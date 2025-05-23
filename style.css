@@ -13,7 +13,7 @@ header{
 a{
     text-decoration: none;
     color: black;
-    padding-right: 10px;
+    padding-right: 30px;
 }
 a:visited{
     color: black;
@@ -37,19 +37,41 @@ main{
 #intro-section{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 30px 30px 0px 30px;
+    padding: 30px;
     margin-bottom: 30px;
     width: 25%;
     background-color: #61b5af;
     color: white;
     border-radius: 5px;
+    height: 100%;
+
+}
+#intro-section>div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+#resume{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    background-color: white;
+    color: #61b5af;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    
+}
+#resume:hover{
+    color:  #407874;
 }
 
 .personalpic>img{
     width: 100%;
     border-radius: 500px;
 }
+
  
 #Projects{
     padding: 0px 30px;
@@ -59,6 +81,7 @@ main{
     align-items: center;
     width: 75%;
 }
+
 #Projects>h3{
     color: #61b5af;
 }
@@ -67,7 +90,8 @@ main{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     width: 100%;
-    gap: 20px;
+    max-width: 1440px;
+    gap: 30px;
    
 
 }
@@ -76,13 +100,29 @@ main{
  display: flex;
  flex-direction: row;
  height: 100%;
- box-shadow: 10px 10px 10px black;
+ background-color: rgb(216, 220, 224);
+ align-items: center;
+ padding: 10px;
 }
+
 .project>img{
-    width: 100%;
+    width: 65%;
     max-height: 100%;
 }
 
+.casestudybutton{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    background-color: #61b5af;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.casestudybutton:hover{
+    background-color: #407874;
+}
 
 footer{
     display: flex;
@@ -91,3 +131,28 @@ footer{
     padding-top: 20px;
     border-top: 2px solid lightcoral
 }
+
+@media screen and (max-width:900px){
+    .project-container{
+        grid-template-columns: 1fr;
+    }
+} 
+@media screen and (max-width:600px){
+    #Projects{
+        width: auto;
+        padding: 0px;
+    }
+    .project{
+       flex-direction: column;
+    }
+    main{
+        flex-direction: column;
+    }
+    #intro-section{
+        flex-direction: row;
+        width: auto;
+    }
+    .personalpic>img{
+        display: none;
+    }
+} 
