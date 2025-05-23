@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emily Diaz</title>
-   <link rel="stylesheet" href="style.css">
+    <title>Emily Diaz-Projects</title>
+   <link rel="stylesheet" href="sharedstyles.css">
+    <link rel="stylesheet" href="homestyle.css">
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
     <script src="script.js" async></script>
     
@@ -14,21 +15,20 @@
     <header>
         <nav>
             <a href="index.html" id="homepage" class="mySelectedPage"> Projects</a>
-            <a href="aboutme.html" id="aboutmepage">About Me</a>
-            <a href="">Contact</a>
+            <a href="aboutme.html" id="aboutmepage">About Me</a> 
         </nav>
     </header>
-    <main>
+    <main id="homemain">
         <section id="intro-section">
             <div>
                 <h1> Hi, I'm Emily!</h1>
                     <div class="personalpic">
-                        <img src="personal image.jpeg" alt="personal picture">
+                        <img src="Images/personal image.jpeg" alt="personal picture">
                     </div>
                 <p>
                 I'm a <strong>UX Designer</strong> focusing on interactions and an experience that tells a story, as well as helps the client meet their needs.
                 </p>
-                <button id="resume" > <img src="Download Logo.png" id="imgdefault"> <img src="Download Logo-Hover.png" id="imghover" hidden >Download resume</button>
+                <button id="resume" > <img src="Images/Download Logo.png" id="imgdefault"> <img src="Images/Download Logo-Hover.png" id="imghover" hidden >Download resume</button>
             </div>
         </section>
         <section id="Projects" >
@@ -36,14 +36,14 @@
                 <div id="project-1" class="project">
                     <div class="projectdescription">
                         <P>
-                            Ongoing enhancement of a propritary 
+                            Ongoing enhancement of a proprietary case management software for the US government
                         </P>
-                        <button class="casestudybutton">
+                        <button class="casestudybutton" id="boozallenbttn">
                             Read case study
                         </button>
                     </div>
                     <img 
-                    src="Reach4Help.png"
+                    src="Images/Booz Allen.png"
                     alt="project 1"
                     >
                 </div>
@@ -57,7 +57,7 @@
                         </button>
                         </div>
                     <img
-                    src="Reach4Help.png"
+                    src="Images/Reach4Help.png"
                     alt="project 2"
                     >
                 </div>
@@ -71,7 +71,7 @@
                         </button>
                     </div>
                     <img 
-                    src="Jargon.png" 
+                    src="Images/Jargon.png" 
                     alt="project 2"
                     >
                 </div>
@@ -85,7 +85,7 @@
                         </button>
                     </div>
                     <img
-                    src="Pocket Museum.png"
+                    src="Images/Pocket Museum.png"
                     alt="project 4"
                     >
                 </div>
@@ -96,7 +96,6 @@
     <footer>
         <p>This website was designed & coded by Emily Diaz</p>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>
 

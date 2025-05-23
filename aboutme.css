@@ -1,0 +1,5 @@
+.mySelectedPage{
+    text-decoration: overline;
+    text-decoration-color: lightcoral;
+    text-decoration-thickness: 3px;
+}
