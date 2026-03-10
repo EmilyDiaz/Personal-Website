@@ -1,5 +1,21 @@
+:root{
+    --border-color:#61b5af;
+    --header-color-primary:#61b5af;
+    --header-color-secondary:white;
+    --body-text:black;
+    --selected-tab:lightcoral;
+    --hover-tab:black;
+    --card-color:#61b5af;
+    --button-text-primary:#61b5af;
+    --button-text-secondary:white;
+    --button-bg-color:#61b5af;
+    --button-bg-color-secondary:white;
+    --button-text-hover:#407874;
+    
+}
+
 body{
-    margin: 30px;
+    margin: 50px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 header{
@@ -23,6 +39,8 @@ a:hover{
     text-decoration-color: black;
     text-decoration-thickness: 3px;
 }
+
+
 
 
 footer{

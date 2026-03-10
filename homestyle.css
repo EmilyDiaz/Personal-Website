@@ -1,13 +1,30 @@
+@import"sharestyles.css";
 
+h2{
+    color: var(--header-color-primary);
+}
+.projectsubheader{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+#line{
+    border-top: var(--border-color) solid 2px;
+    width: 100%;
+    height: 1px;
+}
 
 .mySelectedPage{
     text-decoration: overline;
-    text-decoration-color: lightcoral;
+    text-decoration-color: var(--selected-tab);
     text-decoration-thickness: 3px;
 }
 
 #homemain{
    display: flex;
+   margin: auto;
 }
 #intro-section{
     display: flex;
@@ -15,10 +32,9 @@
     padding: 30px;
     margin-bottom: 30px;
     width: 25%;
-    background-color: #61b5af;
-    color: white;
+    background-color: var(--card-color);
+    color: var(--header-color-secondary);
     border-radius: 5px;
-    height: 100%;
 
 }
 #intro-section>div{
@@ -31,19 +47,24 @@
     align-items: center;
     gap: 10px;
     font-weight: bold;
-    background-color: white;
-    color: #61b5af;
+    background-color: var(--button-bg-color-secondary);
+    color: var(--button-text-primary);
     border: none;
     border-radius: 5px;
     padding: 10px;
     
 }
 #resume:hover{
-    color:  #407874;
+    color:  var(--button-text-hover);
+}
+.personalpic{
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .personalpic>img{
-    width: 100%;
+    width: 50%;
     border-radius: 500px;
 }
 
@@ -58,7 +79,7 @@
 }
 
 #Projects>h3{
-    color: #61b5af;
+    color: var(--header-color-primary);
 }
 .project-container{
     display: grid;
@@ -67,6 +88,7 @@
     width: 100%;
     max-width: 1440px;
     gap: 30px;
+    margin-bottom: 30px;
    
 
 }
@@ -75,7 +97,8 @@
  display: flex;
  flex-direction: row;
  height: 100%;
- background-color: rgb(216, 220, 224);
+ border: solid 2px var(--border-color);
+ border-radius: 5px;
  align-items: center;
  padding: 10px;
 }
@@ -89,14 +112,15 @@
     display: flex;
     flex-direction: row;
     padding: 10px;
-    background-color: #61b5af;
-    color: white;
+    background-color: var(--button-bg-color);
+    color: var(--button-text-secondary);
     border: none;
     border-radius: 5px;
 }
 
 .casestudybutton:hover{
-    background-color: #407874;
+    background-color: var(--button-text-hover);
+    cursor:pointer;
 }
 
 
