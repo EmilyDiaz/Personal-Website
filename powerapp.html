@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emily Diaz-Booz Allen</title>
+    <link rel="stylesheet" href="sharedstyles.css">
+    <link rel="stylesheet" href="powerapp.css">
+    <script src="script.js" async></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html" id="homepage" class="mySelectedPage"> Projects</a>
+            <a href="aboutme.html" id="aboutmepage">About Me</a>
+        </nav>
+    </header>
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalimg">
+        <div id="caption"></div>
+    </div>
+    <main>
+        </section>
+        <section>
+            <h1>X&D Advisor Hub Powerapp</h1>
+            <section class="projectimage">
+                <img src="Images/X&D Advisor Hub App.svg" alt="">
+            </section>
+            <section class="summary">
+                <h2>Problem</h2>
+                <p>The Advisor Hub has been active since 2023 but there has been a lack of consistent engagement from
+                    the users. Upon joining the X&D advisor hub as a lead, I suggested introducing a way of tracking
+                    advisorship progress for both user types
+                    and gamifying this progress in order to improve both aquistion and retention. This whole effort was
+                    a volunteer and leadership experience through the X&D Advisor Hub at Booz Allen; this was not part
+                    of my job and had to be after hours.
+                </p>
+            </section>
+            <section class="topsection">
+                <section class="challenges">
+                    <h2>Challenges faced</h2>
+                    <ul>
+                        <li>Limitations of Powerapps and Powerautomate licenses prevented the pull of information from
+                            Microsoft Bookings.
+                        </li>
+                        <li>Microsoft Bookings' email format did not provide the information expected in order to
+                            automate pull of information for advisees and advisors. </li>
+                    </ul>
+                </section>
+                <section class="timeline">
+                    <h2>Timeline</h2>
+                    <h3>October 2025-Ongoing</h3>
+                    <p>
+                        <strong>Released to production. Undergoing pilot testing by users.</strong>
+                    </p>
+                </section>
+            </section>
+
+
+            <section class="solution">
+                <h2>Solution</h2>
+                <p> Utlize the Microsoft ecosystem to create a gamified dashboard that is not only easily accessible for
+                    users, but is secure on our company network and is able to be developed fast and easily by someone
+                    with a non-programmer background.
+                </p>
+
+                <section class="userflow">
+                    <h3>1. Understanding existing processes</h3>
+                    <p> The main process for a user to participate in the X&D Advisor Hub program was, as follows:
+                    <ol>
+                        <li>
+                            Attend an onboarding session hosted at a quarterly cadence by the Advisor Hub
+                        </li>
+                        <li>
+                            Recieve an onboarding survey from the Hub and input information such as, but not limited to:
+                            <ul>
+                                <li>
+                                    Level of UX/UI experience
+                                </li>
+                                <li>
+                                    Whether the user would like to be an advisor, advisee, or both.
+                                </li>
+                                <li>
+                                    What topics the user would like to advise or be advised on.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Once the survey was submitted, the user would then recieve a link to the X&D Bookings Page,
+                            a site where onboarded users can set their schedules as advisors and schedule meetings as
+                            advisees with an advisor of their choosing.
+                        </li>
+                    </ol>
+                    </p>
+                    <p>
+                        The users who were onboarded as advisees or both could then go to the Bookings Page and select a
+                        topic they wished to have advising in. Once a topic was selected, they could select a preferred
+                        meeting date and time. A dropdown would then conditionally populate advisors based on selections
+                        the user made in the previous two sections.
+                    </p>
+                    <p>
+                        Once the user submits their scheduled meeting, they get a calender invite through their
+                        Microsoft Outlook.
+                    </p>
+                    <section class="componentimages">
+                        <img src="Images/Bookings-Step 1.svg" alt="">
+                        <img src="Images/Bookings-Step 2.svg" alt="">
+                        <img src="Images/Booking-Step 3.svg" alt="">
+                    </section>
+
+                </section>
+                <section class="userflow">
+                    <h3>2. Enhancing the process</h3>
+                    <p>
+                        Each advisor would have their own Bookings account, with a central Bookings calendar shared
+                        amongst the advisors. Therefore, they could see upcoming meetings with an advisee,
+                        but there was no easy way to track which advisees they had meetings with. Furthermore, the
+                        definition of what is considered an advisee or advisor could be subjective based on the user:
+                    <div class="highlight">
+                        <h4>Is it enough to consider a person an advisee or advisor with just one meeting? Or would
+                            there have to be more of an established cadence?</h4>
+                    </div>
+
+                    </p>
+                    <p>
+                        There was also a lack of continous engagement, where there'd be a meeting set up only once
+                        between different sets of advisee and advisor, as well as a lack of onboarding interest.
+                    </p>
+                    <p>
+                        I began to research the definition of gamification, what elements or standards it consisted of,
+                        and examples of gamification in the workplace.
+                        Once I had a proper understanding of that, I looked for options that were compliant with the
+                        security standards at Booz Allen:
+                    </p>
+                    <div class="highlight">
+                        <h4>1. Workday</h4>
+                        <p> Workday is currently used internally by Booz Allen staff. It has its own version of a
+                            mentorship program, where advisees can send advisorships requests to potential advisors.
+                        </p>
+                        <p>There was also a badge system in place, but these badges were tied to learning courses and
+                            not related to the native mentorship functionality. </p>
+                        <p>However, Workday did not offer alot of customization options or potential for growth.
+                            Navigation to different areas of Workday, including these mentorship and badges
+                            functionality, seemed rather daunting and was too large in scale for what the program was
+                            looking for in a dashboard. </p>
+                    </div>
+                    <div class="highlight">
+                        <h4>2. Figma Make</h4>
+                        <p>
+                            Figma Make is Figma's attempt at using AI and is currently still in Beta. Pairing the
+                            versatility of Make with integrated connections such as Supabase offered an enticing
+                            possibility.
+                        </p>
+                        <p>Furthermore, Make would offer a friendlier environment to the other leads given their
+                            non-programmer backgrounds. The only caveat to this would be the learning curve to learn SQL
+                            for using Supabase.</p>
+                        <p>However, I could not find any documentation from my company attesting to whether or not
+                            Supabase was safe to use. The other issue would be how long it would take, realistically, to
+                            get to MVP state of the app given the learning curve for SQL.</p>
+                    </div>
+                    <div class="highlight">
+                        <div class="winner">
+                            <h4>3. Microsoft Ecosystem</h4>
+                            <img src="Images/WINNER.svg" alt="">
+
+                        </div>
+
+                        <p>
+                            Microsoft 365 and all of its products are offered to our company and personnel is added to
+                            our company through the use of Entra ID. Given this, the connectivity of all products and
+                            personnel information access
+                            made this option a seamless one. The use of Powerapps, Sharepoint List, Bookings, and
+                            Powerautomate could all be used to create the dashboard we'd want but there were some
+                            caveats:
+                        </p>
+                        <p>
+                            The original idea of connecting Microsoft Bookings to either Powerapps or
+                            Powerautomate in order to access meeting information was quickly squashed given the type of
+                            license Booz Allen had for all three of these products. Microsoft Outlook had to be relied
+                            on instead.
+                        </p>
+                        <p>
+                            There would also be a similar learning curve for learning how to use PowerFX, the psuedo
+                            coding language for Powerapps, in order to expand the MVP.
+                            Powerautomate would also have its own learning curve, though expectations of change after
+                            initial flow setup were low.
+                        </p>
+                    </div>
+                    <p> Inspiration for the app camme mainly from video games and persona cards, the latter being an
+                        artifact used by UX designers on the early stages of design.
+                        Persona cards are used to identify key user types and humanize these user types, often giving
+                        them a name, personality, and likes and dislikes.
+                    </p>
+                    <div class="componentimages">
+                        <img src="Images/Persona.svg" alt="">
+                        <img src="Images/stats allocation.svg">
+                        <img src="Images/badges.svg" alt="">
+
+                    </div>
+                    <p>
+                        A flow was drafted in mural to represent the MVP state of the app. MVP functionalties and UI
+                        screens were proposed to the other leads with the use of mockups and this flow. Once shown, the
+                        MVP state was agreed upon by the leads, with some proposed, initial changes. MVP functionalities
+                        included, but not limited to:
+                    <ul>
+                        <li>
+                            List of advisees and advisors
+                        </li>
+                        <li>
+                            A way to send feedback to the X&D Hub about the program and the app
+                        <li>
+                            Goals
+                        </li>
+                    </ul>
+
+                    </p>
+                    <div id="xduserflow">
+                        <img src="Images/X&D Advisor Hub App userflow.png" alt="">
+                    </div>
+                    <div id="comparisonaside">
+                        <div id="comparison">
+                            <img src="Images/V1.svg" alt="">
+                            <h2>VS</h2>
+                            <img src="Images/V2.svg" alt="">
+                        </div>
+                        <aside>
+                            <h4>Early mockups</h4>
+                            <p>
+                                UI wise, we weighed what we wanted the dashboard to focus on: The logged in user's
+                                profile or the logged in user's advisees and advisors information.
+                            </p>
+                            <p>
+                                Both pieces of information were crucial, but we ultimately decided to put the logged in
+                                user's profile front and center, with navigation to advisee and advisor pages.
+                            </p>
+                        </aside>
+                    </div>
+                </section>
+            </section>
+
+            <section class="reflections">
+                <h2>Reflections</h2>
+                <p> Coming soon...</p>
+            </section>
+        </section>
+
+    </main>
+    <footer>
+        <p>This website was designed & coded by Emily Diaz</p>
+    </footer>
+</body>
+
+</html>

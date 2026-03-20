@@ -1,129 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emily Diaz-Projects</title>
-   <link rel="stylesheet" href="sharedstyles.css">
+    <link rel="stylesheet" href="sharedstyles.css">
     <link rel="stylesheet" href="homestyle.css">
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
     <script src="script.js" async></script>
-    
+
 
 </head>
+
 <body>
     <header>
         <nav>
             <a href="index.html" id="homepage" class="mySelectedPage"> Projects</a>
-            <a href="aboutme.html" id="aboutmepage">About Me</a> 
+            <a href="aboutme.html" id="aboutmepage">About Me</a>
         </nav>
     </header>
     <main id="homemain">
         <section id="intro-section">
             <div>
                 <h1> Hi, I'm Emily!</h1>
-                    <div class="personalpic">
-                        <img src="Images/personal image.jpeg" alt="personal picture">
-                    </div>
+                <div class="personalpic">
+                    <img src="Images/personal image.jpeg" alt="personal picture">
+                </div>
                 <p>
-                I'm a <strong> Product Designer</strong> focusing on interactions and an experience that tells a story, as well as helps the client meet their needs.
+                    I'm a <strong> Product Designer</strong> focusing on interactions and an experience that tells a
+                    story, as well as helps the client meet their needs.
                 </p>
 
                 <p>I'm currently a UX Designer at Booz Allen Hamilton, working on the Veteran Affairs portfolio.</p>
 
-                <button id="resume" > <img src="Images/Download Logo.png" id="imgdefault"> <img src="Images/Download Logo-Hover.png" id="imghover" hidden >Download resume</button>
+                <a id="downloadlink" href="Resume/Resume-Current.pdf" download="Emily Diaz Resume"><button id="resume">
+                        <img src="Images/Download Logo.svg" id="imgdefault"> <img src="Images/Download Logo-Hover.svg"
+                            id="imghover" hidden>Download resume</button></a>
             </div>
         </section>
-        <section id="Projects" >
-           <div class="projectsubheader" id="design projects">
+        <section id="Projects">
+            <div class="projectsubheader" id="design projects">
                 <h2>Design projects</h2>
                 <div id="line"></div>
             </div>
-            
+
             <div class="project-container">
                 <div id="project-1" class="project">
                     <div class="projectdescription">
+                        <h3>Ongoing enhancement of a proprietary case management software to improve the Appeals process
+                            for U.S Veterans </h3>
                         <P>
-                            Ongoing enhancement of a proprietary case management software for the US government
+                            Designed and have seen over a dozen projects to production deployment under a Booz Allen
+                            contract for the Department of Veterans Affairs.
                         </P>
                         <button class="casestudybutton" id="boozallenbttn">
-                            Read case studies
+                            Learn more
                         </button>
-                    </div>
-                    <img 
-                    src="Images/BoozAllenLogo.svg"
-                    alt="project 1"
-                    >
-                </div>
-                   <div id="project-2"class="project">
-                    <div class="projectdescription">
-                         <P>
-                            Redesigning the mobile user experience for a COVID resource hub organization
-                        </P>
-                        <button class="casestudybutton">
-                            Read case study
-                        </button>
+                        <div class="tools">
+                            <img src="Images/Tools.svg">
+                            <p>Tools:</p>
+                            <img src="Images/Mural.svg">
+                            <img src="Images/FigmaLogo.svg">
                         </div>
-                    <img
-                    src="Images/Reach4Help.png"
-                    alt="project 2"
-                    >
+                    </div>
+
+                    <img src="Images/BoozAllenLogo.svg" id="boozallenimg" alt="project 1">
                 </div>
-                <div id="project-3"class="project">
+                <div id="project-2" class="project">
                     <div class="projectdescription">
+                        <h3>
+                            Making COVID resources accessible at the palm of your hands
+                        </h3>
+                        <P>
+                            Redesigning the mobile user experience for a COVID resource hub organization.
+                        </P>
+                        <button class="casestudybutton" id="reach4helpproject">
+                            Learn more
+                        </button>
+                        <div class="tools">
+                            <img src="Images/Tools.svg">
+                            <p>Tools:</p>
+                            <img src="Images/Mural.svg">
+                            <img src="Images/FigmaLogo.svg">
+                        </div>
+                    </div>
+                    <img src="Images/Reach4Help.png" id="reach4helpimage" alt="project 2">
+                </div>
+                <div id="project-3" class="project">
+                    <div class="projectdescription">
+                        <h3>
+                            RPG inspired app for learning a new language and communicating with others
+                        </h3>
                         <P>
                             Gamified, language learning app designed for Google UX certifcation.
                         </P>
-                        <button class="casestudybutton">
-                            Read case study
+                        <button class="casestudybutton" id="jargonproject">
+                            Learn more
                         </button>
+                        <div class="tools">
+                            <img src="Images/Tools.svg">
+                            <p>Tools:</p>
+                            <img src="Images/Mural.svg">
+                            <img src="Images/FigmaLogo.svg">
+                        </div>
                     </div>
-                    <img 
-                    src="Images/Jargon.png" 
-                    alt="project 2"
-                    >
+                    <img src="Images/Jargon.png" id="jargonimage" alt="project 2">
                 </div>
             </div>
             <div class="projectsubheader" id="otherprojects">
-                        <h2>Other projects</h2>
-                    <div id="line"></div>
+                <h2>Other projects</h2>
+                <div id="line"></div>
             </div>
-             <div class="project-container">       
+            <div class="project-container">
                 <div id="project-4" class="project">
                     <div class="projectdescription">
                         <P>
-                            Figma plugins made to enhance productivity UX teams, portfolio wide
+                            Figma plugins made to enhance productivity UX teams, portfolio wide.
                         </P>
                         <button class="casestudybutton" id="figmaplugin">
-                            View projects
+                            Learn more
                         </button>
+                        <div class="tools">
+                            <img src="Images/Tools.svg">
+                            <p>Tools:</p>
+                            <img src="Images/Chat GPT.svg">
+                            <img src="Images/VS Code.svg">
+                            <img src="Images/FigmaLogo.svg">
+                        </div>
                     </div>
-                    <img 
-                    src="Images/FigmaLogo.svg"
-                    alt="project 4"
-                    >
+                    <img src="Images/Dummy Data Generator.svg" id="figmaimg" alt="project 4">
                 </div>
                 <div id="project-5" class="project">
                     <div class="projectdescription">
                         <P>
-                          Gamified, mentorship tracking application made on Microsoft PowerApps
+                            Designed and developed a gamified, mentorship tracking application made on Microsoft
+                            PowerApps.
                         </P>
-                        <button class="casestudybutton" id="mentorship app">
-                            View project
+                        <button class="casestudybutton" id="xd app">
+                            Learn more
                         </button>
+                        <div class="tools">
+                            <img src="Images/Tools.svg">
+                            <p>Tools:</p>
+                            <img src="Images/Chat GPT.svg">
+                            <img src="Images/VS Code.svg">
+                            <img src="Images/Sharepoint.svg">
+                            <img src="Images/PowerApps Logo.svg">
+                            <img src="Images/Powerautomate.svg">
+                            <img src="Images/FigmaLogo.svg">
+                        </div>
                     </div>
-                    <img 
-                    src="Images/PowerApps Logo.svg"
-                    alt="project 4"
-                    >
+                    <img src="Images/X&D Advisor Hub App.svg" id="XD app image" alt="project 4">
                 </div>
-                
-            </div>    
+
+            </div>
         </section>
     </main>
     <footer>
         <p>This website was designed & coded by Emily Diaz</p>
     </footer>
 </body>
-</html>
 
+</html>
