@@ -1,64 +1,91 @@
 @font-face {
-  font-family: 'Lato-Regular'; /* A name you choose to refer to the font later */
-  src: url('Fonts/Lato/Lato-Regular.ttf') format('truetype'); /* Path relative to the CSS file */
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap; /* Optional: controls how text is displayed while the font loads */
+    font-family: 'Lato-Regular';
+    /* A name you choose to refer to the font later */
+    src: url('Fonts/Lato/Lato-Regular.ttf') format('truetype');
+    /* Path relative to the CSS file */
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    /* Optional: controls how text is displayed while the font loads */
 }
+
 @font-face {
-  font-family: 'Lato-Italic'; /* A name you choose to refer to the font later */
-  src: url('Fonts/Lato/Lato-Italic.ttf') format('truetype'); /* Path relative to the CSS file */
-  font-weight: normal;
-  font-style: italic;
-  font-display: swap; /* Optional: controls how text is displayed while the font loads */
+    font-family: 'Lato-Italic';
+    /* A name you choose to refer to the font later */
+    src: url('Fonts/Lato/Lato-Italic.ttf') format('truetype');
+    /* Path relative to the CSS file */
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+    /* Optional: controls how text is displayed while the font loads */
 }
+
 @font-face {
-  font-family: 'Lato-Bold'; /* A name you choose to refer to the font later */
-  src: url('Fonts/Lato/Lato-Bold.ttf') format('truetype'); /* Path relative to the CSS file */
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap; /* Optional: controls how text is displayed while the font loads */
+    font-family: 'Lato-Bold';
+    /* A name you choose to refer to the font later */
+    src: url('Fonts/Lato/Lato-Bold.ttf') format('truetype');
+    /* Path relative to the CSS file */
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+    /* Optional: controls how text is displayed while the font loads */
 }
+
 @font-face {
-  font-family: 'Lato-Bold Italic'; /* A name you choose to refer to the font later */
-  src: url('Fonts/Lato/Lato-BoldItalic.ttf') format('truetype'); /* Path relative to the CSS file */
-  font-weight: bold;
-  font-style: italic;
-  font-display: swap; /* Optional: controls how text is displayed while the font loads */
+    font-family: 'Lato-Bold Italic';
+    /* A name you choose to refer to the font later */
+    src: url('Fonts/Lato/Lato-BoldItalic.ttf') format('truetype');
+    /* Path relative to the CSS file */
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+    /* Optional: controls how text is displayed while the font loads */
 }
+
 @font-face {
-  font-family: 'Lato-Light'; /* A name you choose to refer to the font later */
-  src: url('Fonts/Lato/Lato-Light.ttf') format('truetype'); /* Path relative to the CSS file */
-  font-weight: lighter;
-  font-style: normal;
-  font-display: swap; /* Optional: controls how text is displayed while the font loads */
+    font-family: 'Lato-Light';
+    /* A name you choose to refer to the font later */
+    src: url('Fonts/Lato/Lato-Light.ttf') format('truetype');
+    /* Path relative to the CSS file */
+    font-weight: lighter;
+    font-style: normal;
+    font-display: swap;
+    /* Optional: controls how text is displayed while the font loads */
+}
+
+@font-face{
+    font-family:'Pixelify-SemiBold';
+    src:url('Fonts/Pixelify_Sans/static/PixelifySans-SemiBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
 
 
-:root{
-    --primary-color:#288071;
-    --secondary-color:white;
-    --accent-color:#7B4773;
-    --tertiary-color:black;
-    --hover-color:#1D594F;
-    --border-color:var(--primary-color);
-    --header-color-primary:var(--primary-color);
-    --header-color-secondary:var(--secondary-color);
-    --body-text:var(--tertiary-color);
-    --selected-tab:var(--accent-color);
-    --hover-tab:var(--tertiary-color);
-    --card-color:var(--primary-color);
-    --button-text-primary:var(--primary-color);
-    --button-text-secondary:var(--secondary-color);
-    --button-bg-color:var(--primary-color);
-    --button-bg-color-secondary:var(--secondary-color);
-    --button-text-hover:var(--hover-color);
-    
+:root {
+    --primary-color: #288071;
+    --secondary-color: white;
+    --accent-color: #7B4773;
+    --tertiary-color: black;
+    --hover-color: #1D594F;
+    --border-color: var(--primary-color);
+    --header-color-primary: var(--primary-color);
+    --header-color-secondary: var(--secondary-color);
+    --body-text: var(--tertiary-color);
+    --selected-tab: var(--accent-color);
+    --hover-tab: var(--tertiary-color);
+    --card-color: var(--primary-color);
+    --button-text-primary: var(--primary-color);
+    --button-text-secondary: var(--secondary-color);
+    --button-bg-color: var(--primary-color);
+    --button-bg-color-secondary: var(--secondary-color);
+    --button-text-hover: var(--hover-color);
+
 }
 
 
-body{
-    margin: 50px;
+body {
+    margin: 2em;
     font-family: 'Lato-Regular', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -67,39 +94,54 @@ h2,
 h3,
 h4 {
     color: var(--primary-color);
-     font-family: 'Lato-Bold', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Lato-Bold', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 10px;
 }
 
-header{
+header {
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     background-color: white;
-    width:100%;
+    width: 100%;
     padding-bottom: 40px;
 }
+header>a>h4{
+    font-family: 'Pixelify-SemiBold',Tahoma,Geneva,Verdana,sans-serif;
+}
+header>a:hover{
+    text-decoration: none;
+}
+
+
+
 .mySelectedPage {
     text-decoration: overline;
     text-decoration-color: var(--selected-tab);
     text-decoration-thickness: 3px;
 }
-ul>li{
+
+ul>li {
 
     padding-bottom: 10px;
 }
-a{
+
+a {
     text-decoration: none;
     color: black;
     padding-right: 30px;
 }
-a:visited{
+
+a:visited {
     color: black;
 }
-a:hover{
+
+a:hover {
     text-decoration: overline;
     text-decoration-color: black;
     text-decoration-thickness: 3px;
 }
-.summary{
+
+.summary {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -108,7 +150,8 @@ a:hover{
     padding: 20px;
     margin-bottom: 20px;
 }
-.solution{
+
+.solution {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -118,7 +161,8 @@ a:hover{
     margin-top: 30px;
     margin-bottom: 20px;
 }
-.topsection{
+
+.topsection {
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -129,24 +173,27 @@ a:hover{
     margin-left: 10px;
     width: 100%;
 }
-.challenges{
+
+.challenges {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     border: solid 2px var(--primary-color);
     border-radius: 5px;
-    padding: 20px;  
+    padding: 20px;
     width: 50%;
 }
-.timeline{
+
+.timeline {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     border: solid 2px var(--primary-color);
     border-radius: 5px;
-    padding: 20px;  
+    padding: 20px;
     width: 50%;
 }
+
 .componentimages {
     display: flex;
     width: 100%;
@@ -170,84 +217,198 @@ a:hover{
     cursor: zoom-in;
     opacity: 0.8;
 }
-.reflections{
+
+.reflections {
     display: flex;
     flex-direction: column;
-    align-items:flex-start;
+    align-items: flex-start;
     border: solid 2px var(--primary-color);
     border-radius: 5px;
-    padding: 20px;  
+    padding: 20px;
     margin-bottom: 50px;
 }
-.projectimage{
-display: flex;
-flex-direction: column;
-width: 100%;
-height: 50%;
-justify-content: center;
-align-items: center;
-margin-bottom: 30px;
+
+.projectimage {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
 
 }
-.projectimage>img{
+
+.highlight {
+    background-color: rgba(211, 211, 211, 0.146);
+    padding: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.projectimage>img {
     width: 100%;
     height: 100%;
 }
+
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 20px;
-  vertical-align: middle;
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow:auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 20px;
+    vertical-align: middle;
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
 }
 
 .modal-content {
-  margin: auto;
-  display: block;
-  max-width: 96vw; 
-  max-height: 200vh;
+    margin: auto;
+    display: block;
+    max-width: 90vw;
+    max-height: 200vh;
+    z-index: 1;
 }
 
 .close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 .close:hover,
 .close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+#caption{
+    background-color:gray;
+    color: white;
+    margin: 10px;
+    padding: 20px;
+
+}
+.modalbody{
+    display: flex;
+    flex-direction: row;
+}
+#previousbutton{
+    z-index: 2;
+    position: absolute;
+    top: 350px;
+    right: 92vw;
 }
 
+#nextbutton{
+    z-index: 2;
+    position: absolute;
+    top: 350px;
+    left: 92vw;
+}
 /* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-  .modal-content {
-    width: 100%;
-  }
-}
-.imganimationover{
-    transform: translateX(10px) translateY(-20px);
-    transition:  .5s ease-in-out;
-}
-.imganimationleave{
-    transform: translateX(-10px) translateY(20px);
-    transition:  .5s ease-in-out;
+@media screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
 }
 
-footer{
+.imganimationover {
+    transform: translateX(10px) translateY(-20px);
+    transition: .5s ease-in-out;
+}
+
+.imganimationleave {
+    transform: translateX(-10px) translateY(20px);
+    transition: .5s ease-in-out;
+}
+
+.imggrow {
+    background-color: rgba(0, 0, 0, 0.106);
+    ;
+    transform: scale(1.05);
+    transition: .5s ease-in-out;
+}
+
+.imgnormal {
+    transform: scale(1);
+    transition: .5s ease-in-out;
+}
+
+.otherprojectsdiv {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+}
+
+.otherprojects {
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
+    width: 50%;
+}
+
+.otherprojects>img {
+    width: 30%;
+    max-width: 200px;
+}
+
+.asidewrapper {
+    display: flex;
+    flex-flow: row;
+    gap: 40px;
+}
+.asidewrapper>nav{
+    top: 0;
+    height: 25vh;
+    position: sticky;
+    position: -webkit-sticky;
+}
+
+
+.asidewrapper>nav>ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+.asidewrapper>nav>ul>li {
+   padding-bottom: 0px;
+}
+
+.asidewrapper>nav>ul>li>a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.asidewrapper>nav>ul>li>a>h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+footer {
     display: flex;
     justify-content: center;
     width: 100%;

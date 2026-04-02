@@ -11,7 +11,28 @@ h2 {
 h3 {
     color: var(--header-color-primary);
 }
-
+.contactinfo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+.contactinfo>a{
+padding-right: 0;
+}
+.contactinfo>h3{
+    color: var(--header-color-secondary);
+}
+.contacts{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.contacts>a{
+    padding-right: 0px;
+}
 .projectsubheader {
     display: flex;
     flex-direction: row;
@@ -51,6 +72,7 @@ h3 {
 
 #downloadlink {
     text-decoration: none;
+    padding-right: 0;
 }
 
 #resume {
@@ -96,7 +118,9 @@ h3 {
     align-items: center;
     width: 75%;
 }
-
+#project-2>img{
+max-height: 500px
+}
 #Projects>h3 {
     color: var(--header-color-primary);
 }
