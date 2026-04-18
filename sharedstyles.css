@@ -352,6 +352,10 @@ a:hover {
     transition: .5s ease-in-out;
 }
 
+.cursorhover{
+    cursor: pointer;
+}
+
 .otherprojectsdiv {
     display: flex;
     flex-direction: row;
