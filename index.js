@@ -8,6 +8,8 @@ let jargonproject = document.getElementById("jargonproject");
 let jargonimage = document.getElementById("jargonimage");
 let figmaplugin = document.getElementById("figmaplugin");
 let figmaimg = document.getElementById("figmaimg");
+let onboardingBttn=document.getElementById("onboardingflow")
+let onboardingImg=document.getElementById("onboardingimg")
 let xdapp = document.getElementById("xdapp");
 let xdappimage = document.getElementById("xdappimg");
 let imganimationover = document.querySelector(".imganimationover");
@@ -31,17 +33,14 @@ let imganimationleave = document.querySelector(".imganimationleave");
   ProjectAnimation(jargonproject, jargonimage);
   ProjectAnimation(figmaplugin, figmaimg);
   ProjectAnimation(xdapp, xdappimage);
+  ProjectAnimation(onboardingBttn,onboardingImg)
 
   //nav logic for the project buttons
-  boozallenbutton.addEventListener("click", () => {
-    location.href = "BoozAllenCaseStudy.html";
-  });
-  xdapp.addEventListener("click", () => {
-    location.href = "powerapp.html";
-  });
-  jargonproject.addEventListener("click", () => {
-    location.href = "jargon.html"
-  })
+  navButton(boozallenbutton,"BoozAllenCaseStudy.html")
+  navButton(xdapp,"powerapp.html")
+  navButton(jargonproject,"jargon.html")
+  navButton(onboardingBttn,"onboarding.html")
+
 
 
 function ProjectAnimation(buttonname, imgname) {
@@ -53,4 +52,10 @@ function ProjectAnimation(buttonname, imgname) {
     imgname.classList.add('imganimationleave');
     imgname.classList.remove('imganimationover')
   });
+}
+
+function navButton(bttn,link){
+  bttn.addEventListener("click",()=>{
+    location.href=link
+  })
 }

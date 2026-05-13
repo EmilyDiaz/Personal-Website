@@ -7,17 +7,7 @@
     width: 100%;
 }
 
-#comparisonaside {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
 
-#comparisonaside>aside {
-    width: 15%;
-}
 
 #styleguideaside {
     display: flex;
@@ -75,14 +65,9 @@
     opacity: 0.8;
 }
 
-@media screen and (max-width:1419px) {
-    #comparisonaside {
-        flex-direction: column;
-    }
 
-    #comparisonaside>aside {
-        width: 100%;
-    }
+
+@media screen and (max-width:1419px) {
 
     #xduserflow {
         flex-direction: column;

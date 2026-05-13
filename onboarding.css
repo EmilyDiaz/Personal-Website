@@ -1,0 +1,30 @@
+.asidediv{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.asidediv>aside{
+    width: 80%;
+}
+
+@media screen and (max-width:1419px) {
+    .asidediv {
+        flex-direction: column;
+    }
+
+    .asidediv>aside {
+        width: 100%;
+    }
+}
+
+#navbarimg{
+    height: 600px;
+}
+
+@media screen and (max-width:1419px) {
+   #navbarimg{
+    height: 80%;
+   }
+}

@@ -27,7 +27,7 @@ let previousbutton = document.getElementById("previousbutton");
 let currentIndex = 0;
 const imageSources = Array.from(imgzoom).map(img => img.src);
 const imageAlts = Array.from(imgzoom).map(img => img.alt);
-
+if(modal){
 imgzoom.forEach((img, index) => {
   img.addEventListener("click", () => {
     openModal(index);
@@ -56,7 +56,7 @@ window.onclick = function (event) {
   }
 };
 
-
+}
 
 //for section beneath each project page to quickly navigate to other projects
 

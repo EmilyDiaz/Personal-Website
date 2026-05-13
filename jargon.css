@@ -1,6 +1,9 @@
 img{
     width: 100%;
 }
+#jargontitle{
+    width: 50%;
+}
 #paperwires{
     display: flex;
     flex-direction: column;

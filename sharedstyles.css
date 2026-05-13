@@ -199,6 +199,17 @@ a:hover {
     padding: 20px;
     width: 50%;
 }
+.comparisonaside {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.comparisonaside>aside {
+    width: 15%;
+}
 
 .componentimages {
     display: flex;
@@ -319,30 +330,60 @@ a:hover {
 #previousbutton{
     z-index: 2;
     position: absolute;
-    top: 350px;
-    right: 92vw;
+    top: 50vh;
+    left: calc(50vw - 45vw - 40px);
+    width: 60px;
+    height: 60px;
 }
 
 #nextbutton{
     z-index: 2;
     position: absolute;
-    top: 350px;
-    left: 92vw;
+    top: 50vh;
+    left: calc(50vw + 45vw);
+    width: 60px;
+    height: 60px;
 }
+/* 100% Image Width on Smaller Screens */
+@media screen and (max-width: 768px) {
+    .modal-content {
+        width: 100%;
+    }
+    #previousbutton{
+        width: 40px;
+        height: 40px;
+        top:40vh;
+        left: 20px;
+    }
+      #nextbutton{
+        width: 40px;
+        height: 40px;
+        top:40vh;
+        left: calc(100vw - 60px);
+    }
+    .close{
+        top:0px;
+        font-size:30px;
+        right:10px
+    }
+}
+
 /* 100% Image Width on Smaller Screens */
 @media screen and (max-width: 500px) {
     .modal-content {
         width: 100%;
     }
     #previousbutton{
-        width: 10%;
-        top:120px;
-        left:0vw
+        width: 40px;
+        height: 40px;
+        top:30vh;
+        left:10px;
     }
       #nextbutton{
-        width: 10%;
-        top:120px;
-        right:0vw
+        width: 40px;
+        height: 40px;
+        top:30vh;
+        left: calc(100vw - 50px);
     }
     .close{
         top:0px;
@@ -459,5 +500,13 @@ footer {
     /*not the solution*/
     .topsection>section{
         width: 88%; 
+    }
+}@media screen and (max-width:1419px) {
+    .comparisonaside {
+        flex-direction: column;
+    }
+
+    .comparisonaside>aside {
+        width: 100%;
     }
 }
