@@ -1,5 +1,3 @@
-
-
 .winner {
     display: flex;
     flex-direction: row;
@@ -32,7 +30,8 @@
 #styleguideaside>aside {
     width: 50%;
 }
-#styleguideaside>aside>h4{
+
+#styleguideaside>aside>h4 {
     color: black;
 }
 
@@ -66,7 +65,7 @@
     box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
 }
 
-#xduserflow>aside>ul{
+#xduserflow>aside>ul {
     padding-left: 10px;
     margin-left: 10px;
 }
@@ -77,23 +76,39 @@
 }
 
 @media screen and (max-width:1419px) {
-    #comparisonaside{
+    #comparisonaside {
         flex-direction: column;
     }
+
     #comparisonaside>aside {
-    width: 100%;
-}
-    #xduserflow{
+        width: 100%;
+    }
+
+    #xduserflow {
         flex-direction: column;
     }
 }
 
-@media screen and (max-width:1197px){
-    #comparison{
+@media screen and (max-width:1197px) {
+    #comparison {
         flex-direction: column;
     }
+
     #comparison>img {
-    width: 100%;
+        width: 100%;
 
+    }
 }
+
+@media screen and (max-width:500px) {
+    .winner {
+        flex-direction: column;
+    }
+
+    #styleguideaside {
+        flex-direction: column;
+    }
+    #styleguideaside>aside{
+        width: 100%;
+    }
 }

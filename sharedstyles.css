@@ -105,6 +105,12 @@ header {
     width: 100%;
     padding-bottom: 40px;
 }
+header>nav{
+    display: flex;
+}
+header>nav>a{
+    text-wrap-mode: nowrap;
+}
 header>a>h4{
     font-family: 'Pixelify-SemiBold',Tahoma,Geneva,Verdana,sans-serif;
 }
@@ -324,9 +330,24 @@ a:hover {
     left: 92vw;
 }
 /* 100% Image Width on Smaller Screens */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 500px) {
     .modal-content {
         width: 100%;
+    }
+    #previousbutton{
+        width: 10%;
+        top:120px;
+        left:0vw
+    }
+      #nextbutton{
+        width: 10%;
+        top:120px;
+        right:0vw
+    }
+    .close{
+        top:0px;
+        font-size:25px;
+        right:10px
     }
 }
 
@@ -388,9 +409,8 @@ a:hover {
 }
 .asidewrapper>nav{
     top: 0;
-    height: 25vh;
+    height: 100vh;
     position: sticky;
-    position: -webkit-sticky;
 }
 
 
@@ -418,4 +438,26 @@ footer {
     width: 100%;
     padding-top: 20px;
     border-top: 2px solid var(--accent-color)
+}
+
+@media screen and (max-width:500px){
+    .asidewrapper{
+        flex-direction: column;
+    }
+    .asidewrapper>nav{
+        display: none
+    }
+    .highlight{
+        margin-left: 0;
+    }
+    .highlight>img{
+        width: 100%;
+    }
+    .topsection{
+        flex-direction: column;
+    }
+    /*not the solution*/
+    .topsection>section{
+        width: 88%; 
+    }
 }

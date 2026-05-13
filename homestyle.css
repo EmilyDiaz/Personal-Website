@@ -212,7 +212,7 @@ max-height: 500px
         width: auto;
     }
 
-    .personalpic>img {
-        display: none;
+    .projectdescription{
+        width: 100%;
     }
 }
