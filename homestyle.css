@@ -59,7 +59,7 @@ padding-right: 0;
     padding: 30px;
     margin-bottom: 30px;
     width: 25%;
-    background:linear-gradient(to bottom, var(--primary-color),white);
+    background:linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
     color: var(--header-color-secondary);
     border-radius: 5px;
 
