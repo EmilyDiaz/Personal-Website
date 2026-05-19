@@ -12,22 +12,24 @@
 </head>
 
 <body>
- <header>
-        <a href="index.html" id="homepage" ><h4> EMILY DIAZ-FUSCO</h4></a>
-        <nav>
-            <a href="index.html" id="homepage" class="mySelectedPage"> Projects</a>
-            <a href="aboutme.html" id="aboutmepage">About Me</a>
-        </nav>
-    </header>
- <div id="myModal" class="modal">
-        <span class="close">&times;</span>
-        <div class="modalbody">
-             <img src="Images/Previous.svg" id="previousbutton">
-        <img class="modal-content" id="modalimg">
-        <img src="Images/Next.svg" id="nextbutton">
-        </div>
-        <div id="caption"></div>
+  <header>
+    <a href="index.html" id="homepage">
+      <h4> EMILY DIAZ-FUSCO</h4>
+    </a>
+    <nav>
+      <a href="index.html" id="homepage" class="mySelectedPage"> Projects</a>
+      <a href="aboutme.html" id="aboutmepage">About Me</a>
+    </nav>
+  </header>
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <div class="modalbody">
+      <img src="Images/Previous.svg" id="previousbutton">
+      <img class="modal-content" id="modalimg">
+      <img src="Images/Next.svg" id="nextbutton">
     </div>
+    <div id="caption"></div>
+  </div>
   <main id="boozallenprj1">
     <section class="heroimage">
       <img src="Images/BoozAllenLogo.svg" alt="Logo of Booz Allen Hamilton">
@@ -43,7 +45,29 @@
       <p class="disclaimer">*Further details on this project cannot be discuss due to NDA. Any information presented has
         been generalized and some parts have even been redacted with the use of lorem ipsum or blur effects.</p>
     </section>
-
+    <section class="summary">
+      <h2>Design Library</h2>
+      <p>When I first started in the VA portfolio, our project was very barebones when it came to the design library in
+        both actual Figma components and documentation. The little components we did have designed out did not even have autolayout 
+        and documentation consisted of a few Word documents thrown into a shared team OneDrive.
+      </p>
+      <p>
+        This led to inefficiency when trying to meet our deliverables on time and inconsistency, since designs had to be adjusted pixel by pixel and colors were not standardized. 
+        This process, paired with the lack of standarization of UX reviews across development teams, resulted in a loss of fidelity between designs and the final product in our software environments. 
+      </p>
+      <p>
+        By the time I left, our small team of three had created over 500 components, modernizing both new and existing ones with autolayout, properties, variables, and slots. 
+        Colors were documentated and attached to design tokens according to their variable names on USWDS. Common layout and spacing values were also attached the tokens and
+        attached to their corresponding components.
+      </p>
+      <p> We had also started assembling a pattern library to share externally with devs and a tech debt log for components, styles, and patterns that had a reported gap between design and code.
+        And to take a step even further, I had begun experimenting with Framelink MCP servers to connect AI to our designs and improve our design handoff process even more for devs.
+      </p>
+      <p>
+        Although my time came to an end on the project before I could work on these processes further, I am proud of what we as a UX team have accomplished and would love to share with you,
+        with some information redacted or shaped differently, of course, the good work we did on our VA portfolio project.
+      </p>
+    </section>
     <section class="casestudyselection">
       <h3>Choose a problem statement below for more information:</h3>
       <section class="probsol">
@@ -78,7 +102,8 @@
       <!--Booz Allen project 1 template: Correspondence-->
       <section id="mailtracking">
         <section class="projectimage">
-          <img src="Images/Booz Allen Project 1.png" alt="An image of the first case study I've written for Booz Allen. ">
+          <img src="Images/Booz Allen Project 1.png"
+            alt="An image of the first case study I've written for Booz Allen. ">
         </section>
         <section class="topsection">
 
@@ -139,7 +164,8 @@
               </p>
               <section class="componentimages">
                 <img src="Images/Component One flow.png" alt="Shows the flow for component one of this project.">
-                <img src="Images/Component 1.svg" alt="Shows a mockup of a document details page, with a modal for actions on the foreground.">
+                <img src="Images/Component 1.svg"
+                  alt="Shows a mockup of a document details page, with a modal for actions on the foreground.">
               </section>
             </section>
 
@@ -154,7 +180,8 @@
               </p>
               <section class="componentimages">
                 <img src="Images/Component Two.png" alt="Shows the flow for component two of this project.">
-                <img src="Images/Component 2.svg"alt="Shows a mockup on step 1 of the intake process for correspondence.">
+                <img src="Images/Component 2.svg"
+                  alt="Shows a mockup on step 1 of the intake process for correspondence.">
               </section>
             </section>
 
@@ -171,7 +198,8 @@
               </p>
               <section class="componentimages">
                 <img src="Images/Component Three user flow.png" alt="Shows the flow for component 3 of the project.">
-                <img src="Images/Component 3.svg" alt="Shows a mockup of correspondence details after the intake process.">
+                <img src="Images/Component 3.svg"
+                  alt="Shows a mockup of correspondence details after the intake process.">
               </section>
             </section>
           </section>
@@ -204,7 +232,8 @@
       <!--Booz Allen Project 2 template this was Reassign Cases to CAMO-->
       <section id="issueapproval">
         <section class="projectimage">
-          <img src="Images/Booz Allen Project 2.svg" alt="An image of the second case study I've written for Booz Allen">
+          <img src="Images/Booz Allen Project 2.svg"
+            alt="An image of the second case study I've written for Booz Allen">
         </section>
         <section class="topsection">
 
@@ -256,7 +285,8 @@
               </p>
               <section class="componentimages">
                 <img src="Images/Reassign Admin.png" alt="Shows userflow for the admin's process in this effort.">
-                <img src="Images/Queue page-Admins.svg" alt="Shows the queue that both admins and non-admins have. Admins can go into links in the Pending tasks tab and act of requests.">
+                <img src="Images/Queue page-Admins.svg"
+                  alt="Shows the queue that both admins and non-admins have. Admins can go into links in the Pending tasks tab and act of requests.">
                 <img src="Images/Request page-Admins.svg" alt="Shows the review request view for admins.">
               </section>
             </section>
@@ -281,9 +311,12 @@
               </ul>
               </p>
               <section class="componentimages">
-                <img src="Images/Reassign Non-Admin Completed.png" alt="Shows the user flow for non-admins for completed tasks.">
-                <img src="Images/Reassign Non-Admin pending.png" alt="Shows the user flow for non-admins for pending tasks.">
-                <img src="Images/Queue Page- Non-Admins.svg" alt="Shows the queue that both admins and non-admins have access to. Non-admins can click on tasks under the in progress tab to submit requests.">
+                <img src="Images/Reassign Non-Admin Completed.png"
+                  alt="Shows the user flow for non-admins for completed tasks.">
+                <img src="Images/Reassign Non-Admin pending.png"
+                  alt="Shows the user flow for non-admins for pending tasks.">
+                <img src="Images/Queue Page- Non-Admins.svg"
+                  alt="Shows the queue that both admins and non-admins have access to. Non-admins can click on tasks under the in progress tab to submit requests.">
                 <img src="Images/Request page-Non-Admins.svg" alt="Shows the submission modal for requests.">
               </section>
             </section>
@@ -321,7 +354,8 @@
       <!--Booz Allen project 3 This is where the Decision evaluation template will sit-->
       <section id="decisioneval">
         <section class="projectimage">
-          <img src="Images/Booz Allen Project 3.svg" alt="An image of the second case study I've written for Booz Allen.">
+          <img src="Images/Booz Allen Project 3.svg"
+            alt="An image of the second case study I've written for Booz Allen.">
         </section>
         <section class="topsection">
           <section class="challenges">

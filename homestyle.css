@@ -52,13 +52,14 @@ padding-right: 0;
     margin: auto;
 }
 
+
 #intro-section {
     display: flex;
     flex-direction: column;
     padding: 30px;
     margin-bottom: 30px;
     width: 25%;
-    background-color: var(--card-color);
+    background:linear-gradient(to bottom, var(--primary-color),white);
     color: var(--header-color-secondary);
     border-radius: 5px;
 
