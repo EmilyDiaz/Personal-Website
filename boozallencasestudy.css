@@ -102,3 +102,15 @@
     }
     
 }
+#atomic-design{
+    width: 100%;
+    display:flex;
+    justify-content:center;
+    background-size: cover;
+}
+.design-system-img-div{
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    gap: 40px;
+}
