@@ -1,0 +1,8 @@
+.plugin>img{
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+}
+.plugin>p>a{
+    text-decoration: underline;
+    color: #0071bc;
+}
