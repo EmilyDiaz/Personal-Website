@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emily Diaz-Figma Plugins</title>
+    <link rel="stylesheet" href="sharedstyles.css">
+    <link rel="stylesheet" href="plugins.css">
+    <script src="common.js" async></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" id="homepage">
+            <h4> EMILY DIAZ-FUSCO</h4>
+        </a>
+        <nav>
+            <a href="index.html" id="homepage" class="mySelectedPage"> Projects</a>
+            <a href="aboutme.html" id="aboutmepage">About Me</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Figma Plugins</h1>
+
+            <section class="plugin">
+                <h2> Dummy Data Generator</h2>
+                <p>
+                    Dummy Data Generator allowed UX designers to quickly fill up table components in Figma with more accurate and unique data than just a typical lorem ipsum 
+                    placeholder. Having unique placeholder text for different table columns helped us deliver more authentic prototypes to the developers, allowing us to illustrate 
+                    different flows in which, for example, required different Veteran names or unique data for each veteran.
+                </p>
+                <p>
+                    This plugin was created before Figma introduced its AI enhancments on the canvas, such as the replace-content feature. That feature rendered this plugin a little
+                    less useful, though the plugin still proved quicker to use than having to continuously correct the replace-content AI feature.
+                </p>
+                <p>
+                    This was the first plugin I made. The figma documentation for its plugin API is a bit...sparse, so I did create my plugins with the help of AI, specifically Github 
+                    Copilot's Claude model.
+                </p>
+                <img src="Images/Dummy data generator.gif"alt="Gif of the dummy data generator plugin in action and fillng out table columns.">
+            </section>
+
+
+            <section class="plugin">
+                <h2> Prototype Variable Scanner</h2>
+                <p>
+                    Variables in Figma are most often used for creating design tokens, but the UX team in the VA project I was in also utilized them for more advanced prototyping,
+                    which allowed us to implement conditionals on our prototypes and allowed for a reduction of how many frames are required to set up a useful prototyping.
+                </p>
+                <p>
+                    One of the major cons to using variables over a vast number of frames to establish your prototypes is the lack of visibility. If Designer A were to come in and
+                    attempt to find what variables are used and where exactly they are being used on a file that Designer B has been working on, Designer A would have a tough time.
+                </p>
+                <p>
+                    Prototype Scanner fixes that issue. The plugin scans the current page and outlines what variables are being used in prototypes on the page. It also tells users how many 
+                    times a variable is used, what type of variable it is, and allows the user to jump to the exact frame (or frames, in the case of multiple use) the variable is used in.
+                    Enhancements for the future include optimization of results fetching, in order to increase the speed in which the page is scanned and results are returned.
+                </p>
+                
+                   <p> If you have a figma account, find the plugin through the plugin menu on your figma canvas. Search for "Prototype variable scanner". <!--<a href="www.google.com">go ahead and try it out on your files.</a>--></p><p>This plugin was not specific to the VA project, so it is available to download on Figma.</p>
+                <img src="Images/Prototype Scanner.gif" alt="Gif of the prototype scanner plugin in action.">
+            </section>
+
+
+
+
+            <h3> Check out other projects:</h3>
+            <div class="otherprojectsdiv" id="otherprojects">
+                <section class="otherprojects" id="boozallenimg">
+                    <img src="Images/BoozAllenLogo.svg"
+                        alt="Click on this image to navigate to the Booz Allen case studies.">
+                    <h3>Booz Allen Case Studies</h3>
+                    <h4>
+                        Ongoing enhancement of a proprietary case management software to improve the Appeals process
+                        for
+                        U.S Veterans
+                    </h4>
+                </section>
+                <section class="otherprojects" id="jargonimage">
+                    <img src="Images/Jargon.svg" alt="Click on this image to navigate to the Jargon project.">
+                    <h3>Jargon</h3>
+                    <h4>
+                        A responsive RPG inspired app for learning a new language and communicating with others on
+                        both
+                        desktop and mobile screens
+                    </h4>
+                </section>
+            </div>
+
+            <footer>
+                <p>This website was designed & coded by Emily</p>
+            </footer>
+
+
+</body>
+
+</html>

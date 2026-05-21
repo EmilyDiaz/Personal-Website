@@ -40,6 +40,7 @@ let imganimationleave = document.querySelector(".imganimationleave");
   navButton(xdapp,"powerapp.html")
   navButton(jargonproject,"jargon.html")
   navButton(onboardingBttn,"onboarding.html")
+  navButton(figmaplugin,"plugins.html")
 
 
 
