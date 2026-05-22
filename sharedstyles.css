@@ -494,6 +494,13 @@ footer {
     .highlight>img{
         width: 100%;
     }
+    .otherprojectsdiv{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .otherprojects{
+        width: auto
+    }
     .topsection{
         flex-direction: column;
     }
@@ -501,7 +508,8 @@ footer {
     .topsection>section{
         width: 88%; 
     }
-}@media screen and (max-width:1419px) {
+}
+@media screen and (max-width:1419px) {
     .comparisonaside {
         flex-direction: column;
     }
