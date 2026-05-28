@@ -53,9 +53,9 @@
     /* Optional: controls how text is displayed while the font loads */
 }
 
-@font-face{
-    font-family:'Pixelify-SemiBold';
-    src:url('Fonts/Pixelify_Sans/static/PixelifySans-SemiBold.ttf') format('truetype');
+@font-face {
+    font-family: 'Pixelify-SemiBold';
+    src: url('Fonts/Pixelify_Sans/static/PixelifySans-SemiBold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -65,7 +65,6 @@
 :root {
     --primary-color: #288071;
     --secondary-color: white;
-    --accent-color: #7B4773;
     --tertiary-color: black;
     --hover-color: #1D594F;
     --border-color: var(--primary-color);
@@ -89,6 +88,26 @@ body {
     font-family: 'Lato-Regular', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+p {
+    font-size: 20px;
+}
+
 h1,
 h2,
 h3,
@@ -101,20 +120,23 @@ h4 {
 header {
     display: flex;
     justify-content: space-between;
-    background-color: white;
     width: 100%;
-    padding-bottom: 40px;
+    padding-bottom: 10px;
 }
-header>nav{
+
+header>nav {
     display: flex;
 }
-header>nav>a{
+
+header>nav>a {
     text-wrap-mode: nowrap;
 }
-header>a>h4{
-    font-family: 'Pixelify-SemiBold',Tahoma,Geneva,Verdana,sans-serif;
+
+header>a>h4 {
+    font-family: 'Pixelify-SemiBold', Tahoma, Geneva, Verdana, sans-serif;
 }
-header>a:hover{
+
+header>a:hover {
     text-decoration: none;
 }
 
@@ -199,6 +221,7 @@ a:hover {
     padding: 20px;
     width: 50%;
 }
+
 .comparisonaside {
     display: flex;
     flex-direction: row;
@@ -316,18 +339,21 @@ a:hover {
     text-decoration: none;
     cursor: pointer;
 }
-#caption{
-    background-color:gray;
+
+#caption {
+    background-color: gray;
     color: white;
     margin: 10px;
     padding: 20px;
 
 }
-.modalbody{
+
+.modalbody {
     display: flex;
     flex-direction: row;
 }
-#previousbutton{
+
+#previousbutton {
     z-index: 2;
     position: absolute;
     top: 50vh;
@@ -336,7 +362,7 @@ a:hover {
     height: 60px;
 }
 
-#nextbutton{
+#nextbutton {
     z-index: 2;
     position: absolute;
     top: 50vh;
@@ -344,27 +370,31 @@ a:hover {
     width: 60px;
     height: 60px;
 }
+
 /* 100% Image Width on Smaller Screens */
 @media screen and (max-width: 768px) {
     .modal-content {
         width: 100%;
     }
-    #previousbutton{
+
+    #previousbutton {
         width: 40px;
         height: 40px;
-        top:40vh;
+        top: 40vh;
         left: 20px;
     }
-      #nextbutton{
+
+    #nextbutton {
         width: 40px;
         height: 40px;
-        top:40vh;
+        top: 40vh;
         left: calc(100vw - 60px);
     }
-    .close{
-        top:0px;
-        font-size:30px;
-        right:10px
+
+    .close {
+        top: 0px;
+        font-size: 30px;
+        right: 10px
     }
 }
 
@@ -373,22 +403,25 @@ a:hover {
     .modal-content {
         width: 100%;
     }
-    #previousbutton{
+
+    #previousbutton {
         width: 40px;
         height: 40px;
-        top:30vh;
-        left:10px;
+        top: 30vh;
+        left: 10px;
     }
-      #nextbutton{
+
+    #nextbutton {
         width: 40px;
         height: 40px;
-        top:30vh;
+        top: 30vh;
         left: calc(100vw - 50px);
     }
-    .close{
-        top:0px;
-        font-size:25px;
-        right:10px
+
+    .close {
+        top: 0px;
+        font-size: 25px;
+        right: 10px
     }
 }
 
@@ -414,7 +447,7 @@ a:hover {
     transition: .5s ease-in-out;
 }
 
-.cursorhover{
+.cursorhover {
     cursor: pointer;
 }
 
@@ -443,12 +476,38 @@ a:hover {
     max-width: 200px;
 }
 
+.dropdown-content{
+    display: none;
+    margin-top: 10px;
+    box-shadow: 5px 5px 10px 5px lightgray;
+    background-color: white;
+    position: absolute;
+}
+.dropdown-content>ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.dropdown-content>ul>li{
+    padding: 10px;
+
+}
+.dropdown-content>ul>li>a{
+   text-decoration: none;
+
+}
+
+.dropdown-content>ul>li:hover{
+    background-color: rgba(183, 223, 216, 0.2);
+}
 .asidewrapper {
     display: flex;
     flex-flow: row;
     gap: 40px;
 }
-.asidewrapper>nav{
+
+.asidewrapper>nav {
     top: 0;
     height: 100vh;
     position: sticky;
@@ -460,17 +519,20 @@ a:hover {
     margin-left: 0;
     padding-left: 0;
 }
+
 .asidewrapper>nav>ul>li {
-   padding-bottom: 0px;
+    padding-bottom: 0px;
 }
 
 .asidewrapper>nav>ul>li>a:hover {
     text-decoration: underline;
     cursor: pointer;
 }
+
 .asidewrapper>nav>ul>li>a>h4 {
     margin-top: 10px;
     margin-bottom: 10px;
+    font-size: 16px;
 }
 
 footer {
@@ -481,34 +543,44 @@ footer {
     border-top: 2px solid var(--accent-color)
 }
 
-@media screen and (max-width:500px){
-    .asidewrapper{
+
+@media screen and (max-width:500px) {
+    .asidewrapper {
         flex-direction: column;
     }
-    .asidewrapper>nav{
+
+    .asidewrapper>nav {
         display: none
     }
-    .highlight{
+
+    .highlight {
         margin-left: 0;
     }
-    .highlight>img{
+
+    .highlight>img {
         width: 100%;
     }
-    .otherprojectsdiv{
+
+    .otherprojectsdiv {
         flex-direction: column;
         gap: 10px;
     }
-    .otherprojects{
+
+    .otherprojects {
         width: auto
     }
-    .topsection{
+
+    .topsection {
         flex-direction: column;
     }
+
     /*not the solution*/
-    .topsection>section{
-        width: 88%; 
+    .topsection>section {
+        width: 88%;
     }
 }
+
+
 @media screen and (max-width:1419px) {
     .comparisonaside {
         flex-direction: column;

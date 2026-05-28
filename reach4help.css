@@ -1,0 +1,22 @@
+img{
+    width: 100%;
+}
+.userflow{
+    margin-bottom: 40px;
+}
+
+main>a{
+    text-decoration: underline;
+    color: #0071bc;
+}
+main>a:hover{
+    text-decoration: underline;
+    color:#263e4e
+}
+main>a:visited{
+    color:purple;
+}
+
+#modalimg{
+    width: 50%;
+}

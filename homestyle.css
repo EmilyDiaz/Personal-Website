@@ -1,8 +1,9 @@
 @import"sharedstyles.css";
 
-h1{
-    color: var(--header-color-secondary);
+h1 {
+    color: var(--primary-color);
 }
+
 h2 {
     color: var(--header-color-primary);
     width: 30%;
@@ -11,7 +12,8 @@ h2 {
 h3 {
     color: var(--header-color-primary);
 }
-.contactinfo{
+
+.contactinfo {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -19,20 +21,25 @@ h3 {
     margin-bottom: 30px;
     align-items: center;
 }
-.contactinfo>a{
-padding-right: 0;
+
+.contactinfo>a {
+    padding-right: 0;
 }
-.contactinfo>h3{
+
+.contactinfo>h3 {
     color: var(--header-color-secondary);
 }
-.contacts{
+
+.contacts {
     display: flex;
     flex-direction: row;
     gap: 20px;
 }
-.contacts>a{
+
+.contacts>a {
     padding-right: 0px;
 }
+
 .projectsubheader {
     display: flex;
     flex-direction: row;
@@ -49,32 +56,35 @@ padding-right: 0;
 
 #homemain {
     display: flex;
-    margin: auto;
+    margin: 2em;
+    padding: 2em;
+    flex-direction: column;
+    background-color: rgba(183, 223, 216, 0.2);
 }
 
 
 #intro-section {
     display: flex;
-    flex-direction: column;
+    gap: 30px;
     padding: 30px;
     margin-bottom: 30px;
-    width: 25%;
-    background:linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
-    color: var(--header-color-secondary);
     border-radius: 5px;
 
 }
 
-#intro-section>div {
+#jobdesc{
     display: flex;
+    width: 50%;
     flex-direction: column;
-    align-items: center;
 }
 
 #downloadlink {
     text-decoration: none;
     padding-right: 0;
 }
+
+
+
 
 #resume {
     display: flex;
@@ -110,28 +120,81 @@ padding-right: 0;
     border-radius: 500px;
 }
 
+#port{
+    background-color: white;
+    padding: 0em 2em;
+}
 
 #Projects {
-    padding: 0px 30px;
     margin-bottom: 30px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 75%;
+    align-items: flex-start;
+    background-color: white;
+    padding:2em;
 }
-#project-2>img{
-max-height: 500px
+.projecttemplate{
+    background-color: rgba(40, 128, 113, .2);
+    border-radius: 30px;
+    height: 400px;
+    background-position: center;
+    padding: 2em 4em;
 }
+.projecttemplate:hover{
+    cursor: pointer;
+}
+#boozallenproject{
+    background-image: url(Images/BoozAllenLogo.svg);
+    background-size: 90%;
+    background-repeat: no-repeat;
+
+}
+#xdappproject{
+    
+    background-image: url(Images/X&D\ Advisor\ Hub\ App.svg);
+    background-size: 90%;
+    background-repeat: no-repeat;
+
+}
+#jargonproject{
+    background-image: url(Images/Jargon\ Cover\ Image.svg);
+    background-size: 90%;
+    background-repeat: no-repeat;
+
+}
+#onboardingproject{
+    background-image: url(Images/OnboardingFlowcutfile-ezgif.com-crop.gif);
+    background-size: 90%;
+    background-repeat: no-repeat;
+
+}
+#datagenproject{
+    background-image: url(Images/Dummy\ Data\ Generator.svg);
+    background-size: 90%;
+    background-repeat: no-repeat;
+
+}
+#scannerproject{
+    background-image: url(Images/Prototype\ Scanner.gif);
+    background-size: 90%;
+    background-repeat: no-repeat;
+
+}
+#reach4helpproject{
+    background-image: url(Images/Reach4HelpProjectCover.svg);
+    background-size:50%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
 #Projects>h3 {
     color: var(--header-color-primary);
 }
 
 .project-container {
     display: grid;
-    /*grid-template-columns: 1fr 1fr;*/
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
-    max-width: 1440px;
     gap: 30px;
     margin-bottom: 30px;
 
@@ -140,18 +203,12 @@ max-height: 500px
 
 .project {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     height: 100%;
-    /*border: solid 2px var(--border-color);
- border-radius: 5px;*/
-    align-items: center;
     padding: 10px;
-    gap: 30px
+    gap: 20px;
 }
 
-.projectdescription {
-    width: 50%;
-}
 
 .tools {
     margin-top: 30px;
@@ -213,7 +270,7 @@ max-height: 500px
         width: auto;
     }
 
-    .projectdescription{
+    .projectdescription {
         width: 100%;
     }
 }

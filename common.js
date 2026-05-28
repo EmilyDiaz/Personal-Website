@@ -2,6 +2,8 @@
 
 
 /* id captures for home page animations*/
+const projectdropdown=document.querySelector(".dropdown");
+const dropdowncontent=document.querySelector(".dropdown-content");
 let boozallenimg = document.getElementById("boozallenimg");
 let jargonimage = document.getElementById("jargonimage");
 let xdappimage = document.getElementById("xdappimg");
@@ -20,6 +22,15 @@ var caption = document.getElementById("caption");
 let nextbutton = document.getElementById("nextbutton");
 let previousbutton = document.getElementById("previousbutton");
 
+headerDropdown()
+function headerDropdown(){
+projectdropdown.addEventListener("mouseover",()=>{
+  dropdowncontent.style.display="block"
+});
+projectdropdown.addEventListener("mouseleave",()=>{
+  dropdowncontent.style.display="none"
+});
+}
 
 
 
@@ -119,6 +130,7 @@ function showNextImage() {
   // Increment index. If at the end, loop back to the first image.
   currentIndex = (currentIndex + 1) % imageSources.length;
   modalImg.src = imageSources[currentIndex];
+  caption.innerHTML=imageAlts[currentIndex];
   if (currentIndex == 0) {
     previousbutton.style.display = "none"
   } else {
@@ -133,6 +145,7 @@ function showNextImage() {
 function showPreviousImage() {
   currentIndex = (currentIndex - 1) % imageSources.length;
   modalImg.src = imageSources[currentIndex];
+  caption.innerHTML=imageAlts[currentIndex];
   if (currentIndex == 0) {
     previousbutton.style.display = "none"
   } else {

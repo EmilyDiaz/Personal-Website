@@ -54,3 +54,13 @@ img{
 .asidewrapper>nav>ul>li>a>h4{
     font-family: 'Pixelify-SemiBold',Tahoma,Geneva,Verdana,sans-serif;
 }
+
+#jargongif{
+    width: 500px;
+}
+#jargon-goodbye{
+    display: flex;
+}
+#jargon-goodbye>p{
+    width: 50%;
+}

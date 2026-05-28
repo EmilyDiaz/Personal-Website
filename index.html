@@ -8,118 +8,129 @@
     <link rel="stylesheet" href="sharedstyles.css">
     <link rel="stylesheet" href="homestyle.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
-    <script src="index.js" async></script>
+
 
 
 </head>
 
 <body>
     <header>
-      <a href="index.html" id="homepage" ><h4> EMILY DIAZ-FUSCO</h4></a>
+        <a href="index.html" id="homepage">
+            <h4> EMILY DIAZ-FUSCO</h4>
+        </a>
         <nav>
-            <a href="index.html" id="homepage" class="mySelectedPage"> Projects</a>
-            <a href="aboutme.html" id="aboutmepage">About Me</a>
+            <div class="dropdown">
+                <a id="project-navbar">Projects</a>
+                <div class="dropdown-content">
+                    <ul>
+                        <li>
+                            <a href="BoozAllenCaseStudy.html">Booz Allen Hamilton</a>
+                        </li>
+                        <li>
+                            <a href="powerapp.html">X&D Advisor App</a>
+                        </li>
+                         <li>
+                            <a href="jargon.html">Jargon</a>
+                        </li>
+                         <li>
+                            <a href="onboarding.html">Onboarding Guide</a>
+                        </li>
+                         <li>
+                            <a href="reach4help.html">Reach4Help</a>
+                        </li>
+                         <li>
+                            <a href="plugins.html">Plugins</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <a href=""> World Map</a>
+            <a href="Resume/Resume-Current.pdf">View Resume</a>
         </nav>
     </header>
     <main id="homemain">
         <section id="intro-section">
-            <div>
+            <section id="jobdesc">
                 <h1> Hi, I'm Emily!</h1>
-                <div class="personalpic">
-                    <img src="Images/personal image.jpeg" alt="personal picture">
-                </div>
                 <p>
-                    I'm a <strong> Product Designer</strong> that specializes in bridging the gap between design and development in order to deliver 
-                    solutions for complex systems. 
+                    I'm an Experience Designer that bridges the gap between design and development and delivers
+                    solutions for complex systems.
                 </p>
-
-                <p>I'm currently a UX Designer at Booz Allen Hamilton, working on the Veteran Affairs portfolio.</p>
-
-
-                <a id="downloadlink" href="Resume/Resume-Current.pdf" download="Emily Diaz Resume"><button id="resume">
-                        <img src="Images/Download Logo.svg" id="imgdefault">
-                        <img src="Images/Download Logo-Hover.svg" id="imghover" hidden>Download resume</button>
-                </a>
-
-                <section class="contactinfo">
-                    <a href="https://www.nngroup.com/ux-certification/verify/"> <img
-                            src="https://media.nngroup.com/nng-uxc-badge.png" width="200" height="170"
-                            alt="UX Certification Badge from Nielsen Norman Group" /></a>
-                    <h3>Contact me at:</h3>
-                    <div class="contacts">
-                        <a href="https://github.com/EmilyDiaz" target="_blank" rel="noopener noreferrer"><img src="Images/Github.svg" width="40px"></a>
-                        <a href="https://www.linkedin.com/in/emily-diaz-b5b696203" target="_blank" rel="noopener noreferrer"><img src="Images/LinkedIn.png"
-                                width="40px"></a>
-                        <a href="mailto:emilmdiaz@gmail.com?subject=Interested in chatting about opportunities"target="_blank" rel="noopener noreferrer"><img src="Images/Email.svg"
-                                width="40px"></a>
-                    </div>
-                </section>
+                <p>Currenty working at Booz Allen Hamilton</p>
+            </section>
+            <section id="frogprofile"></section>
         </section>
 
-        </div>
+        <!--<a id="downloadlink" href="Resume/Resume-Current.pdf" download="Emily Diaz Resume"><button id="resume">
+                    <img src="Images/Download Logo.svg" id="imgdefault">
+                    <img src="Images/Download Logo-Hover.svg" id="imghover" hidden>Download resume</button>
+            </a>
+
+            <section class="contactinfo">
+                <a href="https://www.nngroup.com/ux-certification/verify/"> <img
+                        src="https://media.nngroup.com/nng-uxc-badge.png" width="200" height="170"
+                        alt="UX Certification Badge from Nielsen Norman Group" /></a>
+                <h3>Contact me at:</h3>
+                <div class="contacts">
+                    <a href="https://github.com/EmilyDiaz" target="_blank" rel="noopener noreferrer"><img
+                            src="Images/Github.svg" width="40px"></a>
+                    <a href="https://www.linkedin.com/in/emily-diaz-b5b696203" target="_blank"
+                        rel="noopener noreferrer"><img src="Images/LinkedIn.png" width="40px"></a>
+                    <a href="mailto:emilmdiaz@gmail.com?subject=Interested in chatting about opportunities"
+                        target="_blank" rel="noopener noreferrer"><img src="Images/Email.svg" width="40px"></a>
+                </div>-->
+        </section>
         </section>
         <section id="Projects">
-            <div class="projectsubheader" id="design projects">
-                <h2>Design projects</h2>
-                <div id="line"></div>
-            </div>
-
             <div class="project-container">
-                <div id="project-1" class="project">
+                <div class="project">
+                    <div class="projecttemplate" id="boozallenproject"></div>
                     <div class="projectdescription">
-                        <h3>Ongoing enhancement of a proprietary case management software to improve the Appeals process
-                            for U.S Veterans </h3>
+                        <h3>Booz Allen Hamilton Case Studies </h3>
                         <P>
                             Designed and have seen over a dozen projects to production deployment under a Booz Allen
-                            contract for the Department of Veterans Affairs. Enhanced and maintained a design library with over 500 components.
+                            contract for the Department of Veterans Affairs. Enhanced and maintained a design
+                            library
+                            with over 100 components.
                         </P>
-                        <button class="casestudybutton" id="boozallenbttn">
-                            Learn more
-                        </button>
                         <div class="tools">
                             <img src="Images/Tools.svg">
                             <p>Tools:</p>
-                            <img src="Images/Mural.svg">
-                            <img src="Images/FigmaLogo.svg">
+                            <img src="Images/Mural.svg" class="tooltip" data-tooltip="Mural">
+                            <img src="Images/FigmaLogo.svg" class="tooltip" data-tooltip="Figma">
                         </div>
                     </div>
-
-                    <img src="Images/BoozAllenLogo.svg" id="boozallenimg" alt="project 1">
                 </div>
-                <div id="project-2" class="project">
+                <div class="project">
+                    <div class="projecttemplate" id="xdappproject"></div>
                     <div class="projectdescription">
-                        <h3>Web-based application that provides a gamified dashboard for a UX advisorship program</h3>
-                        <P>
-                            Designed and developed a gamified, advisorship tracking application made on Microsoft
-                            PowerApps.
-                        </P>
-                        <button class="casestudybutton" id="xdapp">
-                            Learn more
-                        </button>
+                        <h3>X&D Advisor Hub Dashboard</h3>
+                        <p>
+                            Designed and developed a gamified, advisorship tracking application to help increase member
+                            aquistion and engagement.
+                        </p>
                         <div class="tools">
                             <img src="Images/Tools.svg">
                             <p>Tools:</p>
-                            <img src="Images/Chat GPT.svg">
-                            <img src="Images/VS Code.svg">
-                            <img src="Images/Sharepoint.svg">
-                            <img src="Images/PowerApps Logo.svg">
-                            <img src="Images/Powerautomate.svg">
-                            <img src="Images/FigmaLogo.svg">
+                            <img src="Images/Chat GPT.svg" class="tooltip" data-tooltip="Chat GPT">
+                            <img src="Images/VS Code.svg" class="tooltip" data-tooltip="VS Code">
+                            <img src="Images/Sharepoint.svg" class="tooltip" data-tooltip="SharePoint">
+                            <img src="Images/PowerApps Logo.svg" class="tooltip" data-tooltip="PowerApps">
+                            <img src="Images/Powerautomate.svg" class="tooltip" data-tooltip="PowerAutomate">
+                            <img src="Images/FigmaLogo.svg" class="tooltip" data-tooltip="Figma">
                         </div>
                     </div>
-                    <img src="Images/X&D Advisor Hub App.svg" id="xdappimg" alt="project 5">
                 </div>
-                <div id="project-3" class="project">
+                <div class="project">
+                    <div class="projecttemplate" id="jargonproject"></div>
                     <div class="projectdescription">
                         <h3>
-                            A responsive RPG inspired app for learning a new language and communicating with others on both desktop and mobile screens
+                            Jargon
                         </h3>
-                        <P>
-                            Gamified, language learning app designed for Google UX certifcation.
-                        </P>
-                        <button class="casestudybutton" id="jargonproject">
-                            Learn more
-                        </button>
+                        <p>
+                            Designed a gamified, language learning app for my Google UX certifcation.
+                        </p>
                         <div class="tools">
                             <img src="Images/Tools.svg">
                             <p>Tools:</p>
@@ -127,23 +138,34 @@
                             <img src="Images/FigmaLogo.svg">
                         </div>
                     </div>
-                    <img src="Images/Jargon.svg" id="jargonimage" alt="project 2">
                 </div>
-            </div>
-            <div class="projectsubheader" id="otherprojects">
-                <h2>Other projects</h2>
-                <div id="line"></div>
-            </div>
-            <div class="project-container">
-                <div id="project-4" class="project">
+                <div class="project">
+                    <div class="projecttemplate" id="reach4helpproject"></div>
                     <div class="projectdescription">
-                        <h3>Figma prototype that provides a centralized and broken down overview of the Veteran Appeals process and the software used to manage it.</h3>
-                        <P>
-                            Designed and prototyped a interactive onboarding flow for new hires on the project, as well as created a companion glossary with PowerApps.
-                        </P>
-                        <button class="casestudybutton" id="onboardingflow">
-                            Learn more
-                        </button>
+                        <h3>
+                            Reach4Help
+                        </h3>
+                        <p>
+                            Designed a gamified, language learning app for my Google UX certifcation.
+                        </p>
+                        <div class="tools">
+                            <img src="Images/Tools.svg">
+                            <p>Tools:</p>
+                            <img src="Images/Mural.svg">
+                            <img src="Images/FigmaLogo.svg">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="projecttemplate" id="onboardingproject"></div>
+                    <div class="projectdescription">
+                        <h3>Onboarding Guide</h3>
+                        <p>
+                            Designed and prototyped a interactive onboarding flow for new hires on the project, as
+                            well as created a companion glossary with PowerApps. Decreased onboarding ramp-up time by
+                            10%.
+                        </p>
                         <div class="tools">
                             <img src="Images/Tools.svg">
                             <p>Tools:</p>
@@ -153,16 +175,18 @@
                             <img src="Images/Sharepoint.svg">
                         </div>
                     </div>
-                    <img src="Images/Onboarding Flow.png" id="onboardingimg" alt="project 4">
                 </div>
-                <div id="project-5" class="project">
+                <div class="project">
+                    <div class="projecttemplate" id="datagenproject"></div>
+
                     <div class="projectdescription">
-                        <P>
-                            Figma plugins made to enhance productivity UX teams, portfolio wide.
-                        </P>
-                        <button class="casestudybutton" id="figmaplugin">
-                           Learn more
-                        </button>
+                        <h3>Dummy Data Generator</h3>
+                        <p>
+                            Coded a figma plugin for generating dummy data appropriate for
+                            designs under the Veterans Affairs portfolio. Distributed and tested
+                            across teams of more than twenty UX designers. Increased fidelity of wires
+                            when handing off to developers.
+                        </p>
                         <div class="tools">
                             <img src="Images/Tools.svg">
                             <p>Tools:</p>
@@ -172,14 +196,52 @@
                             <img src="Images/Github.svg">
                         </div>
                     </div>
-                    <img src="Images/Dummy Data Generator.svg" id="figmaimg" alt="project 5">
+                </div>
+                <div class="project">
+                    <div class="projecttemplate" id="scannerproject"></div>
+
+                    <div class="projectdescription">
+                        <h3>Prototype Variable Scanner</h3>
+                        <p>
+                            Coded a figma plugin for quick and easy variable documentation used in advanced prototyping.
+                            Distributed and tested across teams of more than twenty UX designers. Assisted with
+                            collaboration
+                            between designers.
+                        </p>
+                        <div class="tools">
+                            <img src="Images/Tools.svg">
+                            <p>Tools:</p>
+                            <img src="Images/Chat GPT.svg">
+                            <img src="Images/VS Code.svg">
+                            <img src="Images/FigmaLogo.svg">
+                            <img src="Images/Github.svg">
+                        </div>
+                    </div>
                 </div>
             </div>
+        </section>
+        <section id="aboutme">
+            <h2>More about me</h2>
+            <h3>
+                My main goal in life is to experience and learn new things. Satisfaction to my curiosity is what keeps
+                me going.
+            </h3>
+            <p> And even if I'm not good at that new thing or I decide perhaps the experience isn't for me,
+                at least I tried!
+            </p>
+        </section>
+        <section id="port">
+            <h2>Port</h2>
+            <p>
+                Select an island you'd like to visit:
+            </p>
         </section>
     </main>
     <footer>
         <p>This website was designed & coded by Emily</p>
     </footer>
+    <script src="index.js" async></script>
+    <script src="common.js"></script>
 </body>
 
 </html>
