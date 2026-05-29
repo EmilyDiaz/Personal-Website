@@ -1,5 +1,19 @@
 
+const hexcanvas =  document.getElementById("hexcanvas")
+image = new Image();
+image.onload = () => {
+  const ctx = hexcanvas.getContext("2d")
+  ctx.imageSmoothingEnabled = false;
+	ctx.drawImage(image, 100, 0, 100, 100);
+}
+image.src = "/Images/hexpixel.png"
 
+hexcanvas.addEventListener("mouseover",()=>{
+ image.src = "/Images/hexpixel.gif"
+})
+hexcanvas.addEventListener("mouseleave",()=>{
+ image.src = "/Images/hexpixel.png"
+})
 
 /* id captures for home page animations*/
 const projectdropdown=document.querySelector(".dropdown");
