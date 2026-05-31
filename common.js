@@ -1,19 +1,40 @@
-
-const hexcanvas =  document.getElementById("hexcanvas")
-image = new Image();
-image.onload = () => {
-  const ctx = hexcanvas.getContext("2d")
-  ctx.imageSmoothingEnabled = false;
-	ctx.drawImage(image, 100, 0, 100, 100);
+//logic for hex and cashew's sprites on the footer
+const hexCanvas =  document.getElementById("hexCanvas")
+hexCanvas.width=100;
+hexImage = new Image();
+hexImage.onload = () => {
+  const hexCtx = hexCanvas.getContext("2d")
+  hexCtx.imageSmoothingEnabled = false;
+	hexCtx.drawImage(hexImage, 0, 0, 100, 100);
 }
-image.src = "/Images/hexpixel.png"
+hexImage.src = "/Images/hexpixel.png"
 
-hexcanvas.addEventListener("mouseover",()=>{
- image.src = "/Images/hexpixel.gif"
+hexCanvas.addEventListener("mouseover",()=>{
+ hexImage.src = "/Images/hexpixel.gif"
 })
-hexcanvas.addEventListener("mouseleave",()=>{
- image.src = "/Images/hexpixel.png"
+hexCanvas.addEventListener("mouseleave",()=>{
+ hexImage.src = "/Images/hexpixel.png"
 })
+
+const cashewCanvas =  document.getElementById("cashewCanvas")
+cashewCanvas.width=100;
+cashewImage = new Image();
+cashewImage.onload = () => {
+  const cashewCtx = cashewCanvas.getContext("2d")
+  cashewCtx.imageSmoothingEnabled = false;
+	cashewCtx.drawImage(cashewImage, 0, 10, 100, 100);
+}
+cashewImage.src = "/Images/cashewneutral.png"
+
+cashewCanvas.addEventListener("mouseover",()=>{
+ cashewImage.src = "/Images/cashewpet.png"
+})
+cashewCanvas.addEventListener("mouseleave",()=>{
+ cashewImage.src = "/Images/cashewneutral.png"
+})
+
+
+
 
 /* id captures for home page animations*/
 const projectdropdown=document.querySelector(".dropdown");

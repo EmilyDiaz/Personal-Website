@@ -16,7 +16,6 @@ h3 {
 #homemain {
     display: flex;
     margin: 2em;
-    padding: 2em;
     flex-direction: column;
 
 }
@@ -174,12 +173,9 @@ h3 {
     display: column;
 }
 
-#contactMe{
-    border-bottom:rgba(40, 128, 113, .2) 2px solid;
-    padding:2em;
-}
 
-#contactMe>a{
+
+#aboutme>#aboutmeDesc>a{
     text-decoration: underline;
     color: #0071bc;
     font-style: italic;
@@ -189,6 +185,7 @@ h3 {
     padding: 2em;
 }
 
+/*media queries*/
 
 @media  screen and (max-width:1500px) {
     .project-container{

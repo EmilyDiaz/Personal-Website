@@ -64,9 +64,3 @@ function ProjectAnimation(projectname, link) {
     location.href = link
   })
 }
-
-function navButton(bttn, link) {
-  bttn.addEventListener("click", () => {
-    location.href = link
-  })
-}

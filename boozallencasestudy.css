@@ -1,9 +1,9 @@
 @import"sharestyles.css";
 
-#boozallenprj1 {
+main {
     display: flex;
     flex-direction: column;
-    margin: auto;
+    margin: 2em;
 }
 
 
