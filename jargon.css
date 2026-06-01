@@ -68,3 +68,12 @@ img{
 #jargon-goodbye>p{
     width: 50%;
 }
+
+@media screen and (max-width:600px){
+    #jargon-goodbye{
+    display: block
+}
+#jargongif{
+    width: 300px;
+}
+}

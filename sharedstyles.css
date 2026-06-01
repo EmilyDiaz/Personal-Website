@@ -61,6 +61,13 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Permanent-Marker';
+    src: url('Fonts/PermanentMarker/PermanentMarker-Regular.ttf') format('truetype');
+    font-weight: regular;
+    font-style: normal;
+    font-display: swap;
+}
 
 :root {
     --primary-color: #288071;
@@ -84,7 +91,9 @@
 
 
 body {
-    margin: 2em;
+    max-width: 1440px;
+    width: 100%;
+    justify-self: center;
     font-family: 'Lato-Regular', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -115,6 +124,10 @@ h4 {
     color: var(--primary-color);
     font-family: 'Lato-Bold', Tahoma, Geneva, Verdana, sans-serif;
     margin-top: 10px;
+}
+.separator{
+    border: 1px rgb(126, 123, 123,0.5) solid;
+    height: 60%;
 }
 
 header {
@@ -224,15 +237,13 @@ a:hover {
 
 .comparisonaside {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 30px;
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
-.comparisonaside>aside {
-    width: 15%;
-}
+
 
 .componentimages {
     display: flex;
@@ -475,7 +486,9 @@ a:hover {
     width: 30%;
     max-width: 200px;
 }
-
+.dropdown:hover{
+    cursor: pointer;
+}
 .dropdown-content {
     display: none;
     margin-top: 10px;
@@ -593,15 +606,12 @@ canvas:hover{
     .topsection>section {
         width: 88%;
     }
-}
-
-
-@media screen and (max-width:1419px) {
-    .comparisonaside {
+    footer{
         flex-direction: column;
     }
-
-    .comparisonaside>aside {
+    footer>p{
         width: 100%;
     }
 }
+
+
