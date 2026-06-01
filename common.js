@@ -7,13 +7,13 @@ hexImage.onload = () => {
   hexCtx.imageSmoothingEnabled = false;
 	hexCtx.drawImage(hexImage, 0, 0, 100, 100);
 }
-hexImage.src = "Personal-Website/Images/hexpixel.png"
+hexImage.src = "Images/hexpixel.png"
 
 hexCanvas.addEventListener("mouseover",()=>{
- hexImage.src = "Personal-Website/Images/hexpixel.gif"
+ hexImage.src = "Images/hexpixel.gif"
 })
 hexCanvas.addEventListener("mouseleave",()=>{
- hexImage.src = "Personal-Website/Images/hexpixel.png"
+ hexImage.src = "Images/hexpixel.png"
 })
 
 const cashewCanvas =  document.getElementById("cashewCanvas")
@@ -24,13 +24,13 @@ cashewImage.onload = () => {
   cashewCtx.imageSmoothingEnabled = false;
 	cashewCtx.drawImage(cashewImage, 0, 10, 100, 100);
 }
-cashewImage.src = "Personal-Website/Images/cashewneutral.png"
+cashewImage.src = "Images/cashewneutral.png"
 
 cashewCanvas.addEventListener("mouseover",()=>{
- cashewImage.src = "Personal-Website/Images/cashewpet.png"
+ cashewImage.src = "Images/cashewpet.png"
 })
 cashewCanvas.addEventListener("mouseleave",()=>{
- cashewImage.src = "Personal-Website/Images/cashewneutral.png"
+ cashewImage.src = "Images/cashewneutral.png"
 })
 
 
