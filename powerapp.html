@@ -11,11 +11,39 @@
 </head>
 
 <body>
-    <header>
-        <a href="index.html" id="homepage" ><h4> EMILY DIAZ-FUSCO</h4></a>
+   <header>
+        <a href="index.html" id="homepage">
+            <h4> EMILY DIAZ-FUSCO</h4>
+        </a>
         <nav>
-            <a href="index.html" id="homepage" class="mySelectedPage"> Projects</a>
-            <a href="aboutme.html" id="aboutmepage">About Me</a>
+            <div class="dropdown">
+                <a id="project-navbar">Projects</a>
+                <div class="dropdown-content">
+                    <ul>
+                        <li>
+                            <a href="BoozAllenCaseStudy.html">Booz Allen Hamilton</a>
+                        </li>
+                        <li>
+                            <a href="powerapp.html">X&D Advisor App</a>
+                        </li>
+                         <li>
+                            <a href="jargon.html">Jargon</a>
+                        </li>
+                         <li>
+                            <a href="onboarding.html">Onboarding Guide</a>
+                        </li>
+                         <li>
+                            <a href="reach4help.html">Reach4Help</a>
+                        </li>
+                         <li>
+                            <a href="plugins.html">Plugins</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <!--<a href=""> World Map</a>-->
+            <a href="Resume/Resume-Current.pdf">View Resume</a>
         </nav>
     </header>
     <div id="myModal" class="modal">
@@ -363,12 +391,7 @@
                                 <img src="Images/X&D Advisor Hub App UserFlow Assignments page.png" alt="A section of the flow that touches on the Assignment page of the flow.">
                             </div>
                             <div class="comparisonaside">
-                                <div id="comparison">
-                                    <img src="Images/V1.svg" alt="A version of the app UI that focuses primarly of the logged in user's stats.">
-                                    <h2>VS</h2>
-                                    <img src="Images/V2.svg" alt="A version of the app UI that puts more focus on the assignments a user has.">
-                                </div>
-                                <aside>
+                                   <aside>
                                     <h4>Early mockups</h4>
                                     <p>
                                         UI wise, we weighed what we wanted the dashboard to focus on: The logged in
@@ -382,6 +405,19 @@
                                         user's profile front and center, with navigation to advisee and advisor pages.
                                     </p>
                                 </aside>
+                                <div id="comparison">
+                                    <figure>
+                                        <img src="Images/V1.svg" alt="A version of the app UI that focuses primarly of the logged in user's stats.">
+                                        <figcaption>Dashboard focused on the logged in user's profile.</figcaption>
+                                    </figure>
+                                    <h2>VS</h2>
+                                    <figure>
+                                         <img src="Images/V2.svg" alt="A version of the app UI that puts more focus on the assignments a user has.">
+                                        <figcaption>Dashboard focused on the logged in user's advisees and advisors information.</figcaption>
+                                    </figure>
+                                   
+                                </div>
+                             
                             </div>
                             <h4>Style guide</h4>
                             <div id="styleguideaside">
@@ -401,9 +437,14 @@
                                         a work environment but strong enough that it meets 508 color contrast standards
                                         against
                                         a white background.</p>
+                                    <h4>Avatars</h4>
+                                    <p>Avatars were designed by me. I wanted a very diverse group of images for users to pick from,
+                                        in a pixel art aethestic to keep the app fun and engaging.
+                                    </p>
                                 </aside>
                                 <div class="highlight">
                                     <img src="Images/Style Guide.svg" alt="An image of the styles used in the app.">
+                                    <img src="Images/avatars for mentorapp.png" alt="An image of all the different avatars a user could pick from.">                             
                                 </div>
                             </div>
                         </section>
@@ -588,8 +629,18 @@
     </div>
         </section>
     </main>
-    <footer>
-        <p>This website was designed & coded by Emily</p>
+     <footer>
+        <div id="graphicsRight">
+            <canvas id="hexCanvas" tabindex="0"></canvas>
+            <canvas id="cashewCanvas" tabindex="0"></canvas>
+        </div>
+        <p tabindex="0">This website was designed & coded by Emily. Two gremlins named Hex and Cashew supervised, though.</p>
+        <div id="graphicsLeft">
+            <a href="https://github.com/EmilyDiaz" target="_blank" rel="noopener noreferrer"><img
+                    src="Images/Github.svg" alt=""></a>
+            <a href="https://www.linkedin.com/in/emily-diaz-b5b696203" target="_blank" rel="noopener noreferrer"><img
+                    src="Images/LinkedIn.png" alt=""></a>
+        </div>
     </footer>
 </body>
 

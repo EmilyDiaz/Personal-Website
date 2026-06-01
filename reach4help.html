@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emily Diaz-Jargon</title>
+    <link rel="stylesheet" href="sharedstyles.css">
+    <link rel="stylesheet" href="reach4help.css">
+    <script src="common.js" async></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" id="homepage">
+            <h4> EMILY DIAZ-FUSCO</h4>
+        </a>
+        <nav>
+            <div class="dropdown">
+                <a id="project-navbar">Projects</a>
+                <div class="dropdown-content">
+                    <ul>
+                        <li>
+                            <a href="BoozAllenCaseStudy.html">Booz Allen Hamilton</a>
+                        </li>
+                        <li>
+                            <a href="powerapp.html">X&D Advisor App</a>
+                        </li>
+                        <li>
+                            <a href="jargon.html">Jargon</a>
+                        </li>
+                        <li>
+                            <a href="onboarding.html">Onboarding Guide</a>
+                        </li>
+                        <li>
+                            <a href="reach4help.html">Reach4Help</a>
+                        </li>
+                        <li>
+                            <a href="plugins.html">Plugins</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <a href="Resume/Resume-Current.pdf">View Resume</a>
+        </nav>
+    </header>
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <div class="modalbody">
+            <img src="Images/Previous.svg" id="previousbutton">
+            <img class="modal-content" id="modalimg">
+            <img src="Images/Next.svg" id="nextbutton">
+        </div>
+        <div id="caption"></div>
+    </div>
+    <main>
+        <section>
+            <h1>Reach4Help</h1>
+            <section class="projectimage">
+                <img src="Images/Reach4HelpPageCover.svg" alt="Cover image of the Jargon project">
+            </section>
+            <section class="summary" id="problem">
+                <h2>Problem</h2>
+                <p>
+                    Reach4Help is a non-profit organization dedicated to connecting users to a COVID-19 resource hub.
+                    The service provided was primarly browser-based, but when I joined the CEO was pushing to make a
+                    mobile version.
+                </p>
+                <p>
+                    If a user selected too many options on the map filter, the controls menu would push past the
+                    viewpoint of the browser application. Our small team of 3 UXers needed to redesign
+                    the way the map filter functioned when making selections, for both the current problem present in
+                    the browser application but also for the future design of the mobile application.
+                </p>
+            </section>
+            <section class="topsection" id="c&t">
+                <section class="challenges">
+                    <h2>Challenges faced</h2>
+                    <ul>
+                        <li>Iterate on the existing map filter design and functionality of the browser application.
+                        </li>
+                        <li>
+                            Begin designing for the future mobile application's map filter.
+                        </li>
+                        <li>Design a visual representation for the two categories of filters ( "Organization
+                            Type" and "Services Offered" ) that not only works as intended, but is comprehensive
+                            to the user.
+                        </li>
+                        <li>
+                            Run A/B Testing to identify which features needed and which are extraneous in order
+                            to design an accurate MVP.
+                        </li>
+                        <li>
+                            Schedule usability tests for and get significant feedback from volunteers, who are
+                            all in different time zones and often have other responsibilities.
+                        </li>
+                    </ul>
+                </section>
+                <section class="timeline">
+                    <h2>Timeline</h2>
+                    <h3>October 2021-November 2021</h3>
+                    <p>
+                        Browser issue was fixed and deployed, however the website might be defunct at this point. See
+                        live site <a href="https://reach4help.org/">here.</a></p>
+                    <p>
+                        The Mobile app, to my knowledge, was never released.
+                    </p>
+                </section>
+            </section>
+            <section class="solution">
+                <h2>Solution</h2>
+                <p> Make the filter selection process more intuitive so the results list remains visible. We
+                    also prioritized in keeping the map interface front and center, without sacrificing the
+                    clean UI or the ease in navigation
+                    and remaining consistent with the design and within the bounds of the design system for
+                    Reach4Help.
+                </p>
+
+                <section class="userflow">
+                    <h3 id="research">1. Research</h3>
+
+                    <p> A competitive audit was conducted using a variety of products, both indirect and direct
+                        competitors. We identified different examples of search and filtering menus within
+                        applications
+                        such as Google Maps and Uber Eats that could lend inspiration to solve the problem.
+                    </p>
+                    <img src="Images/Competitve Audit Paper.png" width="90%"
+                        alt="An image of the competitive audit for Reach4Help's map filter feature against other mobile apps. Competitors include UberEats,Libby and Google Maps.">
+                    <img src="Images/competitve audit board.jpg" width="90%"
+                        alt="An image of the competitive audit for Reach4Help's map filter feature against other mobile apps. Competitors include UberEats,Libby and Google Maps.">
+
+                    <section class="userflow">
+                        <h3 id="pentopaper">2. Pen to paper</h3>
+                        <div>
+                            <img src="Images/Browser App.png"
+                                alt="An image of the map filter issue on the browser app.">
+                            <p>Old Design for map hub (see above). Window would expand to the point where visibility was
+                                cut.</p>
+                            <img src="Images/Paper wires.png">
+                        </div>
+                        <p>
+                            The next step after paper wires was to translate them to digital and create a very rough
+                            prototype for the first round of testing.
+                            Figma was used for both these efforts, though the first pass of this digitization was as
+                            simple
+                            as possible witth low fidelity mockups.
+                        </p>
+                        <section class="componentimages">
+                            <img src="Images/Home Default.png" alt="Starting screen for the mobile app.">
+                            <img src="Images/Filter Screen Overlay style A.png" width="50%"
+                                alt="One potential option was to have a seperate drawer for the filter options, instead of having them in a dropdown.">
+                            <img src="Images/Search Option Lo-Fi.png"
+                                alt="Another option was to use checkboxes instead of dropdowns for both types of filters.">
+                            <img src="Images/Organization types expanded Lo-Fi.png"
+                                alt="Organization types expanded by using collapsibles and checkboxes.">
+                            <img src="Images/Services offered expanded-lo-fi.png"
+                                alt="Service types expanded by using collapsibles and checkboxes.">
+                        </section>
+                    </section>
+                    <section class="userflow" id="prototype">
+                        <h4>3.Higher Fidelity Screens</h4>
+                        <p>A breakdown can be seen of each screen in the application at a higher fidelity, which was
+                            constructed after the first round of testing.
+                        </p>
+                        <section class="componentimages">
+                            <img src="Images/Home Page Hi-Fi.png"
+                                alt="Hi-Fi mockup of the starting screen of the mobile app.">
+                            <img src="Images/Controls Hi Fi.png" alt="Hi-Fi mockup of controls expanded.">
+                            <img src="Images/Organization types expanded Hi-Fi.png"
+                                alt="Hi-Fi mockup of the organization types expanded.">
+                            <img src="Images/Services offered expanded.png"
+                                alt="Hi-Fi mockup of service types expanded.">
+                        </section>
+                    </section>
+                </section>
+
+                <section class="reflections" id="reflections">
+                    <h2>Reflections</h2>
+                    <p>
+                        This was my very first experience in working with other designers and communicating with
+                        developers. It introduced me into the world of product development and I had no idea how to communicate to devs or even to 
+                        fellow designers. I made tons of mistakes and I barely knew Figma at this point. It was a small project,
+                        more than anything an enhancement really, but it was still a good experience.
+                    </p>
+                    <p>
+
+                    </p>
+                </section>
+    </main>
+    <footer>
+        <div id="graphicsRight">
+            <canvas id="hexCanvas" tabindex="0"></canvas>
+            <canvas id="cashewCanvas" tabindex="0"></canvas>
+        </div>
+        <p tabindex="0">This website was designed & coded by Emily. Two gremlins named Hex and Cashew supervised,
+            though.</p>
+        <div id="graphicsLeft">
+            <a href="https://github.com/EmilyDiaz" target="_blank" rel="noopener noreferrer"><img
+                    src="Images/Github.svg" alt=""></a>
+            <a href="https://www.linkedin.com/in/emily-diaz-b5b696203" target="_blank" rel="noopener noreferrer"><img
+                    src="Images/LinkedIn.png" alt=""></a>
+        </div>
+    </footer>
+</body>
+
+</html>

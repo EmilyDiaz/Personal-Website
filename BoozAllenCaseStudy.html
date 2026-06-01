@@ -17,8 +17,34 @@
       <h4> EMILY DIAZ-FUSCO</h4>
     </a>
     <nav>
-      <a href="index.html" id="homepage" class="mySelectedPage"> Projects</a>
-      <a href="aboutme.html" id="aboutmepage">About Me</a>
+      <div class="dropdown">
+        <a id="project-navbar">Projects</a>
+        <div class="dropdown-content">
+          <ul>
+            <li>
+              <a href="BoozAllenCaseStudy.html">Booz Allen Hamilton</a>
+            </li>
+            <li>
+              <a href="powerapp.html">X&D Advisor App</a>
+            </li>
+            <li>
+              <a href="jargon.html">Jargon</a>
+            </li>
+            <li>
+              <a href="onboarding.html">Onboarding Guide</a>
+            </li>
+            <li>
+              <a href="reach4help.html">Reach4Help</a>
+            </li>
+            <li>
+              <a href="plugins.html">Plugins</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+      <!--<a href=""> World Map</a>-->
+      <a href="Resume/Resume-Current.pdf">View Resume</a>
     </nav>
   </header>
   <div id="myModal" class="modal">
@@ -30,10 +56,14 @@
     </div>
     <div id="caption"></div>
   </div>
-  <main id="boozallenprj1">
-    <section class="heroimage">
-      <img src="Images/BoozAllenLogo.svg" alt="Logo of Booz Allen Hamilton">
-      <h1>Case studies for Booz Allen, 2022-Present</h1>
+  <main>
+    <section id="projecttitle">
+      <img src="Images/BoozAllenTitle.svg" width="100%">
+      <h1>Case studies</h1>
+      <section id="projectdetails">
+        <h3>Experience Designer</h3>
+        <h4>2022-Present</h4>
+      </section>
     </section>
     <section class="summary">
       <h2>Software</h2>
@@ -48,38 +78,54 @@
     <section class="summary">
       <h2>Design Library</h2>
       <p>When I first started in the VA portfolio, our project was very barebones when it came to the design library in
-        both actual Figma components and documentation. The little components we did have designed out did not even have autolayout 
+        both actual Figma components and documentation. The little components we did have designed out did not even have
+        autolayout
         and documentation consisted of a few Word documents thrown into a shared team OneDrive.
       </p>
       <p>
-        This led to inefficiency when trying to meet our deliverables on time and inconsistency, since designs had to be adjusted pixel by pixel and colors were not standardized. 
-        This process, paired with the lack of standarization of UX reviews across development teams, resulted in a loss of fidelity between designs and the final product in our software environments. 
+        This led to inefficiency when trying to meet our deliverables on time and inconsistency, since designs had to be
+        adjusted pixel by pixel and colors were not standardized.
+        This process, paired with the lack of standarization of UX reviews across development teams, resulted in a loss
+        of fidelity between designs and the final product in our software environments.
       </p>
       <p>
-        By the time I left, our small team of three had created over 500 components, modernizing both new and existing ones with autolayout, properties, variables, and slots. 
-        Colors were documentated and attached to design tokens according to their variable names on USWDS. Common layout and spacing values were also attached the tokens and
+        By the time I left, our small team of three had created over 100 components, modernizing both new and existing
+        ones with autolayout, properties, variables, and slots.
+        Colors were documentated and attached to design tokens according to their variable names on USWDS. Common layout
+        and spacing values were also attached the tokens and
         attached to their corresponding components.
       </p>
-      <p> We had also started assembling a pattern library to share externally with devs and a tech debt log for components, styles, and patterns that had a reported gap between design and code.
-        And to take a step even further, I had begun experimenting with Framelink MCP servers to connect AI to our designs and improve our design handoff process even more for devs.
+      <p> We had also started assembling a pattern library to share externally with devs and a tech debt log for
+        components, styles, and patterns that had a reported gap between design and code.
+        And to take a step even further, I had begun experimenting with Framelink MCP servers to connect AI to our
+        designs and improve our design handoff process even more for devs.
       </p>
       <p>
-        Although my time came to an end on the project before I could work on these processes further, I am proud of what we as a UX team have accomplished and would love to share with you,
-        with some information redacted or shaped differently, of course, the good work we did on our VA portfolio project.
+        Although my time came to an end on the project before I could work on these processes further, I am proud of
+        what we as a UX team have accomplished and would love to share with you,
+        with some information redacted or shaped differently, of course, the good work we did on our VA portfolio
+        project.
       </p>
       <div id="atomic-design">
         <img src="Images/atomic-design-process.png">
       </div>
-      <p>We used the atomic design process to create and organize our components, as well as variables to create design tokens we then attached to different properties on our component.</p>
+      <p>We used the atomic design process to create and organize our components, as well as variables to create design
+        tokens we then attached to different properties on our component.</p>
       <section class="design-system-img-div">
-        <img src="Images/Primitive tokens.png" alt="An image of the native Figma variable creater with a list of the primitive tokens created for the VA project's design system.">
-        <img src="Images/Semantic tokens.png" alt="An image of the native Figma variables creator with a list of Semantic tokens created for the VA project's design system.">
-        <img src="Images/Atom component.png" alt="An image of an atom component, specifically a link, in the VA project.">
-        <img src="Images/Molecule component.png" alt="An image of a molecule component, specifically a button, in the VA project.">
+        <img src="Images/Primitive tokens.png"
+          alt="An image of the native Figma variable creater with a list of the primitive tokens created for the VA project's design system.">
+        <img src="Images/Semantic tokens.png"
+          alt="An image of the native Figma variables creator with a list of Semantic tokens created for the VA project's design system.">
+        <img src="Images/Atom component.png"
+          alt="An image of an atom component, specifically a link, in the VA project.">
+        <img src="Images/Molecule component.png"
+          alt="An image of a molecule component, specifically a button, in the VA project.">
       </section>
       <section class="design-system-img-div">
-        <img src="Images/Button Component Breakdown.png" alt="An image of the button component, broken down by its various properties.">
-        <img src="Images/Organisms.png" alt="An example of an organism component, specifically a footer pattern, used in the VA project.">
+        <img src="Images/Button Component Breakdown.png"
+          alt="An image of the button component, broken down by its various properties.">
+        <img src="Images/Organisms.png"
+          alt="An example of an organism component, specifically a footer pattern, used in the VA project.">
       </section>
 
     </section>
@@ -257,7 +303,7 @@
             <ul>
               <li>Last minute changes from stakeholders, albeit minor, kept the solutioning team pivoting and on our
                 toes. </li>
-              <li>Working with multiple designers at a time in the same file, while mananging communication issues
+              <li>Working with multiple designers at a time in the same file, while managing communication issues
                 during PTO and other events for all designers.</li>
             </ul>
           </section>
@@ -386,7 +432,7 @@
           <section class="timeline">
             <h2>Timeline</h2>
             <h3>March 2025-March 2026</h3>
-            <p><strong>Successfully completed UAT, not yet in production.</strong></p>
+            <p><strong>In production.</strong></p>
           </section>
         </section>
 
@@ -526,7 +572,18 @@
       </div>
   </main>
   <footer>
-    <p>This website was designed & coded by Emily Diaz</p>
+    <div id="graphicsRight">
+      <canvas id="hexCanvas" tabindex="0"></canvas>
+      <canvas id="cashewCanvas" tabindex="0"></canvas>
+    </div>
+    <p tabindex="0">This website was designed & coded by Emily. Two gremlins named Hex and Cashew supervised, though.
+    </p>
+    <div id="graphicsLeft">
+      <a href="https://github.com/EmilyDiaz" target="_blank" rel="noopener noreferrer"><img src="Images/Github.svg"
+          alt=""></a>
+      <a href="https://www.linkedin.com/in/emily-diaz-b5b696203" target="_blank" rel="noopener noreferrer"><img
+          src="Images/LinkedIn.png" alt=""></a>
+    </div>
   </footer>
 </body>
 

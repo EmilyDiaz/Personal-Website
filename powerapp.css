@@ -1,3 +1,7 @@
+main{
+    margin: 2em;
+}
+
 .winner {
     display: flex;
     flex-direction: row;
@@ -33,9 +37,16 @@
     gap: 20px;
 }
 
-#comparison>img {
+#comparison>figure>img {
     max-width: 600px;
     max-height: 500px;
+}
+figure{
+    margin: 0;
+}
+figcaption{
+    font-style: italic;
+    width: 80%;
 }
 
 #xduserflow {

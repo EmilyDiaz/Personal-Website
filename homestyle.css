@@ -1,137 +1,130 @@
 @import"sharedstyles.css";
 
-h1{
-    color: var(--header-color-secondary);
+h1 {
+    color: var(--primary-color);
 }
+
 h2 {
     color: var(--header-color-primary);
-    width: 30%;
 }
 
 h3 {
     color: var(--header-color-primary);
 }
-.contactinfo{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    align-items: center;
-}
-.contactinfo>a{
-padding-right: 0;
-}
-.contactinfo>h3{
-    color: var(--header-color-secondary);
-}
-.contacts{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-}
-.contacts>a{
-    padding-right: 0px;
-}
-.projectsubheader {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-}
-
-#line {
-    border-top: var(--border-color) solid 2px;
-    width: 100%;
-    height: 1px;
-}
-
 
 #homemain {
     display: flex;
-    margin: auto;
+    flex-direction: column;
+    margin: 2em;
 }
-
 
 #intro-section {
     display: flex;
-    flex-direction: column;
-    padding: 30px;
+    gap: 60px;
     margin-bottom: 30px;
-    width: 25%;
-    background:linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
-    color: var(--header-color-secondary);
     border-radius: 5px;
 
 }
 
-#intro-section>div {
+#introDesc{
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
-#downloadlink {
-    text-decoration: none;
-    padding-right: 0;
-}
-
-#resume {
+#moreDetails{
     display: flex;
+    gap: 60px;
     align-items: center;
-    gap: 10px;
-    font-weight: bold;
-    background-color: var(--button-bg-color-secondary);
-    color: var(--button-text-primary);
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    max-width: 250px;
-    height: 50px;
-    justify-content: center;
-    align-items: center;
-    font-size: 18px;
-
+}
+#moreDetails>.descBlock>h3{
+    margin-bottom: 10px;
 }
 
-#resume:hover {
-    color: var(--button-text-hover);
-    cursor: pointer;
+#moreDetails>.descBlock>p{
+    margin: 0;
 }
 
-.personalpic {
+#frogprofile{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    width: 100%;
+    align-items: flex-end;
 }
-
-.personalpic>img {
-    width: 50%;
-    border-radius: 500px;
+#frogprofile>p{
+    align-self: center;
 }
 
 
 #Projects {
-    padding: 0px 30px;
     margin-bottom: 30px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 75%;
+    align-items: flex-start;
+    background-color: white;
 }
-#project-2>img{
-max-height: 500px
+.projecttemplate{
+    background-color: rgba(40, 128, 113, .2);
+    border-radius: 30px;
+    height: 400px;
+    background-position: center;
+    padding: 2em 4em;
 }
+.projecttemplate:hover{
+    cursor: pointer;
+}
+#boozallenproject{
+    background-image: url(Images/BoozAllenLogo.svg);
+    background-size: 90%;
+    background-repeat: no-repeat;
+
+}
+#xdappproject{
+    
+    background-image: url(Images/X&D\ Advisor\ Hub\ App.svg);
+    background-size: 90%;
+    background-repeat: no-repeat;
+
+}
+#jargonproject{
+    background-image: url(Images/JargonCover.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+#onboardingproject{
+    background-image: url(Images/OnboardingFlowcutfile-ezgif.com-crop.gif);
+    background-size: 90%;
+    background-repeat: no-repeat;
+
+}
+#datagenproject{
+    background-image: url(Images/Dummy\ Data\ Generator.svg);
+    background-size: 90%;
+    background-repeat: no-repeat;
+
+}
+#scannerproject{
+    background-image: url(Images/Prototype\ Scanner.gif);
+    background-size: 90%;
+    background-repeat: no-repeat;
+
+}
+#reach4helpproject{
+    background-image: url(Images/Reach4HelpProjectCover.svg);
+    background-size:40%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 #Projects>h3 {
     color: var(--header-color-primary);
 }
 
 .project-container {
     display: grid;
-    /*grid-template-columns: 1fr 1fr;*/
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
-    max-width: 1440px;
     gap: 30px;
     margin-bottom: 30px;
 
@@ -140,18 +133,12 @@ max-height: 500px
 
 .project {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     height: 100%;
-    /*border: solid 2px var(--border-color);
- border-radius: 5px;*/
-    align-items: center;
     padding: 10px;
-    gap: 30px
+    gap: 20px;
 }
 
-.projectdescription {
-    width: 50%;
-}
 
 .tools {
     margin-top: 30px;
@@ -167,34 +154,65 @@ max-height: 500px
 
 }
 
-.casestudybutton {
+
+#aboutme{
     display: flex;
-    flex-direction: row;
-    padding: 10px;
-    background-color: var(--button-bg-color);
-    color: var(--button-text-secondary);
-    border: none;
-    border-radius: 5px;
-    width: 150px;
-    height: 50px;
-    font-size: 20px;
-    justify-content: center;
-    align-items: center;
+    margin-bottom:30px;
+     border-top:rgba(40, 128, 113, .2) 2px solid;
+    /*border-bottom:rgba(40, 128, 113, .2) 2px solid;*/
+    padding:2em;
 }
-
-.casestudybutton:hover {
-    background-color: var(--button-text-hover);
-    cursor: pointer;
+#aboutmeDesc{
+    display: column;
 }
 
 
-@media screen and (max-width:900px) {
+
+#aboutme>#aboutmeDesc>a{
+    text-decoration: underline;
+    color: #0071bc;
+    font-style: italic;
+}
+#aboutmegraphicsMain{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+.imgframe{
+    box-shadow: 10px 10px 10px gray,
+    -5px 0 5px gray;
+    padding: 1em;
+    background-color: white;
+}
+.imgframe>h3{
+    justify-self: center;
+    font-family: 'Permanent-Marker', Tahoma, Geneva, Verdana, sans-serif;
+}
+#aboutmegraphicsMain>.imgframe>img{
+width: 300px;
+height: 300px;
+}
+#port{
+    padding: 2em;
+}
+
+/*media queries*/
+
+@media  screen and (max-width:1500px) {
+    .project-container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width:1000px) {
     .project-container {
         grid-template-columns: 1fr;
     }
 }
 
 @media screen and (max-width:600px) {
+    video{
+        width: 80vw;
+    }
     #Projects {
         width: auto;
         padding: 0px;
@@ -204,16 +222,37 @@ max-height: 500px
         flex-direction: column;
     }
 
-    main {
+    #homemain {
         flex-direction: column;
     }
-
-    #intro-section {
-        flex-direction: row;
-        width: auto;
+    .separator{
+        display: none;
+    }
+    #intro-section,#introDesc,
+    #moreDetails {
+      display: block;
+      justify-self: center;
+    }
+    #introDesc>h1{
+        justify-self: center;
+    }
+       #introDesc>p{
+        justify-self: center;
     }
 
-    .projectdescription{
+    #aboutme{
+        display: block;
+    }
+    #aboutmegraphicsMain{
+        flex-direction: column;
+    }
+   
+    #aboutmegraphicsMain>.imgframe>img{
+        width: 100%;
+    }
+
+
+    .projectdescription {
         width: 100%;
     }
 }
