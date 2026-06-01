@@ -92,6 +92,9 @@ main {
     justify-content:center;
     background-size: cover;
 }
+#atomic-design>img{
+    width: 100%;
+}
 .design-system-img-div{
     display: flex;
     flex-direction: row;
@@ -99,7 +102,9 @@ main {
     gap: 40px;
     flex-wrap: wrap;
 }
-
+.design-system-img-div>img{
+    width: 100%;
+}
 
 @media screen and (max-width:500px){
     .heroimage{
