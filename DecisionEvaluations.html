@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Emily Diaz-Booz Allen</title>
   <link rel="stylesheet" href="sharedstyles.css">
-  <link rel="stylesheet" href="boozallencasestudy.css">
+  <link rel="stylesheet" href="projectpages.css">
   <script src="common.js" async></script>
   <script type="module">
     import RefreshRuntime from 'http://localhost:5173/@react-refresh'
@@ -21,16 +21,18 @@
 <body>
   <header id=react-header-container></header>
   <main>
-    <section class="projectheader" data-titleimg="/Images/BoozAllenTitle.svg" data-img="/Images/Booz Allen Project 3.svg" data-alt="An image of the second case study I've written for Booz Allen.">
+    <section class="projectheader" data-titleimg="/Images/BoozAllenTitle.svg"
+      data-img="/Images/Booz Allen Project 3.svg"
+      data-alt="An image of the second case study I've written for Booz Allen.">
     </section>
+    <section class="projectsummary">
       <h2>Problem</h2>
-
       <p> After reviewing a case, judges will submit an evaluation of the attorney's performance on the case. This
         evaluation is currently not available post-submission, which prevents judges and other authorized users from
         correcting or updating any feedback that might impact an attorney's pay and work opportunities.
       </p>
-      <section>
-        <section>
+      <section class="projectdetails">
+        <section class="challenges">
           <h2>Challenges faced</h2>
           <ul>
             <li> Multiple stakeholders with conflicting opinions, all needed to be weighed somewhat equally.</li>
@@ -40,125 +42,123 @@
               development process
           </ul>
         </section>
-        <section>
-          <h2>Timeline</h2>
+        <section class="timeline">
+          <h2>Timeline & Role</h2>
+          <h3>UX Designer</h3>
           <h3>March 2025-March 2026</h3>
-          <p><strong>In production.</strong></p>
         </section>
       </section>
+    </section>
 
-      <section>
-        <h2>Solution</h2>
-        <p> Allow for decision evaluations to be revisted by judges and other authorized users through both existing
-          and new pages in the application. Implement solutions used previously in another effort to
-          prevent two users from editing the same evaluation at the same time. Allow for past evaluations to be viewed
-          but not editable if it meets certain criteria, so as not to cause duplication of data.
-        </p>
 
-        <section>
-          <h3>1. Mapping out the user flow</h3>
+    <section class="solution">
+      <h2>Solution</h2>
+      <p> Allow for decision evaluations to be revisted by judges and other authorized users through both existing
+        and new pages in the application. Implement solutions used previously in another effort to
+        prevent two users from editing the same evaluation at the same time. Allow for past evaluations to be viewed
+        but not editable if it meets certain criteria, so as not to cause duplication of data.
+      </p>
+    </section>
+    <section class="process">
+      <h3>1. Mapping out the user flow</h3>
 
-          <p> We approached the requirements gathering phase by meeting up with the stakeholders, getting a better
-            understanding of the ask, and then exploring the existing functionality internally amongst ourselves.
-            From there, we continued with our weekly cadence of stakeholder meetings to continue asking more questions
-            and presenting initial wireframes until we were able to flesh both requirements and wireframes out enough.
-            Common practice during this solutioning effort is creating a process flow deliverable, as seen below:
-          </p>
-          <h3>2. Entry points for Decision Evaluations</h3>
-          <p> The entry points for the decision evaluations were established during several rounds of the stakeholder
-            meetings. Originally, the main entry points were going to be siloed to the case details page of applicable
-            cases as well as the search page, but after further internal discussion we proposed a new view on the
-            judges queue to the stakeholders.
-            This new view would allow judges to quickly access and see all decision evaluations that had been
-            submitted just by them, organized by attorney name. These three starting points would all lead to the same
-            decision evaluation page, with slight differences to account for as seen in the overall user flow below:
-          </p>
+      <p> We approached the requirements gathering phase by meeting up with the stakeholders, getting a better
+        understanding of the ask, and then exploring the existing functionality internally amongst ourselves.
+        From there, we continued with our weekly cadence of stakeholder meetings to continue asking more questions
+        and presenting initial wireframes until we were able to flesh both requirements and wireframes out enough.
+        Common practice during this solutioning effort is creating a process flow deliverable, as seen below:
+      </p>
+      <h3>2. Entry points for Decision Evaluations</h3>
+      <p> The entry points for the decision evaluations were established during several rounds of the stakeholder
+        meetings. Originally, the main entry points were going to be siloed to the case details page of applicable
+        cases as well as the search page, but after further internal discussion we proposed a new view on the
+        judges queue to the stakeholders.
+        This new view would allow judges to quickly access and see all decision evaluations that had been
+        submitted just by them, organized by attorney name. These three starting points would all lead to the same
+        decision evaluation page, with slight differences to account for as seen in the overall user flow below:
+      </p>
+      <div class="process-imgs">
+        <img src="Images/Decision Evaluations.png"
+          alt="An image of a user flow for how the case evaluations page works.">
+        <img src="Images/Case evaulation.svg" alt="A wireframe for case evaluations.">
+      </div>
+      <h4>1. Case Details</h4>
+      <p> Under more research, the entry point of the case details page was determined to not be the main entry
+        point taken by judges or authorized users. However, stakeholder's original request did include having
+        this entry point
+        and it was requested to remain even after several presentations. It would still prove useful as an entry
+        point in the use case where a judge would be reviewing multiple cases for the same veteran, for example.
+        The case details page is also a page with heavy traffic, given the amount of crucial information
+        displayed on it, so it could often be opened for judges and other users to have a reference.
+        In reality, this is more of a sub entry point, given that it is mainly accessed by the other two entry
+        points of the judge queue and the search page.
+      </p>
+      <div class="process-imgs">
+        <img src="Images/Decision Evaluations-Case Details.png"
+          alt="An image of a user flow for the case evaluation is accessed through the case details page. ">
+        <img src="Images/Case Details.svg" alt="A wireframe for the updated version of the case details page.">
+      </div>
+      <h4>2. Judge Queue</h4>
+      <p>Every user in the application has a personal queue, where they can see cases assigned to them in
+        different statuses. This effort would provide a new view in a judge's queue, where they can see decision
+        evaluations that they have submitted and are both still editable or have passed the editable date and
+        are read-only.
+        Each case would be organized by attorney name, as well as other filterable pieces of information such as
+        different score types and the date the evaluation was submitted. A search bar would allow for searching
+        by fields that are not already filterable in the queue table, such as fields with unique values. The
+        ability to download
+        the queue table as a CSV file would also be available. This new view would be the main entry point for
+        judges, unless they need to look for cases that have been submitted by other judges.
+        Although initally seen as a business need, this entry point was later deprioritized and deemed out of
+        scope given that it wasn't captured in the original draft of business requirements.
+      </p>
+      <div class="process-imgs">
+        <img src="Images/Decision Evaluations-Judge Queue.png"
+          alt="An image of a user flow for how the judge's queue works and how to access case evaluations through it.">
+        <img src="Images/Judge's queue.svg" alt="A wireframe for the judge's queue.">
+      </div>
 
-          <img src="Images/Decision Evaluations.png"
-            alt="An image of a user flow for how the case evaluations page works.">
-          <img src="Images/Case evaulation.svg" alt="A wireframe for case evaluations.">
+      <h4>3. Search Page</h4>
+      <p> The search page enhancement was three-fold. Firstly, Decision Evaluations would be added in as a
+        possible result when specific users search existing search criteria on the existing search page.
+        These same users would be able to search for decision evaluations using new search criteria introduced
+        in a second phase of this search effort.
+        Lastly, a potential third phase was discussed with the business to introduce new search criteria for the
+        other two existing types of results, cases and reviews.
+      </p>
+      <div class="process-imgs">
+        <img src="Images/Decision Evaluations-Search.png"
+          alt="An image of a user flow for how regular and advanced search work.">
+        <img src="Images/Search.svg" alt="A wireframe of the regular search functionality on the search page.">
+        <img src="Images/Advanced search.svg" alt="A wireframe of the advanced search functionality on the search page.">
+      </div>
+    </section>
 
-          <section>
-            <h4>1. Case Details</h4>
-            <p> Under more research, the entry point of the case details page was determined to not be the main entry
-              point taken by judges or authorized users. However, stakeholder's original request did include having
-              this entry point
-              and it was requested to remain even after several presentations. It would still prove useful as an entry
-              point in the use case where a judge would be reviewing multiple cases for the same veteran, for example.
-              The case details page is also a page with heavy traffic, given the amount of crucial information
-              displayed on it, so it could often be opened for judges and other users to have a reference.
-              In reality, this is more of a sub entry point, given that it is mainly accessed by the other two entry
-              points of the judge queue and the search page.
-            </p>
-
-            <img src="Images/Decision Evaluations-Case Details.png"
-              alt="An image of a user flow for the case evaluation is accessed through the case details page. ">
-            <img src="Images/Case Details.svg" alt="A wireframe for the updated version of the case details page.">
-
-          </section>
-          <section>
-            <h4>2. Judge Queue</h4>
-            <p>Every user in the application has a personal queue, where they can see cases assigned to them in
-              different statuses. This effort would provide a new view in a judge's queue, where they can see decision
-              evaluations that they have submitted and are both still editable or have passed the editable date and
-              are read-only.
-              Each case would be organized by attorney name, as well as other filterable pieces of information such as
-              different score types and the date the evaluation was submitted. A search bar would allow for searching
-              by fields that are not already filterable in the queue table, such as fields with unique values. The
-              ability to download
-              the queue table as a CSV file would also be available. This new view would be the main entry point for
-              judges, unless they need to look for cases that have been submitted by other judges.
-              Although initally seen as a business need, this entry point was later deprioritized and deemed out of
-              scope given that it wasn't captured in the original draft of business requirements.
-            </p>
-            <img src="Images/Decision Evaluations-Judge Queue.png"
-              alt="An image of a user flow for how the judge's queue works and how to access case evaluations through it.">
-            <img src="Images/Judge's queue.svg" alt="A wireframe for the judge's queue.">
-
-          </section>
-          <section>
-            <h4>3. Search Page</h4>
-            <p> The search page enhancement was three-fold. Firstly, Decision Evaluations would be added in as a
-              possible result when specific users search existing search criteria on the existing search page.
-              These same users would be able to search for decision evaluations using new search criteria introduced
-              in a second phase of this search effort.
-              Lastly, a potential third phase was discussed with the business to introduce new search criteria for the
-              other two existing types of results, cases and reviews.
-            </p>
-            <img src="Images/Decision Evaluations-Search.png"
-              alt="An image of a user flow for how regular and advanced search work.">
-            <img src="Images/Search.svg" alt="A wireframe of the regular search functionality on the search page.">
-            <img src="Images/Advanced search.svg"
-              alt="A wireframe of the advanced search functionality on the search page.">
-          </section>
-        </section>
-      </section>
-
-      <section class="reflections">
-        <h2>Reflections</h2>
-        <p>
-          Unlike the previous project, this project was handed off to three different development teams before it got
-          properly worked on.
-          The project was divided into two parts: <strong>Development team A would spearhead the case details entry
-            point</strong> while <strong>development team B would take charge of the search page entry point</strong>.
-          The entry point of the judges queue, although intially approved, was later deemed by stakeholders to be out
-          of scope.
-        </p>
-        <p>
-          The initial development team that I had worked with <strong>did not properly document business
-            requirements</strong> due to lack of frontend experience, so I and the leads of the different development
-          teams had to work together on drafting business requirements.
-          There were a few gaps missed during initial presentation of wireframes that had to be addressed during the
-          UAT deployment in the development phase, but most of these gaps were linked to edge cases.
-        </p>
-        <p>
-          Otherwise, the development process went off without many issues and deployed succesfully to UAT.
-          Still, this experience made me realize that <strong>I have to really work on documenting not just rare edge
-            cases</strong> and work on addressing them sooner rather than later, but I also have to work on
-          <strong>vocalizing concerns and questioning how efforts are written up</strong>, even if it falls out of
-          range of my immediate work responsibilities.
-        </p>
-      </section>
+    <section class="reflections">
+      <h2>Reflections</h2>
+      <p>
+        Unlike the previous project, this project was handed off to three different development teams before it got
+        properly worked on.
+        The project was divided into two parts: <strong>Development team A would spearhead the case details entry
+          point</strong> while <strong>development team B would take charge of the search page entry point</strong>.
+        The entry point of the judges queue, although intially approved, was later deemed by stakeholders to be out
+        of scope.
+      </p>
+      <p>
+        The initial development team that I had worked with <strong>did not properly document business
+          requirements</strong> due to lack of frontend experience, so I and the leads of the different development
+        teams had to work together on drafting business requirements.
+        There were a few gaps missed during initial presentation of wireframes that had to be addressed during the
+        UAT deployment in the development phase, but most of these gaps were linked to edge cases.
+      </p>
+      <p>
+        Otherwise, the development process went off without many issues and deployed succesfully to UAT.
+        Still, this experience made me realize that <strong>I have to really work on documenting not just rare edge
+          cases</strong> and work on addressing them sooner rather than later, but I also have to work on
+        <strong>vocalizing concerns and questioning how efforts are written up</strong>, even if it falls out of
+        range of my immediate work responsibilities.
+      </p>
+    </section>
     </section>
     <h3> Check out other projects:</h3>
     <div class="otherprojectsdiv">
