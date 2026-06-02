@@ -14,41 +14,7 @@
 </head>
 
 <body>
-    <header>
-        <a href="index.html" id="homepage">
-            <h4> EMILY DIAZ-FUSCO</h4>
-        </a>
-        <nav>
-            <div class="dropdown" tabindex="0">
-                <a id="project-navbar" tabindex="0">Projects</a>
-                <div class="dropdown-content" tabindex="0">
-                    <ul>
-                        <li>
-                            <a href="BoozAllenCaseStudy.html">Booz Allen Hamilton</a>
-                        </li>
-                        <li>
-                            <a href="powerapp.html">X&D Advisor App</a>
-                        </li>
-                        <li>
-                            <a href="jargon.html">Jargon</a>
-                        </li>
-                        <li>
-                            <a href="onboarding.html">Onboarding Guide</a>
-                        </li>
-                        <li>
-                            <a href="reach4help.html">Reach4Help</a>
-                        </li>
-                        <li>
-                            <a href="plugins.html">Plugins</a>
-                        </li>
-                    </ul>
-
-                </div>
-            </div>
-            <!--<a href=""> World Map</a>-->
-            <a href="Resume/Resume-Current.pdf" target="_blank" rel="noopener noreferrer">View Resume</a>
-        </nav>
-    </header>
+    <header id=react-header-container></header>
     <main id="homemain">
         <section id="intro-section">
             <section id="introDesc">
@@ -88,182 +54,43 @@
         </section>
         </section>
         <section id="Projects">
-            <div class="project-container">
-                <div class="project">
-                    <div class="projecttemplate" id="boozallenproject" tabindex="0"></div>
-                    <div class="projectdescription">
-                        <h3 tabindex="0">Booz Allen Hamilton Case Studies </h3>
-                        <p tabindex="0">
-                            Designed and have seen over a dozen projects to production deployment for a web-based application under a Booz Allen
-                            contract for the Department of Veterans Affairs. Enhanced and maintained a design
-                            library with over 100 components.
-                        </p>
-                        <div class="tools">
-                            <img src="Images/Tools.svg" tabindex="0">
-                            <p tabindex="0">Tools:</p>
-                            <img src="Images/Mural.svg" alt="mural" tabindex="0">
-                            <img src="Images/FigmaLogo.svg" alt="figma" tabindex="0">
+            <div class="project-container"></div>
+            <section id="aboutme">
+                <section id="aboutmeDesc">
+                    <h2 tabindex="0">More about me</h2>
+                    <h3 tabindex="0">
+                        My main goal in life is to experience and learn new things. Satisfaction to my curiosity is what
+                        keeps
+                        me going.
+                    </h3>
+                    <p tabindex="0"> And even if I'm not good at that new thing or I decide perhaps the experience isn't
+                        for
+                        me,
+                        at least I tried!
+                    </p>
+                    <p tabindex="0"> When I'm not tangled in code or wireframes, I enjoy drawing, reading, writing,
+                        playing video
+                        games, or spending time with my two gremlins.
+                    </p>
+                    <section id="aboutmegraphicsMain">
+                        <div class="imgframe">
+                            <img src="Images/hex.jpg">
+                            <h3>Hex</h3>
                         </div>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="projecttemplate" id="xdappproject" tabindex="0"></div>
-                    <div class="projectdescription">
-                        <h3 tabindex="0">X&D Advisor Hub Dashboard</h3>
-                        <p tabindex="0">
-                            Designed and developed a gamified, advisorship tracking application to help increase
-                            member
-                            aquistion and engagement.
-                        </p>
-                        <div class="tools">
-                            <img src="Images/Tools.svg" tabindex="0">
-                            <p tabindex="0">Tools:</p>
-                            <img src="Images/Chat GPT.svg" tabindex="0" alt="Chat GPT">
-                            <img src="Images/VS Code.svg" tabindex="0" alt="VS Code">
-                            <img src="Images/Sharepoint.svg" tabindex="0" alt="SharePoint">
-                            <img src="Images/PowerApps Logo.svg" ctabindex="0" alt="PowerApps">
-                            <img src="Images/Powerautomate.svg" tabindex="0" alt="Powerautomate">
-                            <img src="Images/FigmaLogo.svg" tabindex="0" alt="Figma">
+                        <div class="imgframe">
+                            <img src="Images/cashew.jpg">
+                            <h3>Cashew</h3>
                         </div>
-                    </div>
-                </div>
-                
-                <div class="project">
-                    <div class="projecttemplate" id="onboardingproject" tabindex="0"></div>
-                    <div class="projectdescription">
-                        <h3 tabindex="0">Onboarding Guide</h3>
-                        <p tabindex="0">
-                            Designed and prototyped a interactive onboarding flow for new hires on the project, as
-                            well as created a companion glossary with PowerApps. Decreased onboarding ramp-up time
-                            by
-                            10%.
-                        </p>
-                        <div class="tools">
-                            <img src="Images/Tools.svg" tabindex="0">
-                            <p tabindex="0">Tools:</p>
-                            <img src="Images/Chat GPT.svg" tabindex="0" alt="Chat GPT">
-                            <img src="Images/PowerApps Logo.svg" tabindex="0" alt="PowerApps">
-                            <img src="Images/FigmaLogo.svg" tabindex="0" alt="Figma">
-                            <img src="Images/Sharepoint.svg" tabindex="0" alt="SharePoint">
-                        </div>
-                    </div>
-                </div>
-                  <div class="project">
-                    <div class="projecttemplate" id="reach4helpproject" tabindex="0"></div>
-                    <div class="projectdescription">
-                        <h3 tabindex="0">
-                            Reach4Help
-                        </h3>
-                        <p tabindex="0">
-                            Designed a mobile app version of browser application for Reach4Help,
-                            a nonprofit dedicated to connecting users to aid & resources for disaster relief.
-                        </p>
-                        <div class="tools">
-                            <img src="Images/Tools.svg" tabindex="0">
-                            <p tabindex="0">Tools:</p>
-                            <img src="Images/Mural.svg" tabindex="0" alt="Mural">
-                            <img src="Images/FigmaLogo.svg" tabindex="0" alt="Figma">
-                        </div>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="projecttemplate" id="jargonproject" tabindex="0"></div>
-                    <div class="projectdescription">
-                        <h3 tabindex="0">
-                            Jargon
-                        </h3>
-                        <p>
-                            Designed a gamified, language learning app for my Google UX certifcation.
-                        </p>
-                        <div class="tools">
-                            <img src="Images/Tools.svg" tabindex="0">
-                            <p tabindex="0">Tools:</p>
-                            <img src="Images/Mural.svg" tabindex="0" alt="Mural">
-                            <img src="Images/FigmaLogo.svg" tabindex="0" alt="Figma">
-                        </div>
-                    </div>
-                </div>
-              
+                    </section>
 
-                <div class="project">
-                    <div class="projecttemplate" id="datagenproject" tabindex="0"></div>
-
-                    <div class="projectdescription">
-                        <h3 tabindex="0">Dummy Data Generator</h3>
-                        <p tabindex="0">
-                            Coded a figma plugin for generating dummy data appropriate for
-                            designs under the Veterans Affairs portfolio. Distributed and tested
-                            across teams of more than twenty UX designers. Increased fidelity of wires
-                            when handing off to developers.
-                        </p>
-                        <div class="tools">
-                            <img src="Images/Tools.svg" tabindex="0">
-                            <p tabindex="0">Tools:</p>
-                            <img src="Images/Chat GPT.svg" tabindex="0" alt="Chat GPT">
-                            <img src="Images/VS Code.svg" tabindex="0" alt="VS Code">
-                            <img src="Images/FigmaLogo.svg" tabindex="0" alt="Figma">
-                            <img src="Images/Github.svg" tabindex="0" alt="Github">
-                        </div>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="projecttemplate" id="scannerproject" tabindex="0"></div>
-
-                    <div class="projectdescription">
-                        <h3 tabindex="0">Prototype Variable Scanner</h3>
-                        <p tabindex="0">
-                            Coded a figma plugin for quick and easy variable documentation used in advanced
-                            prototyping.
-                            Distributed and tested across teams of more than twenty UX designers. Assisted with
-                            collaboration
-                            between designers.
-                        </p>
-                        <div class="tools">
-                            <img src="Images/Tools.svg" tabindex="0">
-                            <p tabindex="0">Tools:</p>
-                            <img src="Images/Chat GPT.svg" tabindex="0" alt="Chat GPT">
-                            <img src="Images/VS Code.svg" tabindex="0" alt="VS Code">
-                            <img src="Images/FigmaLogo.svg" tabindex="0" alt="Figma">
-                            <img src="Images/Github.svg" tabindex="0" alt="Github">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="aboutme">
-            <section id="aboutmeDesc">
-                <h2 tabindex="0">More about me</h2>
-                <h3 tabindex="0">
-                    My main goal in life is to experience and learn new things. Satisfaction to my curiosity is what
-                    keeps
-                    me going.
-                </h3>
-                <p tabindex="0"> And even if I'm not good at that new thing or I decide perhaps the experience isn't for
-                    me,
-                    at least I tried!
-                </p>
-                <p tabindex="0"> When I'm not tangled in code or wireframes, I enjoy drawing, reading, writing,
-                    playing video
-                    games, or spending time with my two gremlins.
-                </p>
-                  <section id="aboutmegraphicsMain">
-                    <div class="imgframe">
-                        <img src="Images/hex.jpg">
-                        <h3>Hex</h3>
-                    </div>
-                    <div class="imgframe">
-                        <img src="Images/cashew.jpg"> 
-                        <h3>Cashew</h3>
-                    </div>
+                    <p tabindex="0">Feel free to reach out to me if you have further questions, a business opportunity,
+                        or
+                        simply just
+                        want a
+                        e-pen pal.</p>
+                    <a href="mailto:emilmdiaz@gmail.com">Email me at emilmdiaz@gmail.com</a>
                 </section>
-
-                <p tabindex="0">Feel free to reach out to me if you have further questions, a business opportunity, or
-                    simply just
-                    want a
-                    e-pen pal.</p>
-                <a href="mailto:emilmdiaz@gmail.com">Email me at emilmdiaz@gmail.com</a>
-            </section>
-               <section id="aboutmegraphicsRight">
+                <section id="aboutmegraphicsRight">
                     <img src="Images/littleme.svg" tabindex="0">
                 </section>
             </section>
@@ -280,22 +107,17 @@
             </p>
         </section>-->
     </main>
-    <footer>
-        <div id="graphicsRight">
-            <canvas id="hexCanvas" tabindex="0"></canvas>
-            <canvas id="cashewCanvas" tabindex="0"></canvas>
-        </div>
-        <p tabindex="0">This website was designed & coded by Emily. Two gremlins named Hex and Cashew supervised,
-            though.</p>
-        <div id="graphicsLeft">
-            <a href="https://github.com/EmilyDiaz" target="_blank" rel="noopener noreferrer"><img
-                    src="Images/Github.svg" alt=""></a>
-            <a href="https://www.linkedin.com/in/emily-diaz-b5b696203" target="_blank" rel="noopener noreferrer"><img
-                    src="Images/LinkedIn.png" alt=""></a>
-        </div>
-    </footer>
+    <footer id="react-footer-container"></footer>
     <script src="index.js" async></script>
     <script src="common.js" async></script>
+    <script type="module">
+        import RefreshRuntime from 'http://localhost:5173/@react-refresh'
+        RefreshRuntime.injectIntoGlobalHook(window)
+        window.$RefreshReg$ = () => { }
+        window.$RefreshSig$ = () => (type) => type
+        window.__vite_plugin_react_preamble_installed__ = true
+    </script>
+    <script type="module" src="http://localhost:5173/src/main.jsx"></script>
 </body>
 
 </html>

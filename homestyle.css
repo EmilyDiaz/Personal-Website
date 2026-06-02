@@ -139,6 +139,9 @@ h3 {
     gap: 20px;
 }
 
+.project>a{
+    padding: 0;
+}
 
 .tools {
     margin-top: 30px;
@@ -216,10 +219,6 @@ height: 300px;
     #Projects {
         width: auto;
         padding: 0px;
-    }
-
-    .project {
-        flex-direction: column;
     }
 
     #homemain {

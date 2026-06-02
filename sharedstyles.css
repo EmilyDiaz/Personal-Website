@@ -133,8 +133,7 @@ h4 {
 header {
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    padding-bottom: 10px;
+    padding: 10px;
 }
 
 header>nav {
@@ -147,13 +146,20 @@ header>nav>a {
 
 header>a>h4 {
     font-family: 'Pixelify-SemiBold', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 0;
 }
 
 header>a:hover {
     text-decoration: none;
 }
 
+.dropdown-content{
+    display: none;
+}
 
+.dropdown:hover .dropdown-content{
+    display: block;
+}
 
 .mySelectedPage {
     text-decoration: overline;
@@ -555,8 +561,8 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    padding-top: 20px;
+    padding: 10px;
+    margin: 2em;
     border-top: 2px solid var(--primary-color)
 }
 

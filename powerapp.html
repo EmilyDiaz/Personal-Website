@@ -8,44 +8,18 @@
     <link rel="stylesheet" href="sharedstyles.css">
     <link rel="stylesheet" href="powerapp.css">
     <script src="common.js" async></script>
+    <script type="module">
+        import RefreshRuntime from 'http://localhost:5173/@react-refresh'
+        RefreshRuntime.injectIntoGlobalHook(window)
+        window.$RefreshReg$ = () => { }
+        window.$RefreshSig$ = () => (type) => type
+        window.__vite_plugin_react_preamble_installed__ = true
+    </script>
+    <script type="module" src="http://localhost:5173/src/main.jsx"></script>
 </head>
 
 <body>
-   <header>
-        <a href="index.html" id="homepage">
-            <h4> EMILY DIAZ-FUSCO</h4>
-        </a>
-        <nav>
-            <div class="dropdown">
-                <a id="project-navbar">Projects</a>
-                <div class="dropdown-content">
-                    <ul>
-                        <li>
-                            <a href="BoozAllenCaseStudy.html">Booz Allen Hamilton</a>
-                        </li>
-                        <li>
-                            <a href="powerapp.html">X&D Advisor App</a>
-                        </li>
-                         <li>
-                            <a href="jargon.html">Jargon</a>
-                        </li>
-                         <li>
-                            <a href="onboarding.html">Onboarding Guide</a>
-                        </li>
-                         <li>
-                            <a href="reach4help.html">Reach4Help</a>
-                        </li>
-                         <li>
-                            <a href="plugins.html">Plugins</a>
-                        </li>
-                    </ul>
-
-                </div>
-            </div>
-            <!--<a href=""> World Map</a>-->
-            <a href="Resume/Resume-Current.pdf">View Resume</a>
-        </nav>
-    </header>
+   <header id=react-header-container></header>
     <div id="myModal" class="modal">
         <span class="close">&times;</span>
         <div class="modalbody">
@@ -629,19 +603,7 @@
     </div>
         </section>
     </main>
-     <footer>
-        <div id="graphicsRight">
-            <canvas id="hexCanvas" tabindex="0"></canvas>
-            <canvas id="cashewCanvas" tabindex="0"></canvas>
-        </div>
-        <p tabindex="0">This website was designed & coded by Emily. Two gremlins named Hex and Cashew supervised, though.</p>
-        <div id="graphicsLeft">
-            <a href="https://github.com/EmilyDiaz" target="_blank" rel="noopener noreferrer"><img
-                    src="Images/Github.svg" alt=""></a>
-            <a href="https://www.linkedin.com/in/emily-diaz-b5b696203" target="_blank" rel="noopener noreferrer"><img
-                    src="Images/LinkedIn.png" alt=""></a>
-        </div>
-    </footer>
+    <footer id="react-footer-container"></footer>
 </body>
 
 </html>
