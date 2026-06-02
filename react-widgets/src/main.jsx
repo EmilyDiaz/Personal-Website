@@ -3,11 +3,12 @@ import ReactDOM from 'react-dom/client'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import ProjectTemplate from './components/ProjectTemplate'
+import ProjectHeader from './components/ProjectHeader'
 
 // Find the placeholder elements on your existing website
 const headerRoot = document.getElementById('react-header-container')
 const footerRoot = document.getElementById('react-footer-container')
-//const projectElements = document.querySelectorAll('.react-project-container')
+const projectheaderRoot=document.querySelectorAll('.projectheader')
 const projectRoot = document.querySelector('.project-container')
 
 // Mount components safely if the elements exist on the current page
@@ -27,6 +28,22 @@ if (footerRoot) {
     </React.StrictMode>
   )
 }
+
+if(projectheaderRoot){
+projectheaderRoot.forEach((element) => {
+  // Mount an independent React instance into each individual HTML wrapper
+  ReactDOM.createRoot(element).render(
+    <React.StrictMode>
+      <ProjectHeader
+        projecttitleimg={element.dataset.titleimg}
+        projectname={element.dataset.name}
+        projectimg={element.dataset.img}
+        alt={element.dataset.alt}
+      />
+    </React.StrictMode>
+  )
+})}
+
 if (projectRoot) {
   ReactDOM.createRoot(projectRoot).render(
     <React.StrictMode>
@@ -34,7 +51,7 @@ if (projectRoot) {
         projecturl="BoozAllenCaseStudy.html"
         projectid="boozallenproject"
         projectname="Booz Allen Hamilton Case Studies"
-        projectdescription="Designed and have seen over a dozen projects to production deployment for a web-based application under a Booz Allen contract for the Department of Veterans Affairs.Enhanced and maintained a design library with over 100 components."
+        projectdescription="Designed and have seen over a dozen projects to production deployment for a web-based application under for the Department of Veterans Affairs. Enhanced and maintained a design library with over 100 components."
         tool1="/Images/Mural.svg"
         alt1="Mural"
         tool2="/Images/FigmaLogo.svg"
@@ -60,7 +77,7 @@ if (projectRoot) {
         projecturl="onboarding.html"
         projectid="onboardingproject"
         projectname="Onboarding Guide"
-        projectdescription="Designed and prototyped a interactive onboarding flow for new hires on the project, as well as created a companion glossary with PowerApps.Decreased onboarding ramp-up time by 10%."
+        projectdescription="Designed and prototyped a interactive onboarding flow, as well as created a companion glossary with PowerApps, that decreased onboarding time."
         tool1="/Images/Chat GPT.svg"
         alt1="ChatGPT"
         tool2="/Images/Sharepoint.svg"
@@ -125,18 +142,3 @@ if (projectRoot) {
     </React.StrictMode>
   )
 }
-/*if(projectElements){
-projectElements.forEach((element) => {
-  // Mount an independent React instance into each individual HTML wrapper
-  ReactDOM.createRoot(element).render(
-    <React.StrictMode>
-      <ProjectTemplate 
-        projecturl={element.dataset.url}
-        projectid={element.dataset.id}
-        projectname={element.dataset.name}
-        projectdescription={element.dataset.desc}
-        tool1={element.dataset.tool1}
-      />
-    </React.StrictMode>
-  )
-})}*/
