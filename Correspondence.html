@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emily Diaz-Booz Allen</title>
+    <link rel="stylesheet" href="projectpages.css">
+    <script src="common.js" async></script>
+    <script type="module">
+        import RefreshRuntime from 'http://localhost:5173/@react-refresh'
+        RefreshRuntime.injectIntoGlobalHook(window)
+        window.$RefreshReg$ = () => { }
+        window.$RefreshSig$ = () => (type) => type
+        window.__vite_plugin_react_preamble_installed__ = true
+    </script>
+    <script type="module" src="http://localhost:5173/src/main.jsx"></script>
+</head>
+
+<body>
+    <header id=react-header-container></header>
+    <main>
+        <section class="projectheader" data-titleimg="/Images/BoozAllenTitle.svg"
+            data-img="/Images/Booz Allen Project 1.png"
+            data-alt="An image of the first case study I've written for Booz Allen.">
+        </section>
+        <section class="projectsummary">
+            <h2>Overview</h2>
+            <section class="problem">
+                <h3>Problem</h3>
+                <p> Current software does not allow for tracking of mail that is crucial for completing the lifecycle of
+                    cases. Mail must be managed through another, external software, which
+                    hinders the users' productivity as well as does not allow for in depth tracking of the mail's life
+                    cycle.
+                    Proper reporting needs were not being met for the mail team, which is crucial for auditing as well
+                    as
+                    performance reviews.
+                </p>
+            </section>
+            <section class="projectdetails">
+                <section class="challenges">
+                    <h3>Challenges faced</h3>
+                    <ul>
+                        <li>MVP constraints were not established during the early solutioning phases with the client
+                        </li>
+                        <li>Gathering of business requirements and designs progressed for nearly a year before ready to
+                            pass onto
+                            development, making communication stale in some areas </li>
+                        <li> My first time leading a project made this a learn as you go situation. This was also not an
+                            enhancement to an existing process or page, this was an entirely new workflow.</li>
+                    </ul>
+                </section>
+                <section class="timelinerole">
+                    <section class="timeline">
+                        <h3>Timeline</h3>
+                        <p>December 2022-Ongoing</p>
+                    </section>
+                    <section class="role">
+                        <h3>Role</h3>
+                        <p>UX Designer</p>
+                    </section>
+                </section>
+            </section>
+            <section class="solution">
+                <h3>Solution breakdown</h3>
+                <p> Intergrate mail tracking and management into the case manangement software, as well as allow for
+                    relationships to be established between mail and their corresponding cases.
+                </p>
+            </section>
+        </section>
+        <section class="process">
+            <h2>Process</h2>
+            <h3>1. Mapping out the user flow</h3>
+
+            <p> Our team at Booz Allen reached out to the mail team stakeholders for two rounds of demonstrations. Both
+                demonstrations were conducted on the external software program the mail team used for intaking their
+                mail
+                and were run in addition to requirement gathering meetings.
+            </p>
+            <p>
+                We mapped out a rough user flow of how this external program worked and then worked out how this new
+                flow
+                would fit into the case management program. Our case managment program would recieve mail from the mail
+                team's software on a
+                defined schedule and place it in assignment queues.
+            </p>
+            <p> Three major components were identified in the user flow:</p>
+
+            <section class="subprocess">
+                <h4>1. Correspondence Review</h4>
+                <p>The first component focuses on the communication between the two applications and being able to read
+                    the mail in the case management software.
+                </p>
+                <p>
+                    Mail would be pulled from the external application and placed in a main queue in the case management
+                    application, where supervisors
+                    can assign out mail to specific users. These users would review the mail in this "raw" state before
+                    choosing to intake the mail. The review might
+                    involve requesting that a supervisor perform a specific action on the mail, such as merging it with
+                    another piece of mail, or editing certain details of
+                    the mail document.
+                </p>
+                <div class="process-imgs">
+                    <img src="Images/Component One flow.png" alt="Shows the flow for component one of this project.">
+                    <img src="Images/Component 1.svg"
+                        alt="Shows a mockup of a document details page, with a modal for actions on the foreground.">
+                </div>
+                <h4>2. Correspondence Intake</h4>
+                <p>The second component focuses on the intake of this mail document.</p>
+                <p>
+                    If the mail document is a specific type of form, it can be intaken as a case. Any other type of mail
+                    can
+                    be intaken as a mail document, which is called the mail intake process.
+                    If needed, a user going through the mail intake process can add tasks to the mail, link related
+                    mail,
+                    and link related cases.
+                </p>
+                <div class="process-imgs">
+                    <img src="Images/Component Two.png" alt="Shows the flow for component two of this project.">
+                    <img src="Images/Component 2.svg"
+                        alt="Shows a mockup on step 1 of the intake process for correspondence.">
+                </div>
+
+                <h4>3.Correspondence Post-Intake</h4>
+                <p>The third component focuses on the post-intake process of the mail document.
+                </p>
+                <p>
+                    Once the intake process is done, a piece of mail becomes recorded in the case manangement system. If
+                    tasks were added during the intake process, then the mail is still in a active state until that task
+                    is
+                    closed out.
+                    The piece of mail can still be interacted with post-intake; new tasks can be added and relationships
+                    between the mail and other pieces of mail or cases can be edited.
+                </p>
+                <div class="process-imgs">
+                    <img src="Images/Component Three user flow.png"
+                        alt="Shows the flow for component 3 of the project.">
+                    <img src="Images/Component 3.svg"
+                        alt="Shows a mockup of correspondence details after the intake process.">
+                </div>
+            </section>
+
+            <section class="reflections">
+                <h2>Reflections</h2>
+                <p> This was my first time in a UX lead role, and my first time working with the development team
+                    involved in
+                    this project.
+                    Having worked with a very different development team in the past, <strong>I had certain expectations
+                        that
+                        were not met with this new team and communication was a huge hurdle because of that.</strong>
+                    I quickly learned that, at this point in my career, I was not only not ready to lead a project of
+                    this scope
+                    and tumultuousness but that I also needed to work on my communication skills and to work on
+                    establishing a
+                    process to my design work.
+                </p>
+                <p>
+                    Through the obstacles presented by this project, <strong>I have learned to ask more questions to
+                        developers
+                        and work with them to establish a process that works for both of us.</strong> My deliverables
+                    have shifted
+                    depending on what development team
+                    I'm working with to fit their needs as closely as possible. And I have slowly started to develop an
+                    understanding of how to speak in developer terms.
+
+                    This project was half way through development when it was put on hold but I have learned from the
+                    experience
+                    immensely and have been able to apply what I've learned to
+                    other projects that I have worked on since then.
+            </section>
+        </section>
+        <h3> Check out other projects:</h3>
+        <div class="otherprojectsdiv">
+            <section class="otherprojects" id="xdappimg" tabindex="0">
+                <img src="Images/X&D Advisor Hub App.svg" alt="Click here to navigate to the X&D Advisor Hub project.">
+                <h3>X&D Advisor Hub App</h3>
+                <h4>
+                    Web-based application that provides a gamified dashboard for a UX advisorship program
+                </h4>
+            </section>
+            <section class="otherprojects" id="jargonimage" tabindex="0"
+                alt="Click here to navigate to the Jargon project.">
+                <img src="Images/Jargon.svg">
+                <h3>Jargon</h3>
+                <h4>
+                    A responsive RPG inspired app for learning a new language and communicating with others on both
+                    desktop and
+                    mobile screens
+                </h4>
+            </section>
+        </div>
+    </main>
+    <footer id="react-footer-container"></footer>
+</body>
+
+</html>

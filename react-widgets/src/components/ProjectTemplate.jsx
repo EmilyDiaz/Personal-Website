@@ -1,26 +1,50 @@
 
 
 export default function ProjectTemplate(props) {
+    const tools = [
+        props.alt1,
+        props.alt2,
+        props.alt3,
+        props.alt4,
+        props.alt5,
+        props.alt6,
+    ].filter(Boolean)
+
     return (
         <div className="project">
             <a href={props.projecturl}>
-                <div className="projecttemplate" id={props.projectid} tabIndex="0"></div>
+                <div className="projecttemplate" id={props.projectid} tabIndex="0">
+                    <div className="tagrow">
+                        {props.stickername ? <div className="sticker">{props.stickername}</div> : null}
+                        {props.status ? (
+                            <div className="status-tag">
+                                {['shipped'].some((value) => props.status?.toLowerCase().includes(value)) ? (
+                                    <span className="status-dot shipped"></span>
+                                ) : null}
+                                {['on hold'].some((value) => props.status?.toLowerCase().includes(value)) ? (
+                                    <span className="status-dot on-hold"></span>
+                                ) : null}
+                                {props.status}
+                            </div>
+                        ) : null}
+                    </div>
+                </div>
             </a>
             <div className="projectdescription">
                 <h3 tabIndex="0">{props.projectname} </h3>
+                <p tabIndex="0"><strong>{props.dates}</strong></p>
                 <p tabIndex="0">
                     {props.projectdescription}
                 </p>
-                <div className="tools">
-                    <img src="Images/Tools.svg" tabIndex="0"></img>
-                    <p tabIndex="0">Tools:</p>
-                    <img src={props.tool1} tabIndex="0" alt={props.alt1}></img>
-                    <img src={props.tool2} tabIndex="0" alt={props.alt2}></img>
-                    <img src={props.tool3} tabIndex="0" alt={props.alt3}></img>
-                    <img src={props.tool4} tabIndex="0" alt={props.alt4}></img>
-                    <img src={props.tool5} tabIndex="0" alt={props.alt5}></img>
-                    <img src={props.tool6} tabIndex="0" alt={props.alt6}></img>
-                </div>
+                {tools.length > 0 ? (
+                    <div className="tools">
+                        {tools.map((tool, index) => (
+                            <span key={index} className="tooltag" tabIndex="0">
+                                {tool}
+                            </span>
+                        ))}
+                    </div>
+                ) : null}
             </div>
         </div>
     )

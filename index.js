@@ -3,7 +3,11 @@ const welcomeMessageEl = document.getElementById("welcomeMessage");
 
 
 window.addEventListener('load', () => {
-  const boozallenproject = document.getElementById("boozallenproject");
+  const correspondenceproject = document.getElementById("correspondenceproject");
+  const reassigncasesproject = document.getElementById("reassigncasesproject");
+  const decisionevaluationsproject = document.getElementById("decisionevaluationsproject");
+  const hearingproject = document.getElementById("hearingproject");
+  const designsystemproject = document.getElementById("designsystemproject");
   const jargonproject = document.getElementById("jargonproject");
   const datagenproject = document.getElementById("datagenproject");
   const onboardingproject = document.getElementById("onboardingproject");
@@ -11,7 +15,11 @@ window.addEventListener('load', () => {
   const scannerproject = document.getElementById("scannerproject");
   const reach4helpproject = document.getElementById("reach4helpproject");
 
-  ProjectAnimation(boozallenproject);
+  ProjectAnimation(reassigncasesproject);
+  ProjectAnimation(correspondenceproject);
+  ProjectAnimation(decisionevaluationsproject);
+  ProjectAnimation(hearingproject);
+  ProjectAnimation(designsystemproject);
   ProjectAnimation(jargonproject);
   ProjectAnimation(xdappproject);
   ProjectAnimation(datagenproject);

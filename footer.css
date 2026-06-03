@@ -1,0 +1,21 @@
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 2em;
+    border-top: 2px solid var(--primary-color)
+}
+
+canvas:hover {
+    cursor: grab;
+}
+
+#graphicsLeft {
+    display: flex;
+    margin-left: 20px;
+}
+
+#graphicsLeft>a>img {
+    width: 40px;
+}

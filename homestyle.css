@@ -1,4 +1,6 @@
 @import"sharedstyles.css";
+@import "header.css";
+@import "footer.css";
 
 h1 {
     color: var(--primary-color);
@@ -68,16 +70,96 @@ h3 {
     height: 400px;
     background-position: center;
     padding: 2em 4em;
+    position: relative;
+    overflow: hidden;
 }
 .projecttemplate:hover{
     cursor: pointer;
 }
-#boozallenproject{
-    background-image: url(Images/BoozAllenLogo.svg);
+.tagrow{
+    display: flex;
+    gap: 0.75rem;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+}
+#reassigncasesproject{
+    background-image: url(Images/ReassignCasesHomeCover.svg);
     background-size: 90%;
     background-repeat: no-repeat;
 
 }
+ #decisionevaluationsproject{
+    background-image: url(Images/DecisionEvalHomeCover.svg);
+    background-size: 90%;
+    background-repeat: no-repeat;
+
+}
+#correspondenceproject{
+    background-image: url(Images/CorrespondenceHomeCover.svg);
+    background-size: 90%;
+    background-repeat: no-repeat;
+
+}
+#hearingproject{
+    background-image: url(Images/HearingsHomeCover.svg);
+    background-size: 90%;
+    background-repeat: no-repeat;
+
+}
+#designsystemproject{
+    background-image: url(Images/DesignSystemHomeCover.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+
+.sticker{
+    background-color: rgba(255, 255, 255, 0.92);
+    color: rgba(20, 44, 40, 0.95);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75em 1em;
+    border-radius: 999px;
+    border: 1px solid rgba(20, 44, 40, 0.1);
+}
+
+.status-tag{
+    background-color: rgba(20, 44, 40, 0.95);
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75em 1em;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.status-dot{
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.status-dot.shipped{
+    background-color: #38b000;
+}
+
+.status-dot.on-hold{
+    background-color: #d00000;
+}
+
 #xdappproject{
     
     background-image: url(Images/X&D\ Advisor\ Hub\ App.svg);
@@ -149,6 +231,19 @@ h3 {
     flex-wrap: wrap;
     width: 100%;
     gap: 10px;
+}
+
+.tooltag {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 0.9rem;
+    background: rgba(40, 64, 80, 0.1);
+    color: rgba(20, 44, 40, 0.95);
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: 1px solid rgba(20, 44, 40, 0.12);
 }
 
 .project>img {

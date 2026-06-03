@@ -1,0 +1,30 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+header>nav {
+    display: flex;
+}
+
+header>nav>a {
+    text-wrap-mode: nowrap;
+}
+
+header>a>h4 {
+    font-family: 'Pixelify-SemiBold', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 0;
+}
+
+header>a:hover {
+    text-decoration: none;
+}
+
+.dropdown-content{
+    display: none;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
