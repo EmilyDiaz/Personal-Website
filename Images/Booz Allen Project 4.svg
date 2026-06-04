@@ -1,9 +1,9 @@
 <svg width="1446" height="906" viewBox="0 0 1446 906" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g clip-path="url(#clip0_2996_96209)">
 <rect x="3" y="3" width="1440" height="900" rx="50" fill="#288071" fill-opacity="0.3"/>
-<rect x="-53" y="409" width="722" height="494" fill="url(#pattern0_2996_96209)"/>
-<rect x="828" y="384" width="721" height="605" fill="url(#pattern1_2996_96209)"/>
-<rect x="363" y="185" width="719" height="536" fill="url(#pattern2_2996_96209)"/>
+<rect x="-54.5" y="407.5" width="725" height="497" fill="url(#pattern0_2996_96209)" stroke="#288071" stroke-width="3"/>
+<rect x="826.5" y="382.5" width="724" height="608" fill="url(#pattern1_2996_96209)" stroke="#288071" stroke-width="3"/>
+<rect x="361.5" y="183.5" width="722" height="539" fill="url(#pattern2_2996_96209)" stroke="#288071" stroke-width="3"/>
 </g>
 <rect x="1.5" y="1.5" width="1443" height="903" rx="51.5" stroke="#288071" stroke-width="3"/>
 <defs>
