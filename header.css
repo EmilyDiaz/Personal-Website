@@ -6,11 +6,26 @@ header {
 
 header>nav {
     display: flex;
+    gap: 30px;
+}
+
+header>a {
+    text-decoration: none;
 }
 
 header>nav>a {
-    text-wrap-mode: nowrap;
+    text-decoration: none;
+    color: black;
+    padding-right: 30px;
 }
+
+header>nav>a:hover {
+    text-decoration: overline;
+    text-decoration-color: var(--primary-color);
+    text-decoration-thickness: 3px;
+}
+
+
 
 header>a>h4 {
     font-family: 'Pixelify-SemiBold', Tahoma, Geneva, Verdana, sans-serif;
@@ -21,10 +36,53 @@ header>a:hover {
     text-decoration: none;
 }
 
-.dropdown-content{
-    display: none;
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
-.dropdown:hover .dropdown-content{
-    display: block;
+.dropdown:hover {
+    cursor: pointer;
+}
+
+#project-navbar:hover {
+    text-decoration: overline;
+    text-decoration-color: var(--primary-color);
+    text-decoration-thickness: 3px;
+
+}
+
+.dropdown-content {
+    display: none;
+    max-width: 300px;
+    margin-top: 10px;
+    box-shadow: 5px 5px 10px 5px lightgray;
+    background-color: white;
+    position: absolute;
+}
+
+.dropdown-content>ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.dropdown-content>ul>li {
+    padding: 10px;
+
+}
+
+.dropdown-content>ul>li>a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.dropdown-content>ul>li>a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown-content>ul>li:hover {
+    background-color: rgba(183, 223, 216, 0.2);
 }

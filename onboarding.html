@@ -7,7 +7,8 @@
     <title>Emily Diaz-Onboarding Figma Flow</title>
     <link rel="stylesheet" href="sharedstyles.css">
     <link rel="stylesheet" href="onboarding.css">
-    <script src="common.js" async></script>
+    <link rel="stylesheet" href="projectpages.css" <script src="common.js" async>
+    </script>
     <script type="module">
         import RefreshRuntime from 'http://localhost:5173/@react-refresh'
         RefreshRuntime.injectIntoGlobalHook(window)
@@ -21,15 +22,15 @@
 <body>
     <header id=react-header-container></header>
     <main>
-        <section>
-            <h1 tabindex="0">Onboarding Guide</h1>
-            <section class="projectimage">
-                <img src="Images/Onboarding Flow.png"
-                    alt="Cover image of this project. Shows the dashboard interface of the powerapp." tabindex="0">
-            </section>
-            <section class="summary">
-                <h2 tabindex="0">Problem</h2>
-                <p tabindex="0"> New hires in the project wait about 3 months or so just to have access to the <strong> *proprietary
+        <section class="projectheader" data-name="Onboarding Guide" data-img="/Images/Onboarding Flow.png"
+            data-alt="Cover image of this project. Shows the dashboard interface of the powerapp.">
+        </section>
+        <section class="projectsummary">
+            <h2>Overview</h2>
+            <section class="problem">
+                <h3>Problem</h3>
+                <p> New hires in the project wait about 3 months or so just to have access to the <strong>
+                        *proprietary
                         software </strong> they'll be working with in the duration of the project contract.
                     While this is required due to PII and security concerns for the production environment, these
                     concerns do not affect the demo environment of this software and delay
@@ -37,17 +38,11 @@
                     higher-level concepts of the software as well as the design system of the
                     software.
                 </p>
-
-                <p class="disclaimer" tabindex="0">*Further details on this project cannot be discuss due to NDA. Any information
-                    presented has
-                    been generalized and some parts have even been redacted with the use of lorem ipsum or blur effects.
-                </p>
             </section>
-            <section class="topsection">
-
+            <section class="projectdetails">
                 <section class="challenges">
-                    <h2 tabindex="0">Challenges faced</h2>
-                    <ul>
+                    <h3>Challenges faced</h3>
+                   <ul>
                         <li tabindex="0">
                             Working around the limitations of Figma (a lack of scrolling prototypes as well as no save
                             states) while still trying to make the guide as intuitive as possible
@@ -58,18 +53,21 @@
                         </li>
                     </ul>
                 </section>
-                <section class="timeline">
-                    <h2 tabindex="0">Timeline</h2>
-                    <h3 tabindex="0">March 2024-March 2025</h3>
-                    <p tabindex="0">
-                        Officialy released for use on May 2024, but kept iterating on it up until March 2025
-                    </p>
+                <section class="timelinerole">
+                    <section class="timeline">
+                        <h3>Timeline</h3>
+                        <p>March 2024-March 2025</p>
+                    </section>
+                    <section class="role">
+                        <h3>Role</h3>
+                        <p>0-1 Ownership. I researched, designed, and developed this project into
+                                        production.</p>
+                    </section>
                 </section>
-
             </section>
             <section class="solution">
-                <h2 tabindex="0">Solution</h2>
-                <p tabindex="0"> Create a onboarding learning guide that incorporates the following elements:
+                <h3>Solution breakdown</h3>
+                   <p tabindex="0"> Create a onboarding learning guide that incorporates the following elements:
                 <ul>
                     <li tabindex="0">
                         An overview of the appeals process in the Department of Veterans' Affairs (Information available
@@ -85,6 +83,8 @@
                 </ul>
                 </p>
             </section>
+        </section>
+
             <p tabindex="0">
                 The main chunk of this project was set up using Figma and the flow was divided into two parts:
             </p>
@@ -99,7 +99,8 @@
 
             <div class="asidediv">
                 <img src="Images/Tooltip example.png"
-                    alt="Image of the tooltips that were used to guide users through the different steps and pages." tabindex="0">
+                    alt="Image of the tooltips that were used to guide users through the different steps and pages."
+                    tabindex="0">
                 <aside>
                     <p tabindex="0">
                         The second part consisted of mockups of the software's demo environment. Advanced prototyping,
@@ -117,7 +118,8 @@
                 <img src="Images/OnboardingFlowcutfile-ezgif.com-crop.gif"
                     style="border: 2px solid var(--primary-color); border-radius:5px" tabindex="0">
                 <aside>
-                    <p tabindex="0">Here we see a clip of how the first part of the guide was set up. Unfortuately, given the NDA,
+                    <p tabindex="0">Here we see a clip of how the first part of the guide was set up. Unfortuately,
+                        given the NDA,
                         the second step
                         with glimpses of
                         the software cannot be shown. But in the clip we see the user progressing through the flow and
@@ -152,7 +154,7 @@
                     </p>
                 </aside>
             </div>
-            <div class="comparisonaside">
+            <div class="comparison">
 
                 <img src="Images/Glossary app start.png"
                     alt="Image of the glossary app when the user first loads into Powerapps." tabindex="0">
@@ -184,7 +186,8 @@
                     </h4>
                 </section>
                 <section class="otherprojects" id="jargonimage">
-                    <img src="Images/Jargon.svg" alt="Click on this image to navigate to the Jargon project." tabindex="0">
+                    <img src="Images/Jargon.svg" alt="Click on this image to navigate to the Jargon project."
+                        tabindex="0">
                     <h3 tabindex="0">Jargon</h3>
                     <h4 tabindex="0">
                         A responsive RPG inspired app for learning a new language and communicating with others on both
@@ -193,7 +196,7 @@
                 </section>
             </div>
 
-           <footer id="react-footer-container"></footer>
+            <footer id="react-footer-container"></footer>
 
 
 </body>

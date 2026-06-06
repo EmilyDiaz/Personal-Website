@@ -10,13 +10,22 @@ export default function Header(){
                 <div className="dropdown-content" tabIndex="0">
                     <ul>
                         <li>
-                            <a href="BoozAllenCaseStudy.html">Booz Allen Hamilton</a>
+                            <a href="DecisionEvaluations.html">Decision Evaluations (BAH)</a>
+                        </li>
+                        <li>
+                            <a href="Hearing.html">Hearings (BAH)</a>
+                        </li>
+                        <li>
+                            <a href="ReassignCases.html">Reassign Cases (BAH)</a>
+                        </li>
+                        <li>
+                            <a href="Correspondence.html">Correspondence (BAH)</a>
+                        </li>
+                        <li>
+                            <a href="DesignSystem.html">Design System (BAH)</a>
                         </li>
                         <li>
                             <a href="powerapp.html">X&D Advisor App</a>
-                        </li>
-                        <li>
-                            <a href="jargon.html">Jargon</a>
                         </li>
                         <li>
                             <a href="onboarding.html">Onboarding Guide</a>
@@ -25,7 +34,10 @@ export default function Header(){
                             <a href="reach4help.html">Reach4Help</a>
                         </li>
                         <li>
-                            <a href="plugins.html">Plugins</a>
+                            <a href="dummydata.html">Dummy Data Generator</a>
+                        </li>
+                        <li>
+                            <a href="prototypescanner.html">Prototype Variable Scanner</a>
                         </li>
                     </ul>
 

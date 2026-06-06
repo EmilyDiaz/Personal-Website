@@ -8,8 +8,9 @@ import ProjectHeader from './components/ProjectHeader'
 // Find the placeholder elements on your existing website
 const headerRoot = document.getElementById('react-header-container')
 const footerRoot = document.getElementById('react-footer-container')
-const projectheaderRoot=document.querySelectorAll('.projectheader')
-const projectRoot = document.querySelector('.project-container')
+const projectheaderRoot = document.querySelectorAll('.projectheader')
+const designprojectRoot = document.getElementById('designprojectContainer')
+const devprojectRoot = document.getElementById('devprojectContainer')
 
 // Mount components safely if the elements exist on the current page
 if (headerRoot) {
@@ -29,24 +30,68 @@ if (footerRoot) {
   )
 }
 
-if(projectheaderRoot){
-projectheaderRoot.forEach((element) => {
-  // Mount an independent React instance into each individual HTML wrapper
-  ReactDOM.createRoot(element).render(
-    <React.StrictMode>
-      <ProjectHeader
-        projecttitleimg={element.dataset.titleimg}
-        projectname={element.dataset.name}
-        projectimg={element.dataset.img}
-        alt={element.dataset.alt}
-      />
-    </React.StrictMode>
-  )
-})}
+if (projectheaderRoot) {
+  projectheaderRoot.forEach((element) => {
+    // Mount an independent React instance into each individual HTML wrapper
+    ReactDOM.createRoot(element).render(
+      <React.StrictMode>
+        <ProjectHeader
+          projecttitleimg={element.dataset.titleimg}
+          projectname={element.dataset.name}
+          projectimg={element.dataset.img}
+          alt={element.dataset.alt}
+        />
+      </React.StrictMode>
+    )
+  })
+}
 
-if (projectRoot) {
-  ReactDOM.createRoot(projectRoot).render(
+if (designprojectRoot) {
+  ReactDOM.createRoot(designprojectRoot).render(
     <React.StrictMode>
+      <ProjectTemplate
+        projecturl="DecisionEvaluations.html"
+        projectid="decisionevaluationsproject"
+        projectname="Booz Allen Hamilton Case Studies"
+        dates="2025-2026"
+        stickername="NDA"
+        status="Shipped"
+        projectdescription="Created a new feature for accessing and editing attorney performance reviews."
+        tool1="/Images/Mural.svg"
+        alt1="Mural"
+        tool2="/Images/FigmaLogo.svg"
+        alt2="Figma"
+      />
+
+      <ProjectTemplate
+        projecturl="Hearing.html"
+        projectid="hearingproject"
+        projectname="Booz Allen Hamilton Case Study"
+        dates="2024-2025"
+        stickername="NDA"
+        status="Shipped"
+        projectdescription="Created a new queue for tracking Veteran hearings more efficiently. Enhanced scheduling workflows to prevent
+        erroneous or double booking of Veteran hearings. "
+        tool1="/Images/Mural.svg"
+        alt1="Mural"
+        tool2="/Images/FigmaLogo.svg"
+        alt2="Figma"
+      />
+
+      <ProjectTemplate
+        projecturl="ReassignCases.html"
+        projectid="reassigncasesproject"
+        projectname="Booz Allen Hamilton Case Study"
+        dates="2023-2024"
+        stickername="NDA"
+        status="Shipped"
+        projectdescription="Enhancement of supervisor and employee workflows for Veteran Health Administration."
+        tool1="/Images/Mural.svg"
+        alt1="Mural"
+        tool2="/Images/FigmaLogo.svg"
+        alt2="Figma"
+      />
+
       <ProjectTemplate
         projecturl="Correspondence.html"
         projectid="correspondenceproject"
@@ -61,46 +106,6 @@ if (projectRoot) {
         alt2="Figma"
       />
       <ProjectTemplate
-        projecturl="ReassignCases.html"
-        projectid="reassigncasesproject"
-        projectname="Booz Allen Hamilton Case Study"
-        dates="2023-2024"
-        stickername="NDA"
-        status="Shipped"
-        projectdescription="Enhancement of supervisor and employee workflows for Veteran Health Administration."
-        tool1="/Images/Mural.svg"
-        alt1="Mural"
-        tool2="/Images/FigmaLogo.svg"
-        alt2="Figma"
-      />
-       <ProjectTemplate
-        projecturl="Hearing.html"
-        projectid="hearingproject"
-        projectname="Booz Allen Hamilton Case Study"
-        dates="2024-2025"
-        stickername="NDA"
-        status="Shipped"
-        projectdescription="Created a new queue for tracking Veteran hearings more efficiently. Enhanced scheduling workflows to prevent
-        erroneous or double booking of Veteran hearings. "
-        tool1="/Images/Mural.svg"
-        alt1="Mural"
-        tool2="/Images/FigmaLogo.svg"
-        alt2="Figma"
-      />
-       <ProjectTemplate
-        projecturl="DecisionEvaluations.html"
-        projectid="decisionevaluationsproject"
-        projectname="Booz Allen Hamilton Case Studies"
-        dates="2025-2026"
-        stickername="NDA"
-        status="Shipped"
-        projectdescription="Created a new feature for accessing and editing attorney performance reviews."
-        tool1="/Images/Mural.svg"
-        alt1="Mural"
-        tool2="/Images/FigmaLogo.svg"
-        alt2="Figma"
-      />
-       <ProjectTemplate
         projecturl="DesignSystem.html"
         projectid="designsystemproject"
         projectname="Booz Allen Hamilton Case Studies"
@@ -111,6 +116,37 @@ if (projectRoot) {
         tool2="/Images/FigmaLogo.svg"
         alt2="Figma"
       />
+     
+      <ProjectTemplate
+        projecturl="reach4help.html"
+        projectid="reach4helpproject"
+        projectname="Reach 4 Help"
+        projectdescription="Designed a mobile app version of browser application for Reach4Help, a nonprofit dedicated to connecting users to aid & resources for disaster relief."
+        tool1="/Images/Mural.svg"
+        alt1="Mural"
+        tool2="/Images/FigmaLogo.svg"
+        alt2="Figma"
+      />
+      {/*<ProjectTemplate
+        projecturl="jargon.html"
+        projectid="jargonproject"
+        projectname="Jargon"
+        projectdescription="Designed a gamified, language learning app for my Google UX certifcation."
+        tool1="/Images/Mural.svg"
+        alt1="Mural"
+        tool2="/Images/FigmaLogo.svg"
+        alt2="Figma"
+      />*/}
+      
+
+    </React.StrictMode>
+  )
+}
+
+if (devprojectRoot) {
+  ReactDOM.createRoot(devprojectRoot).render(
+    <React.StrictMode>
+  
       <ProjectTemplate
         projecturl="powerapp.html"
         projectid="xdappproject"
@@ -141,26 +177,7 @@ if (projectRoot) {
         tool4="/Images/FigmaLogo.svg"
         alt4="Figma"
       />
-      <ProjectTemplate
-        projecturl="reach4help.html"
-        projectid="reach4helpproject"
-        projectname="Reach 4 Help"
-        projectdescription="Designed a mobile app version of browser application for Reach4Help, a nonprofit dedicated to connecting users to aid & resources for disaster relief."
-        tool1="/Images/Mural.svg"
-        alt1="Mural"
-        tool2="/Images/FigmaLogo.svg"
-        alt2="Figma"
-      />
-      <ProjectTemplate
-        projecturl="jargon.html"
-        projectid="jargonproject"
-        projectname="Jargon"
-        projectdescription="Designed a gamified, language learning app for my Google UX certifcation."
-        tool1="/Images/Mural.svg"
-        alt1="Mural"
-        tool2="/Images/FigmaLogo.svg"
-        alt2="Figma"
-      />
+
       <ProjectTemplate
         projecturl="plugins.html"
         projectid="datagenproject"
@@ -196,3 +213,4 @@ if (projectRoot) {
     </React.StrictMode>
   )
 }
+

@@ -1,17 +1,22 @@
-//logic for hex and cashew's sprites on the footer
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.process-imgs img[alt]').forEach((img) => {
+    const existingCaption = img.nextElementSibling;
+    if (existingCaption && existingCaption.classList.contains('alt-caption')) {
+      return;
+    }
+
+    const caption = document.createElement('p');
+    caption.className = 'alt-caption';
+    caption.textContent = img.alt;
+    img.insertAdjacentElement('afterend', caption);
+  });
+});
 
 
 
 
-/* id captures for home page animations*/
-const projectdropdown=document.querySelector(".dropdown");
-const dropdowncontent=document.querySelector(".dropdown-content");
-let boozallenimg = document.getElementById("boozallenimg");
-let jargonimage = document.getElementById("jargonimage");
-let xdappimage = document.getElementById("xdappimg");
-let imggrow = document.querySelector(".imggrow");
-let imgnormal = document.querySelector(".imgnormal")
-let cursorhover=document.querySelector(".cursorhover")
+
+
 
 
 let otherprojects = document.querySelector(".otherprojectsdiv");
@@ -77,6 +82,8 @@ if (otherprojects && boozallenimg && xdappimage) {
   SetOtherProjects(boozallenimg, "BoozAllenCaseStudy.html");
   SetOtherProjects(xdappimage, "powerapp.html")
 };
+
+
 
 //functions
 

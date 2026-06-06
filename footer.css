@@ -19,3 +19,14 @@ canvas:hover {
 #graphicsLeft>a>img {
     width: 40px;
 }
+
+@media screen and (max-width:500px) {
+    footer{
+        flex-direction: column;
+    }
+    footer>p{
+        width: 100%;
+    }
+}
+
+

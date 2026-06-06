@@ -6,9 +6,7 @@
 main{
     margin: 2em;
 }
-li{
-    font-size: 20px;
-}
+
 .projectsummary{
     display: flex;
     flex-direction: column;
@@ -66,11 +64,21 @@ li{
     flex-direction: column;
     gap: 20px;
     padding:2em;
+    
 
 }
 
-.process-imgs img{
+
+.process-imgs img:not(.modalImg){
     width: 100%;
+}
+
+.process-imgs img {
+    border: 2px solid var(--primary-color);
+}
+
+.modalImg{
+    width: 50%;
 }
 
 .projectdetails {
@@ -96,4 +104,36 @@ li{
     padding: 20px;
     margin-bottom: 50px;
     border-top:rgba(40, 128, 113, .2) 2px solid;
+}
+
+.alt-caption {
+    font-size: 0.9rem;
+    color: rgba(20, 44, 40, 0.9);
+    background: #f4f4f4;
+    padding: 0.85rem 1rem;
+    margin: 0.75rem 0 1.5rem;
+    line-height: 1.45;
+    border-radius: 0.75rem;
+    max-width: 100%;
+}
+
+.alt-caption::before {
+    font-weight: 700;
+    color: rgba(20, 44, 40, 0.7);
+}
+
+.process-imgs img + .alt-caption,
+.projectheader + .alt-caption,
+.otherprojects img + .alt-caption,
+.projectsummary img + .alt-caption {
+    margin-top: 0.75rem;
+}
+
+@media screen and (max-width:900px){
+    .projectdetails{
+        flex-direction: column;
+    }
+    .challenges{
+        width: 100%;
+    }
 }

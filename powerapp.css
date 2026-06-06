@@ -10,7 +10,11 @@ main{
 .winner>h4 {
     width: 100%;
 }
-
+a{
+    text-decoration: none;
+    color: black;
+    padding-right: 30px;
+}
 
 
 #styleguideaside {
@@ -29,25 +33,25 @@ main{
     color: black;
 }
 
-#comparison {
+.comparisonimages {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     align-items: center;
-    gap: 20px;
+    width: 100%;
+    gap: 40px;
 }
 
-#comparison>figure>img {
-    max-width: 600px;
-    max-height: 500px;
-    width: 100%;
-}
+
 figure{
     margin: 0;
+    width: 50%;
 }
 figcaption{
     font-style: italic;
     width: 80%;
+}
+figure>img {
+    width: 100%;
 }
 
 #xduserflow {
@@ -87,14 +91,10 @@ figcaption{
 }
 
 @media screen and (max-width:1197px) {
-    #comparison {
+    .comparisonimages {
         flex-direction: column;
     }
 
-    #comparison>img {
-        width: 100%;
-
-    }
 }
 
 @media screen and (max-width:500px) {

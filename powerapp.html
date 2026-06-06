@@ -7,7 +7,8 @@
     <title>Emily Diaz-X&D Advisor Hub PowerApp</title>
     <link rel="stylesheet" href="sharedstyles.css">
     <link rel="stylesheet" href="powerapp.css">
-    <script src="common.js" async></script>
+    <link rel="stylesheet" href="projectpages.css"> <script src="common.js" async>
+    </script>
     <script type="module">
         import RefreshRuntime from 'http://localhost:5173/@react-refresh'
         RefreshRuntime.injectIntoGlobalHook(window)
@@ -31,23 +32,17 @@
     </div>
     <main>
         </section>
-        <section>
-            <h1 tabindex="0">X&D Advisor Hub Powerapp</h1>
-            <section class="projectimage">
-                <img src="Images/X&D Advisor Hub App.svg"
-                    alt="Cover image of this project. Shows the dashboard interface of the powerapp." tabindex="0">
+            <section class="projectheader" data-name="X&D Advisor Hub Powerapp"
+                data-img="/Images/X&D Advisor Hub App.svg"
+                data-alt="Cover image of this project. Shows the dashboard interface of the powerapp.">
             </section>
+
             <div class="asidewrapper">
                 <nav>
                     <ul>
                         <li>
-                            <a href="#problem">
-                                <h4>PROBLEM</h4>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#c&t">
-                                <h4>CHALLENGES & TIMELINE</h4>
+                            <a href="#overview">
+                                <h4>OVERVIEW</h4>
                             </a>
                         </li>
                         <li>
@@ -80,11 +75,7 @@
                                 <h4>LOOKING AHEAD</h4>
                             </a>
                         </li>
-                        <li>
-                            <a href="#reflections">
-                                <h4>REFLECTIONS</h4>
-                            </a>
-                        </li>
+            
                         <li>
                             <a href="#otherprojects">
                                 <h4>OTHER PROJECTS</h4>
@@ -93,580 +84,586 @@
                     </ul>
                 </nav>
                 <div class="contentwrapper">
-                    <section class="summary" id="problem">
-                        <h2 tabindex="0">Problem</h2>
-                        <p tabindex="0">The Advisor Hub has been active since 2023 but there has been a lack of
-                            consistent engagement
-                            from
-                            the users. Upon joining the X&D advisor hub as a lead, I suggested introducing a way of
-                            tracking
-                            advisorship progress for both user types
-                            and gamifying this progress in order to improve both aquistion and retention. This whole
-                            effort
-                            was
-                            a volunteer and leadership experience through the X&D Advisor Hub at Booz Allen; this was
-                            not
-                            part
-                            of my job and had to be after hours.
-                        </p>
-                    </section>
-                    <section class="topsection" id="c&t">
-                        <section class="challenges">
-                            <h2 tabindex="0">Challenges faced</h2>
-                            <ul>
-                                <li tabindex="0">Limitations of Powerapps and Powerautomate licenses prevented the pull
-                                    of
-                                    information
-                                    from
-                                    Microsoft Bookings.
-                                </li>
-                                <li tabindex="0">Microsoft Bookings' email format did not provide the information
-                                    expected in order
-                                    to
-                                    automate pull of information for advisees and advisors. </li>
-                            </ul>
-                        </section>
-                        <section class="timeline">
-                            <h2 tabindex="0">Timeline</h2>
-                            <h3 tabindex="0">October 2025-Ongoing</h3>
-                            <p tabindex="0">
-                                <strong>Released to production. Undergoing pilot testing by users.</strong>
+                    <section class="projectsummary" id="overview">
+                        <h2>Overview</h2>
+                        <section class="problem">
+                            <h3>Problem</h3>
+                            <p> The Advisor Hub has been active since 2023 but there has been a lack of
+                                consistent engagement
+                                from
+                                the users. Upon joining the X&D advisor hub as a lead, I suggested introducing a way of
+                                tracking
+                                advisorship progress for both user types
+                                and gamifying this progress in order to improve both aquistion and retention. This whole
+                                effort
+                                was
+                                a volunteer and leadership experience through the X&D Advisor Hub at Booz Allen; this
+                                was
+                                not
+                                part
+                                of my job and had to be after hours.
                             </p>
                         </section>
-                    </section>
-
-
-                    <section class="solution">
-                        <h2 tabindex="0">Solution</h2>
-                        <p tabindex="0"> Utlize the Microsoft ecosystem to create a gamified dashboard that is not only
-                            easily
-                            accessible
-                            for
-                            users, but is secure on our company network and is able to be developed fast and easily by
-                            someone
-                            with a non-programmer background.
-                        </p>
-
-                        <section class="userflow" id="existing">
-                            <h3 tabindex="0">1. Understanding the existing process</h3>
-                            <p tabindex="0"> The main process for a user to participate in the X&D Advisor Hub program
-                                was, as
-                                follows:
-                            <ol>
-                                <li tabindex="0">
-                                    Attend an onboarding session hosted at a quarterly cadence by the Advisor Hub
-                                </li>
-                                <li tabindex="0">
-                                    Recieve an onboarding survey from the Hub and input information such as, but not
-                                    limited
-                                    to:
-                                    <ul>
-                                        <li tabindex="0">
-                                            Level of UX/UI experience
-                                        </li>
-                                        <li tabindex="0">
-                                            Whether the user would like to be an advisor, advisee, or both.
-                                        </li>
-                                        <li tabindex="0">
-                                            What topics the user would like to advise or be advised on.
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li tabindex="0">
-                                    Once the survey was submitted, the user would then recieve a link to the X&D
-                                    Bookings
-                                    Page,
-                                    a site where onboarded users can set their schedules as advisors and schedule
-                                    meetings
-                                    as
-                                    advisees with an advisor of their choosing.
-                                </li>
-                            </ol>
-                            </p>
-                            <p tabindex="0">
-                                The users who were onboarded as advisees or both could then go to the Bookings Page and
-                                select a
-                                topic they wished to have advising in. Once a topic was selected, they could select a
-                                preferred
-                                meeting date and time. A dropdown would then conditionally populate advisors based on
-                                selections
-                                the user made in the previous two sections.
-                            </p>
-                            <p tabindex="0">
-                                Once the user submits their scheduled meeting, they get a calender invite through their
-                                Microsoft Outlook.
-                            </p>
-                            <section class="componentimages">
-                                <img src="Images/Bookings-Step 1.svg"
-                                    alt="Shows the first step of the Bookings page, where a user can select a service."
-                                    tabindex="0">
-                                <img src="Images/Bookings-Step 2.svg"
-                                    alt="Shows the second step of the Bookings page, where a user can select the date and time of their appointment."
-                                    tabindex="0">
-                                <img src="Images/Booking-Step 3.svg"
-                                    alt="Shows the third step of the Bookings page, where a user can add their details such as their name and email."
-                                    tabindex="0">
+                        <section class="projectdetails">
+                            <section class="challenges">
+                                <h3>Challenges faced</h3>
+                                <ul>
+                                    <li tabindex="0">Limitations of Powerapps and Powerautomate licenses prevented the
+                                        pull
+                                        of
+                                        information
+                                        from
+                                        Microsoft Bookings.
+                                    </li>
+                                    <li tabindex="0">Microsoft Bookings' email format did not provide the information
+                                        expected in order
+                                        to
+                                        automate pull of information for advisees and advisors. </li>
+                                </ul>
                             </section>
-
+                            <section class="timelinerole">
+                                <section class="timeline">
+                                    <h3>Timeline</h3>
+                                    <p>October 2025-Present</p>
+                                </section>
+                                <section class="role">
+                                    <h3>Role</h3>
+                                    <p>0-1 Ownership. I researched, designed, and developed this project into
+                                        production.</p>
+                                </section>
+                            </section>
                         </section>
-                        <section class="userflow" id="research">
-                            <h3 tabindex="0">2. How to enhance the process?</h3>
-                            <p tabindex="0">
-                                Each advisor would have their own Bookings account, with a central Bookings calendar
-                                shared
-                                amongst the advisors. Therefore, they could see upcoming meetings with an advisee,
-                                but there was no easy way to track which advisees they had meetings with. Furthermore,
-                                the
-                                definition of what is considered an advisee or advisor could be subjective based on the
-                                user:
-                            <div class="highlight">
-                                <h4>Is it enough to consider a person an advisee or advisor with just one meeting? Or
-                                    would
-                                    there have to be more of an established cadence?</h4>
-                            </div>
-
+                        <section class="solution">
+                            <h3>Solution breakdown</h3>
+                            <p tabindex="0"> Utlize the Microsoft ecosystem to create a gamified dashboard that is not
+                                only
+                                easily
+                                accessible
+                                for
+                                users, but is secure on our company network and is able to be developed fast and easily
+                                by
+                                someone
+                                with a non-programmer background.
                             </p>
-                            <p tabindex="0">
-                                There was also a lack of continous engagement, where there'd be a meeting set up only
-                                once
-                                between different sets of advisee and advisor, as well as a lack of onboarding interest.
-                            </p>
-                            <p tabindex="0">
-                                I began to research the definition of gamification, what elements or standards it
-                                consisted
-                                of,
-                                and examples of gamification in the workplace.
-                                Once I had a proper understanding of that, I looked for options that were compliant with
-                                the
-                                security standards at Booz Allen:
-                            </p>
-                            <div class="highlight">
-                                <h4 tabindex="0">1. Workday</h4>
-                                <p tabindex="0"> Workday is currently used internally by Booz Allen staff. It has its
-                                    own version of
-                                    a
-                                    mentorship program, where advisees can send advisorships requests to potential
-                                    advisors.
-                                </p>
-                                <p tabindex="0">There was also a badge system in place, but these badges were tied to
-                                    learning
-                                    courses
-                                    and
-                                    not related to the native mentorship functionality. </p>
-                                <p tabindex="0">However, Workday did not offer alot of customization options or
-                                    potential for growth.
-                                    Navigation to different areas of Workday, including these mentorship and badges
-                                    functionality, seemed rather daunting and was too large in scale for what the
-                                    program
-                                    was
-                                    looking for in a dashboard. </p>
-                            </div>
-                            <div class="highlight">
-                                <h4 tabindex="0">2. Figma Make</h4>
-                                <p tabindex="0">
-                                    Figma Make is Figma's attempt at using AI and is currently still in Beta. Pairing
-                                    the
-                                    versatility of Make with integrated connections such as Supabase offered an enticing
-                                    possibility.
-                                </p>
-                                <p tabindex="0">Furthermore, Make would offer a friendlier environment to the other
-                                    leads given their
-                                    non-programmer backgrounds. The only caveat to this would be the learning curve to
-                                    learn
-                                    SQL
-                                    for using Supabase.</p>
-                                <p tabindex="0">However, I could not find any documentation from my company attesting to
-                                    whether or
-                                    not
-                                    Supabase was safe to use. The other issue would be how long it would take,
-                                    realistically, to
-                                    get to MVP state of the app given the learning curve for SQL.</p>
-                            </div>
-                            <div class="highlight">
-                                <div class="winner">
-                                    <h4 tabindex="0">3. Microsoft Ecosystem</h4>
-                                    <img src="Images/WINNER.svg" tabindex="0">
-
-                                </div>
-
-                                <p tabindex="0">
-                                    Microsoft 365 and all of its products are offered to our company and personnel is
-                                    added
-                                    to
-                                    our company through the use of Entra ID. Given this, the connectivity of all
-                                    products
-                                    and
-                                    personnel information access
-                                    made this option a seamless one. The use of Powerapps, Sharepoint List, Bookings,
-                                    and
-                                    Powerautomate could all be used to create the dashboard we'd want but there were
-                                    some
-                                    caveats:
-                                </p>
-                                <p tabindex="0">
-                                    The original idea of connecting Microsoft Bookings to either Powerapps or
-                                    Powerautomate in order to access meeting information was quickly squashed given the
-                                    type
-                                    of
-                                    license Booz Allen had for all three of these products. Microsoft Outlook had to be
-                                    relied
-                                    on instead.
-                                </p>
-                                <p tabindex="0">
-                                    There would also be a similar learning curve for learning how to use PowerFX, the
-                                    psuedo
-                                    coding language for Powerapps, in order to expand the MVP.
-                                    Powerautomate would also have its own learning curve, though expectations of change
-                                    after
-                                    initial flow setup were low.
-                                </p>
-                            </div>
-                            <p tabindex="0"> Inspiration for the app camme mainly from video games and persona cards,
-                                the latter
-                                being an
-                                artifact used by UX designers on the early stages of design.
-                                Persona cards are used to identify key user types and humanize these user types, often
-                                giving
-                                them a name, personality, and likes and dislikes.
-                            </p>
-                            <div class="componentimages">
-                                <img src="Images/Persona.svg" alt="An example of a persona card." tabindex="0">
-                                <img src="Images/stats allocation.svg"
-                                    alt="A screenshot of rpg mechanics in the game Clair Obscur: Expedition 33."
-                                    tabindex="0">
-                                <img src="Images/badges.svg" alt="A screenshot of a badges page in a Steam profile."
-                                    tabindex="0">
-
-                            </div>
-                            <div id="xduserflow">
-                                <aside>
-                                    <h4 tabindex="0">Mapping the user flow</h4>
-                                    <p tabindex="0">
-                                        A flow was drafted in mural to represent the MVP state of the app. MVP
-                                        functionalties
-                                        and UI
-                                        screens were proposed to the other leads with the use of mockups and this flow.
-                                        Once
-                                        shown, the
-                                        MVP state was agreed upon by the leads, with some proposed, initial changes. MVP
-                                        functionalities
-                                        included, but not limited to:
-                                    <ul>
-                                        <li tabindex="0">
-                                            List of advisees and advisors
-                                        </li>
-                                        <li tabindex="0">
-                                            A way to send feedback to the X&D Hub about the program and the app
-                                        </li>
-                                        <li tabindex="0">
-                                            Goals
-                                        </li>
-                                    </ul>
-                                    <p tabindex="0">A complete view of the MVP User flow can be seen to the right, with
-                                        a key to
-                                        illustrate
-                                        different components of the flow, such as UI/UX (Pages, Components,User Action)
-                                        and
-                                        Logic (Data checks/code).
-                                    </p>
-                                    <p tabindex="0">
-                                        A star on a component represents future ideas or implementations, such as the
-                                        use of
-                                        Powerautomate to
-                                        grab user responses submitted from the onboarding survey to populate information
-                                        onto
-                                        the Powerapp.
-                                    </p>
-                                </aside>
-                                <img src="Images/X&D Advisor User Flow MVP.png"
-                                    alt="A userflow map that shows the MVP state of the application. Breaks down different processes of the app at a high-level."
-                                    tabindex="0">
-                            </div>
-                            <p tabindex="0">Screenshots below focus on different sections of the MVP Useflow Mural: </p>
-                            <div class="componentimages">
-                                <img src="Images/X&D Advisor Hub App UserFlow Login Checks.png"
-                                    alt="A section of the user flow showing the log in portion of the flow."
-                                    tabindex="0">
-                                <img src="Images/X&D Advisor Hub App UserFlow Dashboard.png"
-                                    alt="A section of the user flow showing the dashboard portion of the flow."
-                                    tabindex="0">
-                                <img src="Images/X&D Advisor Hub App UseFlow Dashboard Elements.png"
-                                    alt="A section of the user flow that expands the different dashboard elements."
-                                    tabindex="0">
-                                <img src="Images/X&D Advisor Hub App UserFlow Assignments page.png"
-                                    alt="A section of the flow that touches on the Assignment page of the flow."
-                                    tabindex="0">
-                            </div>
-                            <div class="comparisonaside">
-                                <aside>
-                                    <h4 tabindex="0">Early mockups</h4>
-                                    <p tabindex="0">
-                                        UI wise, we weighed what we wanted the dashboard to focus on: The logged in
-                                        user's
-                                        profile or the logged in user's advisees and advisors information.
-                                    </p>
-                                    <p tabindex="0">
-                                        Both pieces of information were crucial, but we ultimately decided to put the
-                                        logged
-                                        in
-                                        user's profile front and center, with navigation to advisee and advisor pages.
-                                    </p>
-                                </aside>
-                                <div id="comparison">
-                                    <figure>
-                                        <img src="Images/V1.svg"
-                                            alt="A version of the app UI that focuses primarly of the logged in user's stats."
-                                            tabindex="0">
-                                        <figcaption tabindex="0">Dashboard focused on the logged in user's profile.
-                                        </figcaption>
-                                    </figure>
-                                    <h2 tabindex="0">VS</h2>
-                                    <figure>
-                                        <img src="Images/V2.svg"
-                                            alt="A version of the app UI that puts more focus on the assignments a user has."
-                                            tabindex="0">
-                                        <figcaption tabindex="0">Dashboard focused on the logged in user's advisees and
-                                            advisors information.</figcaption>
-                                    </figure>
-
-                                </div>
-
-                            </div>
-                            <h4 tabindex="0">Style guide</h4>
-                            <div id="styleguideaside">
-                                <aside>
-                                    <h4 tabindex="0">Typography</h4>
-                                    <p tabindex="0">Segoe UI was the selected font for the app, providing high
-                                        readbility while
-                                        maintaining a
-                                        professional air for the app.</p>
-                                    <h4 tabindex="0">Color</h4>
-                                    <p tabindex="0">Main color used was a seafoam green with white as the backdrop.
-                                        Green is often
-                                        associated
-                                        with success and learning, but a softer green was chosen as to create a more
-                                        soothing
-                                        environment, less focused on competition. It was also chosen to be less loud
-                                        since
-                                        it is
-                                        a work environment but strong enough that it meets 508 color contrast standards
-                                        against
-                                        a white background.</p>
-                                    <h4 tabindex="0">Avatars</h4>
-                                    <p tabindex="0">Avatars were designed by me. I wanted a very diverse group of images
-                                        for users to pick from,
-                                        in a pixel art aethestic to keep the app fun and engaging.
-                                    </p>
-                                </aside>
-                                <div class="highlight">
-                                    <img src="Images/Style Guide.svg" alt="An image of the styles used in the app."
-                                        tabindex="0">
-                                    <img src="Images/avatars for mentorapp.png" width=100%
-                                        alt="An image of all the different avatars a user could pick from."
-                                        tabindex="0">
-                                </div>
-                            </div>
-                        </section>
-                        <section class="userflow" id="production">
-                            <h3 tabindex="0">3. Troubleshooting and production release</h3>
-                            <p tabindex="0">
-                                I realized very quickly that some of the initial ideas for the PowerApp would have to be
-                                axed or
-                                altered as I worked through the logic. Initially, the thought was to have session counts
-                                per
-                                quarter and be able to
-                                record who the user had had sessions with per quarter and whether that person was an
-                                advisor
-                                or
-                                an advisee.
-                            </p>
-                            <p tabindex="0">
-                                Unfortuately, as mentioned before, the lack of a Microsoft Bookings connection rendered
-                                this
-                                impossible.
-                                The formatting of Bookings emails in Microsoft Outlook put all information concerning
-                                who
-                                the
-                                meeting was booked with in HTML format, as part of the body of that message.
-                                When attempting to capture only the body of the email, Powerapps would cut out part of
-                                it-specifically, the part where it mentioned the advisor's name. It was not fully
-                                explored
-                                whether this same issue would happen on the opposite end; if an advisor was using the
-                                app,
-                                would
-                                the advisee's name in that email be captured or not.
-                                However, the capture of the name in HTML format would only be one part of the problem.
-                                There
-                                would still have to be a match between that string of text and existing users in the
-                                company.
-                            </p>
-                            <p tabindex="0">
-                                This was a major hurdle and was not considered worth the effort to delve deeper or
-                                devote so
-                                many man hours to it with the possiblity of all of it leading to a dead end.
-                                Although not favorable, the metric of sessions count per user had to be scrapped. And
-                                without
-                                the ability to automatically captures advisees and advisors from Outlook, a new solution
-                                had
-                                to
-                                be put in place for the advisors and advisees list that would appear on Powerapps.
-                            </p>
-
-                            <p tabindex="0">
-                                A question was previously posed:
-                            </p>
-                            <div class="highlight">
-                                <h4 tabindex="0">Is it enough to consider a person an advisee or advisor with just one
-                                    meeting? Or
-                                    would
-                                    there have to be more of an established cadence?</h4>
-                            </div>
-                            <img src="Images/Assignments Dashboard.png"
-                                alt="An image showing how the assignments page looks like if the logged in user is both an adisor and advisee."
-                                width="100%" tabindex="0">
-                            <p tabindex="0">
-                                Although not as automated and a bit reductive, we introduced the solution of having
-                                users
-                                manually add advisors and advisees to their assignments page.
-                                This would put the answer to the question above into the user's hands, allowing them to
-                                determine what they defined as an advisor or an advisee. Session count per advisor or
-                                advisee
-                                could not be collected anymore,
-                                but we could collect information such as job role, likes, dislikes, level, badges and
-                                avatar to
-                                still
-                                act as topic starters and spark a bit of a conversation. The design for the assignments
-                                page also stays true to the original inspiration: the persona card.
-                            </p>
-                            <p tabindex="0">
-                                Another thing that was axed, though more of a minor removal, was the ability for the
-                                user to
-                                click a button and be linked to their Bookings schedule. Again, it would not be possible
-                                due
-                                to
-                                the lack of a Microsoft Bookings connector.
-                            </p>
-                            <p tabindex="0">
-                                Otherwise, all of the other features seen in the mockups were either retained, modified,
-                                or
-                                slightly enhanced. For example, the average rating in the form of stars was modified to
-                                instead
-                                be text-based feedback, that could be collected anonymously as well.
-                            </p>
-                            <p tabindex="0">
-                                One enhancement not originally in the mockups was the introduction of a profile setup
-                                wizard.
-                                These three pages would guide the users on their first time opening the app, allowing
-                                them
-                                to
-                                add information about themselves on the wizard they could otherwise add later but could
-                                help
-                                ease them into the app's functionality.
-                            </p>
-                            <div class="componentimages">
-                                <img src="Images/Profile Setup 1.svg"
-                                    alt="Shows step 1 of the profile setup flow in the app. Here users can select whether they are an advisee, advisor, or both. They can also enter likes and dislikes."
-                                    tabindex="0">
-                                <img src="Images/Profile Setup 2.svg"
-                                    alt="Shows step 2 of the profile setup flow. Here, the user can select a sprite or their own Office 365 image to serve as their avatar picture."
-                                    tabindex="0">
-                                <img src="Images/Profile Setup 3.svg"
-                                    alt="Shows step 3 of the profile setup flow. Here, the user can use to allocate points to different UI and UX oriented attributes."
-                                    tabindex="0">
-                            </div>
-
-                            <p tabindex="0">This profile setup flow also included tracking at what step the user left
-                                off, so they
-                                could
-                                resume their progress instead of starting over and so the app could recognize that the
-                                user
-                                could not be taken to the dashboard until this flow was complete.
-                            </p>
-                            <p tabindex="0">
-                                Powerautomate was also utilized to automate the permissions for both the Powerapp and
-                                the
-                                required Sharepoint Lists. The flow would be triggered by the survey response, which
-                                would then create a new entry in the Personnel Sharepoint list for the user who
-                                submitted the response.
-                                Creating this new user row sets off the Powerautomate logic of sharing all four lists
-                                and
-                                the
-                                powerapp to the new user.
-                            </p>
-                            <img src="Images/Powerautomate Flow.png"
-                                alt="An image showing how the assignments page looks like if the logged in user is both an adisor and advisee."
-                                width="100%" tabindex="0">
-                            <p tabindex="0">
-                                This app was first tested by the leads and then released on March 13th, 2026 to both
-                                advisees
-                                and advisors who had signed up to the program before the creation of the app. It is
-                                currently
-                                slated to be released to new advisees and advisors each quarter, introduced to them
-                                during
-                                the
-                                onboarding presentation.
-                            </p>
-
                         </section>
                     </section>
 
-                    <section class="reflections" id="lookingahead">
-                        <h2 tabindex="0">Looking ahead</h2>
-                        <p tabindex="0">Part of the feedback functionality was to give users a way to not only report
-                            bugs or rate
-                            advisors,
-                            but to also post ideas on what they'd like to see in future releases of the app.
-                            Given that the app was recently released, it hasn't gained much traction yet but looking
-                            ahead
-                            the
-                            leads team already has a few ideas as to how to improve the app. If these same ideas are
-                            requested
-                            enough by different users,
-                            the leads will implement them. Some ideas already in mind include, but are not limited to:
-                        <ul>
+
+                    <section class="process" id="existing">
+                        <h3 tabindex="0">1. Understanding the existing process</h3>
+                        <p tabindex="0"> The main process for a user to participate in the X&D Advisor Hub program
+                            was, as
+                            follows:
+                        <ol>
                             <li tabindex="0">
-                                Leaderboards that showcase users with highest skill points
+                                Attend an onboarding session hosted at a quarterly cadence by the Advisor Hub
                             </li>
                             <li tabindex="0">
-                                A kudos system that allows users to gift other users skill points and is displayed as a
-                                badge or
-                                trophy with a counter on it
+                                Recieve an onboarding survey from the Hub and input information such as, but not
+                                limited
+                                to:
+                                <ul>
+                                    <li tabindex="0">
+                                        Level of UX/UI experience
+                                    </li>
+                                    <li tabindex="0">
+                                        Whether the user would like to be an advisor, advisee, or both.
+                                    </li>
+                                    <li tabindex="0">
+                                        What topics the user would like to advise or be advised on.
+                                    </li>
+                                </ul>
                             </li>
                             <li tabindex="0">
-                                Seasonal challenges that would provide bonus XP or other awards when completed
+                                Once the survey was submitted, the user would then recieve a link to the X&D
+                                Bookings
+                                Page,
+                                a site where onboarded users can set their schedules as advisors and schedule
+                                meetings
+                                as
+                                advisees with an advisor of their choosing.
                             </li>
-                        </ul>
+                        </ol>
                         </p>
-                    </section>
-                    <section class="reflections" id="reflections">
-                        <h2 tabindex="0">Reflections</h2>
-                        <p tabindex="0"> Coming soon...</p>
-                    </section>
-                    <h3 tabindex="0"> Check out other projects:</h3>
-                    <div class="otherprojectsdiv" id="otherprojects">
-                        <section class="otherprojects" id="boozallenimg">
-                            <img src="Images/BoozAllenLogo.svg"
-                                alt="Click on this image to navigate to the Booz Allen case studies." tabindex="0">
-                            <h3 tabindex="0">Booz Allen Case Studies</h3>
-                            <h4 tabindex="0">
-                                Ongoing enhancement of a proprietary case management software to improve the Appeals
-                                process for
-                                U.S Veterans
-                            </h4>
-                        </section>
-                        <section class="otherprojects" id="jargonimage">
-                            <img src="Images/Jargon.svg" alt="Click on this image to navigate to the Jargon project."
+                        <p tabindex="0">
+                            The users who were onboarded as advisees or both could then go to the Bookings Page and
+                            select a
+                            topic they wished to have advising in. Once a topic was selected, they could select a
+                            preferred
+                            meeting date and time. A dropdown would then conditionally populate advisors based on
+                            selections
+                            the user made in the previous two sections.
+                        </p>
+                        <p tabindex="0">
+                            Once the user submits their scheduled meeting, they get a calender invite through their
+                            Microsoft Outlook.
+                        </p>
+                        <section class="componentimages">
+                            <img src="Images/Bookings-Step 1.svg"
+                                alt="Shows the first step of the Bookings page, where a user can select a service."
                                 tabindex="0">
-                            <h3 tabindex="0">Jargon</h3>
-                            <h4 tabindex="0">
-                                A responsive RPG inspired app for learning a new language and communicating with others
-                                on both
-                                desktop and mobile screens
-                            </h4>
+                            <img src="Images/Bookings-Step 2.svg"
+                                alt="Shows the second step of the Bookings page, where a user can select the date and time of their appointment."
+                                tabindex="0">
+                            <img src="Images/Booking-Step 3.svg"
+                                alt="Shows the third step of the Bookings page, where a user can add their details such as their name and email."
+                                tabindex="0">
                         </section>
-                    </div>
-                </div>
-            </div>
+
+                    </section>
+                    <section class="process" id="research">
+                        <h3 tabindex="0">2. How to enhance the process?</h3>
+                        <p tabindex="0">
+                            Each advisor would have their own Bookings account, with a central Bookings calendar
+                            shared
+                            amongst the advisors. Therefore, they could see upcoming meetings with an advisee,
+                            but there was no easy way to track which advisees they had meetings with. Furthermore,
+                            the
+                            definition of what is considered an advisee or advisor could be subjective based on the
+                            user:
+                        <div class="highlight">
+                            <h4>Is it enough to consider a person an advisee or advisor with just one meeting? Or
+                                would
+                                there have to be more of an established cadence?</h4>
+                        </div>
+
+                        </p>
+                        <p tabindex="0">
+                            There was also a lack of continous engagement, where there'd be a meeting set up only
+                            once
+                            between different sets of advisee and advisor, as well as a lack of onboarding interest.
+                        </p>
+                        <p tabindex="0">
+                            I began to research the definition of gamification, what elements or standards it
+                            consisted
+                            of,
+                            and examples of gamification in the workplace.
+                            Once I had a proper understanding of that, I looked for options that were compliant with
+                            the
+                            security standards at Booz Allen:
+                        </p>
+                        <div class="highlight">
+                            <h4 tabindex="0">1. Workday</h4>
+                            <p tabindex="0"> Workday is currently used internally by Booz Allen staff. It has its
+                                own version of
+                                a
+                                mentorship program, where advisees can send advisorships requests to potential
+                                advisors.
+                            </p>
+                            <p tabindex="0">There was also a badge system in place, but these badges were tied to
+                                learning
+                                courses
+                                and
+                                not related to the native mentorship functionality. </p>
+                            <p tabindex="0">However, Workday did not offer alot of customization options or
+                                potential for growth.
+                                Navigation to different areas of Workday, including these mentorship and badges
+                                functionality, seemed rather daunting and was too large in scale for what the
+                                program
+                                was
+                                looking for in a dashboard. </p>
+                        </div>
+                        <div class="highlight">
+                            <h4 tabindex="0">2. Figma Make</h4>
+                            <p tabindex="0">
+                                Figma Make is Figma's attempt at using AI and is currently still in Beta. Pairing
+                                the
+                                versatility of Make with integrated connections such as Supabase offered an enticing
+                                possibility.
+                            </p>
+                            <p tabindex="0">Furthermore, Make would offer a friendlier environment to the other
+                                leads given their
+                                non-programmer backgrounds. The only caveat to this would be the learning curve to
+                                learn
+                                SQL
+                                for using Supabase.</p>
+                            <p tabindex="0">However, I could not find any documentation from my company attesting to
+                                whether or
+                                not
+                                Supabase was safe to use. The other issue would be how long it would take,
+                                realistically, to
+                                get to MVP state of the app given the learning curve for SQL.</p>
+                        </div>
+                        <div class="highlight">
+                            <div class="winner">
+                                <h4 tabindex="0">3. Microsoft Ecosystem</h4>
+                                <img src="Images/WINNER.svg" tabindex="0">
+
+                            </div>
+
+                            <p tabindex="0">
+                                Microsoft 365 and all of its products are offered to our company and personnel is
+                                added
+                                to
+                                our company through the use of Entra ID. Given this, the connectivity of all
+                                products
+                                and
+                                personnel information access
+                                made this option a seamless one. The use of Powerapps, Sharepoint List, Bookings,
+                                and
+                                Powerautomate could all be used to create the dashboard we'd want but there were
+                                some
+                                caveats:
+                            </p>
+                            <p tabindex="0">
+                                The original idea of connecting Microsoft Bookings to either Powerapps or
+                                Powerautomate in order to access meeting information was quickly squashed given the
+                                type
+                                of
+                                license Booz Allen had for all three of these products. Microsoft Outlook had to be
+                                relied
+                                on instead.
+                            </p>
+                            <p tabindex="0">
+                                There would also be a similar learning curve for learning how to use PowerFX, the
+                                psuedo
+                                coding language for Powerapps, in order to expand the MVP.
+                                Powerautomate would also have its own learning curve, though expectations of change
+                                after
+                                initial flow setup were low.
+                            </p>
+                        </div>
+                        <p tabindex="0"> Inspiration for the app camme mainly from video games and persona cards,
+                            the latter
+                            being an
+                            artifact used by UX designers on the early stages of design.
+                            Persona cards are used to identify key user types and humanize these user types, often
+                            giving
+                            them a name, personality, and likes and dislikes.
+                        </p>
+                        <div class="componentimages">
+                            <img src="Images/Persona.svg" alt="An example of a persona card." tabindex="0">
+                            <img src="Images/stats allocation.svg"
+                                alt="A screenshot of rpg mechanics in the game Clair Obscur: Expedition 33."
+                                tabindex="0">
+                            <img src="Images/badges.svg" alt="A screenshot of a badges page in a Steam profile."
+                                tabindex="0">
+
+                        </div>
+                        <div id="xduserflow">
+                            <aside>
+                                <h4 tabindex="0">Mapping the user flow</h4>
+                                <p tabindex="0">
+                                    A flow was drafted in mural to represent the MVP state of the app. MVP
+                                    functionalties
+                                    and UI
+                                    screens were proposed to the other leads with the use of mockups and this flow.
+                                </p>
+                                <p tabindex="0">
+                                    Once
+                                    shown, the
+                                    MVP state was agreed upon by the leads, with some proposed, initial changes. MVP
+                                    functionalities
+                                    included, but not limited to:
+                                </p>
+                                <ul>
+                                    <li tabindex="0">
+                                        List of advisees and advisors
+                                    </li>
+                                    <li tabindex="0">
+                                        A way to send feedback to the X&D Hub about the program and the app
+                                    </li>
+                                    <li tabindex="0">
+                                        Goals
+                                    </li>
+                                </ul>
+                            </aside>
+                            <img src="Images/X&D Advisor User Flow MVP.png"
+                                alt="A userflow map that shows the MVP state of the application. Breaks down different processes of the app at a high-level."
+                                tabindex="0">
+                        </div>
+                         <p tabindex="0">A complete view of the MVP User flow can be seen to the right, with
+                                    a key to
+                                    illustrate
+                                    different components of the flow, such as UI/UX (Pages, Components,User Action)
+                                    and
+                                    Logic (Data checks/code).
+                                </p>
+                                <p tabindex="0">
+                                    A star on a component represents future ideas or implementations, such as the
+                                    use of
+                                    Powerautomate to
+                                    grab user responses submitted from the onboarding survey to populate information
+                                    onto
+                                    the Powerapp.
+                                </p>
+                        <p tabindex="0">Screenshots below focus on different sections of the MVP Useflow Mural: </p>
+                        <div class="componentimages">
+                            <img src="Images/X&D Advisor Hub App UserFlow Login Checks.png"
+                                alt="A section of the user flow showing the log in portion of the flow." tabindex="0">
+                            <img src="Images/X&D Advisor Hub App UserFlow Dashboard.png"
+                                alt="A section of the user flow showing the dashboard portion of the flow."
+                                tabindex="0">
+                            <img src="Images/X&D Advisor Hub App UseFlow Dashboard Elements.png"
+                                alt="A section of the user flow that expands the different dashboard elements."
+                                tabindex="0">
+                            <img src="Images/X&D Advisor Hub App UserFlow Assignments page.png"
+                                alt="A section of the flow that touches on the Assignment page of the flow."
+                                tabindex="0">
+                        </div>
+                        <div class="comparison">
+                            <aside>
+                                <h4 tabindex="0">Early mockups</h4>
+                                <p tabindex="0">
+                                    UI wise, we weighed what we wanted the dashboard to focus on: The logged in
+                                    user's
+                                    profile or the logged in user's advisees and advisors information.
+                                </p>
+                                <p tabindex="0">
+                                    Both pieces of information were crucial, but we ultimately decided to put the
+                                    logged
+                                    in
+                                    user's profile front and center, with navigation to advisee and advisor pages.
+                                </p>
+                            </aside>
+                            <div class="comparisonimages">
+                                <figure>
+                                    <img src="Images/V1.svg"
+                                        alt="A version of the app UI that focuses primarly of the logged in user's stats."
+                                        tabindex="0">
+                                    <figcaption tabindex="0">V1: Dashboard focused on the logged in user's profile.
+                                    </figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="Images/V2.svg"
+                                        alt="A version of the app UI that puts more focus on the assignments a user has."
+                                        tabindex="0">
+                                    <figcaption tabindex="0">V2: Dashboard focused on the logged in user's advisees and
+                                        advisors information.</figcaption>
+                                </figure>
+
+                            </div>
+
+                        </div>
+                        <h4 tabindex="0">Style guide</h4>
+                        <div id="styleguideaside">
+                            <aside>
+                                <h4 tabindex="0">Typography</h4>
+                                <p tabindex="0">Segoe UI was the selected font for the app, providing high
+                                    readbility while
+                                    maintaining a
+                                    professional air for the app.</p>
+                                <h4 tabindex="0">Color</h4>
+                                <p tabindex="0">Main color used was a seafoam green with white as the backdrop.
+                                    Green is often
+                                    associated
+                                    with success and learning, but a softer green was chosen as to create a more
+                                    soothing
+                                    environment, less focused on competition. It was also chosen to be less loud
+                                    since
+                                    it is
+                                    a work environment but strong enough that it meets 508 color contrast standards
+                                    against
+                                    a white background.</p>
+                                <h4 tabindex="0">Avatars</h4>
+                                <p tabindex="0">Avatars were designed by me. I wanted a very diverse group of images
+                                    for users to pick from,
+                                    in a pixel art aethestic to keep the app fun and engaging.
+                                </p>
+                            </aside>
+                            <div class="highlight">
+                                <img src="Images/Style Guide.svg" alt="An image of the styles used in the app."
+                                    tabindex="0">
+                                <img src="Images/avatars for mentorapp.png" width=100%
+                                    alt="An image of all the different avatars a user could pick from." tabindex="0">
+                            </div>
+                        </div>
+                    </section>
+                    <section class="process" id="production">
+                        <h3 tabindex="0">3. Troubleshooting and production release</h3>
+                        <p tabindex="0">
+                            I realized very quickly that some of the initial ideas for the PowerApp would have to be
+                            axed or
+                            altered as I worked through the logic. Initially, the thought was to have session counts
+                            per
+                            quarter and be able to
+                            record who the user had had sessions with per quarter and whether that person was an
+                            advisor
+                            or
+                            an advisee.
+                        </p>
+                        <p tabindex="0">
+                            Unfortuately, as mentioned before, the lack of a Microsoft Bookings connection rendered
+                            this
+                            impossible.
+                            The formatting of Bookings emails in Microsoft Outlook put all information concerning
+                            who
+                            the
+                            meeting was booked with in HTML format, as part of the body of that message.
+                            When attempting to capture only the body of the email, Powerapps would cut out part of
+                            it-specifically, the part where it mentioned the advisor's name. It was not fully
+                            explored
+                            whether this same issue would happen on the opposite end; if an advisor was using the
+                            app,
+                            would
+                            the advisee's name in that email be captured or not.
+                            However, the capture of the name in HTML format would only be one part of the problem.
+                            There
+                            would still have to be a match between that string of text and existing users in the
+                            company.
+                        </p>
+                        <p tabindex="0">
+                            This was a major hurdle and was not considered worth the effort to delve deeper or
+                            devote so
+                            many man hours to it with the possiblity of all of it leading to a dead end.
+                            Although not favorable, the metric of sessions count per user had to be scrapped. And
+                            without
+                            the ability to automatically captures advisees and advisors from Outlook, a new solution
+                            had
+                            to
+                            be put in place for the advisors and advisees list that would appear on Powerapps.
+                        </p>
+
+                        <p tabindex="0">
+                            A question was previously posed:
+                        </p>
+                        <div class="highlight">
+                            <h4 tabindex="0">Is it enough to consider a person an advisee or advisor with just one
+                                meeting? Or
+                                would
+                                there have to be more of an established cadence?</h4>
+                        </div>
+                        <img src="Images/Assignments Dashboard.png"
+                            alt="An image showing how the assignments page looks like if the logged in user is both an adisor and advisee."
+                            width="100%" tabindex="0">
+                        <p tabindex="0">
+                            Although not as automated and a bit reductive, we introduced the solution of having
+                            users
+                            manually add advisors and advisees to their assignments page.
+                            This would put the answer to the question above into the user's hands, allowing them to
+                            determine what they defined as an advisor or an advisee. Session count per advisor or
+                            advisee
+                            could not be collected anymore,
+                            but we could collect information such as job role, likes, dislikes, level, badges and
+                            avatar to
+                            still
+                            act as topic starters and spark a bit of a conversation. The design for the assignments
+                            page also stays true to the original inspiration: the persona card.
+                        </p>
+                        <p tabindex="0">
+                            Another thing that was axed, though more of a minor removal, was the ability for the
+                            user to
+                            click a button and be linked to their Bookings schedule. Again, it would not be possible
+                            due
+                            to
+                            the lack of a Microsoft Bookings connector.
+                        </p>
+                        <p tabindex="0">
+                            Otherwise, all of the other features seen in the mockups were either retained, modified,
+                            or
+                            slightly enhanced. For example, the average rating in the form of stars was modified to
+                            instead
+                            be text-based feedback, that could be collected anonymously as well.
+                        </p>
+                        <p tabindex="0">
+                            One enhancement not originally in the mockups was the introduction of a profile setup
+                            wizard.
+                            These three pages would guide the users on their first time opening the app, allowing
+                            them
+                            to
+                            add information about themselves on the wizard they could otherwise add later but could
+                            help
+                            ease them into the app's functionality.
+                        </p>
+                        <div class="componentimages">
+                            <img src="Images/Profile Setup 1.svg"
+                                alt="Shows step 1 of the profile setup flow in the app. Here users can select whether they are an advisee, advisor, or both. They can also enter likes and dislikes."
+                                tabindex="0">
+                            <img src="Images/Profile Setup 2.svg"
+                                alt="Shows step 2 of the profile setup flow. Here, the user can select a sprite or their own Office 365 image to serve as their avatar picture."
+                                tabindex="0">
+                            <img src="Images/Profile Setup 3.svg"
+                                alt="Shows step 3 of the profile setup flow. Here, the user can use to allocate points to different UI and UX oriented attributes."
+                                tabindex="0">
+                        </div>
+
+                        <p tabindex="0">This profile setup flow also included tracking at what step the user left
+                            off, so they
+                            could
+                            resume their progress instead of starting over and so the app could recognize that the
+                            user
+                            could not be taken to the dashboard until this flow was complete.
+                        </p>
+                        <p tabindex="0">
+                            Powerautomate was also utilized to automate the permissions for both the Powerapp and
+                            the
+                            required Sharepoint Lists. The flow would be triggered by the survey response, which
+                            would then create a new entry in the Personnel Sharepoint list for the user who
+                            submitted the response.
+                            Creating this new user row sets off the Powerautomate logic of sharing all four lists
+                            and
+                            the
+                            powerapp to the new user.
+                        </p>
+                        <img src="Images/Powerautomate Flow.png"
+                            alt="An image showing how the assignments page looks like if the logged in user is both an adisor and advisee."
+                            width="100%" tabindex="0">
+                        <p tabindex="0">
+                            This app was first tested by the leads and then released on March 13th, 2026 to both
+                            advisees
+                            and advisors who had signed up to the program before the creation of the app. It is
+                            currently
+                            slated to be released to new advisees and advisors each quarter, introduced to them
+                            during
+                            the
+                            onboarding presentation.
+                        </p>
+
+                    </section>
+        </section>
+
+        <section class="reflections" id="lookingahead">
+            <h2 tabindex="0">Looking ahead</h2>
+            <p tabindex="0">Part of the feedback functionality was to give users a way to not only report
+                bugs or rate
+                advisors,
+                but to also post ideas on what they'd like to see in future releases of the app.
+                Given that the app was recently released, it hasn't gained much traction yet but looking
+                ahead
+                the
+                leads team already has a few ideas as to how to improve the app. If these same ideas are
+                requested
+                enough by different users,
+                the leads will implement them. Some ideas already in mind include, but are not limited to:
+            <ul>
+                <li tabindex="0">
+                    Leaderboards that showcase users with highest skill points
+                </li>
+                <li tabindex="0">
+                    A kudos system that allows users to gift other users skill points and is displayed as a
+                    badge or
+                    trophy with a counter on it
+                </li>
+                <li tabindex="0">
+                    Seasonal challenges that would provide bonus XP or other awards when completed
+                </li>
+            </ul>
+            </p>
+        </section>
+        <h3 tabindex="0"> Check out other projects:</h3>
+        <div class="otherprojectsdiv" id="otherprojects">
+            <section class="otherprojects" id="boozallenimg">
+                <img src="Images/BoozAllenLogo.svg"
+                    alt="Click on this image to navigate to the Booz Allen case studies." tabindex="0">
+                <h3 tabindex="0">Booz Allen Case Studies</h3>
+                <h4 tabindex="0">
+                    Ongoing enhancement of a proprietary case management software to improve the Appeals
+                    process for
+                    U.S Veterans
+                </h4>
+            </section>
+            <section class="otherprojects" id="jargonimage">
+                <img src="Images/Jargon.svg" alt="Click on this image to navigate to the Jargon project." tabindex="0">
+                <h3 tabindex="0">Jargon</h3>
+                <h4 tabindex="0">
+                    A responsive RPG inspired app for learning a new language and communicating with others
+                    on both
+                    desktop and mobile screens
+                </h4>
+            </section>
+        </div>
+        </div>
+        </div>
         </section>
     </main>
     <footer id="react-footer-container"></footer>

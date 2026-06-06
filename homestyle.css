@@ -13,6 +13,15 @@ h2 {
 h3 {
     color: var(--header-color-primary);
 }
+.imganimationover {
+    transform: translateX(10px) translateY(-20px);
+    transition: .5s ease-in-out;
+}
+
+.imganimationleave {
+    transform: translateX(-10px) translateY(20px);
+    transition: .5s ease-in-out;
+}
 
 #homemain {
     display: flex;
@@ -25,6 +34,7 @@ h3 {
     gap: 60px;
     margin-bottom: 30px;
     border-radius: 5px;
+    width: 100%;
 
 }
 
@@ -57,7 +67,7 @@ h3 {
 }
 
 
-#Projects {
+.Projects {
     margin-bottom: 30px;
     display: flex;
     flex-direction: column;
@@ -199,11 +209,11 @@ h3 {
     background-repeat: no-repeat;
 }
 
-#Projects>h3 {
+.Projects>h3 {
     color: var(--header-color-primary);
 }
 
-.project-container {
+#designprojectContainer, #devprojectContainer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
@@ -297,21 +307,35 @@ height: 300px;
 /*media queries*/
 
 @media  screen and (max-width:1500px) {
-    .project-container{
+    #designprojectContainer, #devprojectContainer{
         grid-template-columns: 1fr 1fr;
     }
 }
 @media screen and (max-width:1000px) {
-    .project-container {
+    #designprojectContainer, #devprojectContainer{
         grid-template-columns: 1fr;
     }
 }
-
+@media screen and (max-width:1280px){
+     #intro-section{
+      flex-direction: column;
+      justify-self: center;
+    }
+    #introDesc>h1{
+        justify-self: center;
+    }
+       #introDesc>p{
+        justify-self: center;
+    }
+    #frogprofile{
+        align-items: center;
+    }
+}
 @media screen and (max-width:600px) {
     video{
         width: 80vw;
     }
-    #Projects {
+    .Projects {
         width: auto;
         padding: 0px;
     }
@@ -322,17 +346,7 @@ height: 300px;
     .separator{
         display: none;
     }
-    #intro-section,#introDesc,
-    #moreDetails {
-      display: block;
-      justify-self: center;
-    }
-    #introDesc>h1{
-        justify-self: center;
-    }
-       #introDesc>p{
-        justify-self: center;
-    }
+   
 
     #aboutme{
         display: block;

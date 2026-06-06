@@ -137,48 +137,12 @@ ul>li {
     padding-bottom: 10px;
 }
 
-a {
-    text-decoration: none;
-    color: black;
-    padding-right: 30px;
-}
-
-a:visited {
-    color: black;
-}
-
-a:hover {
-    text-decoration: overline;
-    text-decoration-color: black;
-    text-decoration-thickness: 3px;
-}
-
-.summary {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    border: solid 2px var(--primary-color);
-    border-radius: 5px;
-    padding: 20px;
-    margin-bottom: 20px;
+li{
+    font-size: 20px;
 }
 
 
-.topsection {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    width: 100%;
-}
-
-.userflow {
-    margin-left: 10px;
-    width: 100%;
-}
-
-
-
-.comparisonaside {
+.comparison {
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -222,10 +186,7 @@ a:hover {
     margin-bottom: 10px;
 }
 
-.projectimage>img {
-    width: 100%;
-    height: 100%;
-}
+
 
 .modal {
     display: none;
@@ -360,27 +321,7 @@ a:hover {
     }
 }
 
-.imganimationover {
-    transform: translateX(10px) translateY(-20px);
-    transition: .5s ease-in-out;
-}
 
-.imganimationleave {
-    transform: translateX(-10px) translateY(20px);
-    transition: .5s ease-in-out;
-}
-
-.imggrow {
-    background-color: rgba(0, 0, 0, 0.106);
-    ;
-    transform: scale(1.05);
-    transition: .5s ease-in-out;
-}
-
-.imgnormal {
-    transform: scale(1);
-    transition: .5s ease-in-out;
-}
 
 .cursorhover {
     cursor: pointer;
@@ -410,36 +351,7 @@ a:hover {
     width: 30%;
     max-width: 200px;
 }
-.dropdown:hover{
-    cursor: pointer;
-}
-.dropdown-content {
-    display: none;
-    margin-top: 10px;
-    box-shadow: 5px 5px 10px 5px lightgray;
-    background-color: white;
-    position: absolute;
-}
 
-.dropdown-content>ul {
-    list-style: none;
-    padding: 0px;
-    margin: 0px;
-}
-
-.dropdown-content>ul>li {
-    padding: 10px;
-
-}
-
-.dropdown-content>ul>li>a {
-    text-decoration: none;
-
-}
-
-.dropdown-content>ul>li:hover {
-    background-color: rgba(183, 223, 216, 0.2);
-}
 
 .asidewrapper {
     display: flex;
@@ -503,20 +415,7 @@ a:hover {
         width: auto
     }
 
-    .topsection {
-        flex-direction: column;
-    }
 
-    /*not the solution*/
-    .topsection>section {
-        width: 88%;
-    }
-    footer{
-        flex-direction: column;
-    }
-    footer>p{
-        width: 100%;
-    }
 }
 
 
