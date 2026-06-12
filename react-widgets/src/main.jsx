@@ -57,9 +57,7 @@ if (designprojectRoot) {
         stickername="NDA"
         status="Shipped"
         projectdescription="Created a new feature for accessing and editing attorney performance reviews."
-        tool1="/Images/Mural.svg"
         alt1="Mural"
-        tool2="/Images/FigmaLogo.svg"
         alt2="Figma"
       />
 
@@ -72,9 +70,7 @@ if (designprojectRoot) {
         status="Shipped"
         projectdescription="Created a new queue for tracking Veteran hearings more efficiently. Enhanced scheduling workflows to prevent
         erroneous or double booking of Veteran hearings. "
-        tool1="/Images/Mural.svg"
         alt1="Mural"
-        tool2="/Images/FigmaLogo.svg"
         alt2="Figma"
       />
 
@@ -86,9 +82,7 @@ if (designprojectRoot) {
         stickername="NDA"
         status="Shipped"
         projectdescription="Enhancement of supervisor and employee workflows for Veteran Health Administration."
-        tool1="/Images/Mural.svg"
         alt1="Mural"
-        tool2="/Images/FigmaLogo.svg"
         alt2="Figma"
       />
 
@@ -100,9 +94,7 @@ if (designprojectRoot) {
         stickername="NDA"
         status="On Hold"
         projectdescription="Created a new mail tracking workflow for Veteran Appeals."
-        tool1="/Images/Mural.svg"
         alt1="Mural"
-        tool2="/Images/FigmaLogo.svg"
         alt2="Figma"
       />
       <ProjectTemplate
@@ -111,9 +103,7 @@ if (designprojectRoot) {
         projectname="Booz Allen Hamilton Case Studies"
         stickername="NDA"
         projectdescription="Enhanced and maintained a VA Design system based library with over 100 components through the use of layout features, variables, components, and AI."
-        tool1="/Images/Mural.svg"
         alt1="Mural"
-        tool2="/Images/FigmaLogo.svg"
         alt2="Figma"
       />
      
@@ -122,9 +112,7 @@ if (designprojectRoot) {
         projectid="reach4helpproject"
         projectname="Reach 4 Help"
         projectdescription="Designed a mobile app version of browser application for Reach4Help, a nonprofit dedicated to connecting users to aid & resources for disaster relief."
-        tool1="/Images/Mural.svg"
         alt1="Mural"
-        tool2="/Images/FigmaLogo.svg"
         alt2="Figma"
       />
       {/*<ProjectTemplate
@@ -152,15 +140,10 @@ if (devprojectRoot) {
         projectid="xdappproject"
         projectname="X&D Advisor Hub Dashboard"
         projectdescription=" Designed and developed a gamified, advisorship tracking application to help increase member aquistion and engagement."
-        tool1="/Images/Chat GPT.svg"
         alt1="ChatGPT"
-        tool2="/Images/Sharepoint.svg"
         alt2="Sharepoint"
-        tool3="/Images/Powerapps Logo.svg"
         alt3="Powerapps"
-        tool4="/Images/Powerautomate.svg"
         alt4="Powerautomate"
-        tool5="/Images/FigmaLogo.svg"
         alt5="Figma"
       />
       <ProjectTemplate
@@ -168,13 +151,9 @@ if (devprojectRoot) {
         projectid="onboardingproject"
         projectname="Onboarding Guide"
         projectdescription="Designed and prototyped a interactive onboarding flow, as well as created a companion glossary with PowerApps, that decreased onboarding time."
-        tool1="/Images/Chat GPT.svg"
         alt1="ChatGPT"
-        tool2="/Images/Sharepoint.svg"
         alt2="Sharepoint"
-        tool3="/Images/Powerapps Logo.svg"
         alt3="Powerapps"
-        tool4="/Images/FigmaLogo.svg"
         alt4="Figma"
       />
 
@@ -183,13 +162,9 @@ if (devprojectRoot) {
         projectid="datagenproject"
         projectname="Dummy Data Generator"
         projectdescription="Coded a figma plugin for generating dummy data appropriate for designs under the Veterans Affairs portfolio. Distributed and tested across teams of more than twenty UX designers. Increased fidelity of wires when handing off to developers."
-        tool1="/Images/Chat GPT.svg"
         alt1="ChatGPT"
-        tool2="/Images/VS Code.svg"
         alt2="VS Code"
-        tool3="/Images/Github.svg"
         alt3="Github"
-        tool4="/Images/FigmaLogo.svg"
         alt4="Figma"
       />
       <ProjectTemplate
@@ -200,13 +175,9 @@ if (devprojectRoot) {
                             Distributed and tested across teams of more than twenty UX designers. Assisted with
                             collaboration
                             between designers."
-        tool1="/Images/Chat GPT.svg"
         alt1="ChatGPT"
-        tool2="/Images/VS Code.svg"
         alt2="VS Code"
-        tool3="/Images/Github.svg"
         alt3="Github"
-        tool4="/Images/FigmaLogo.svg"
         alt4="Figma"
       />
 

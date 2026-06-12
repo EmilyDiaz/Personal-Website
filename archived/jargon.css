@@ -1,0 +1,79 @@
+main{
+    margin: 2em;
+}
+
+img{
+    width: 100%;
+}
+#jargontitle{
+    width: 20%;
+}
+#paperwires{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow:clip;
+    width: 100%;
+    background-color: rgba(0,0, 0, 0.3);
+    border-radius: 10px;
+    align-items: center;
+}
+#paperwires>img{
+    width: 70%;
+    padding: 20px;
+}
+#personas{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#roundone{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#mobileapp{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+#mobileapp>img{
+    width: 100%;
+}
+
+#externalsite{
+    text-decoration: underline;
+    color: blue;
+}
+#externalsite:visited{
+    text-decoration: underline;
+    color: purple;
+}
+
+.pixel{
+    font-family: 'Pixelify-SemiBold',Tahoma,Geneva,Verdana,sans-serif;
+}
+
+.asidewrapper>nav>ul>li>a>h4{
+    font-family: 'Pixelify-SemiBold',Tahoma,Geneva,Verdana,sans-serif;
+}
+
+#jargongif{
+    width: 500px;
+}
+#jargon-goodbye{
+    display: flex;
+}
+#jargon-goodbye>p{
+    width: 50%;
+}
+
+@media screen and (max-width:600px){
+    #jargon-goodbye{
+    display: block
+}
+#jargongif{
+    width: 300px;
+}
+}
