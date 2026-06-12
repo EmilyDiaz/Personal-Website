@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emily Diaz-Booz Allen</title>
+    <link rel="stylesheet" href="projectpages.css">
+    <script src="common.js" async></script>
+    <script type="module">
+        import RefreshRuntime from 'http://localhost:5173/@react-refresh'
+        RefreshRuntime.injectIntoGlobalHook(window)
+        window.$RefreshReg$ = () => { }
+        window.$RefreshSig$ = () => (type) => type
+        window.__vite_plugin_react_preamble_installed__ = true
+    </script>
+    <script type="module" src="http://localhost:5173/src/main.jsx"></script>
+</head>
+
+<body>
+    <header id=react-header-container></header>
+    <main>
+        <section class="projectheader" data-titleimg="/Images/BoozAllenTitle.svg"
+            data-img="/Images/Booz Allen Project 4.svg"
+            data-alt="An image of the fourth case study I've written for Booz Allen.">
+        </section>
+        <section class="projectsummary">
+            <h2>Overview</h2>
+            <section class="problem">
+                <h3>Problem</h3>
+                <p> Appeal hearings are scheduled by hearing coordinators assigned to different regional offices (RO),
+                    and
+                    Veterans are placed into regional
+                    office buckets based on distance. This was creating a bottleneck where hearings that required more
+                    priority were not being scheduled within an appropriate timeframe because
+                    coordinators could only assign to a specific RO or all the timeslots were booke for that RO.
+                </p>
+            </section>
+            <section class="projectdetails">
+                <section class="challenges">
+                    <h3>Challenges faced</h3>
+                    <ul>
+                        <li> I was personally not as familar with this part of the software, given that another UX was
+                            typically the POC for it.</li>
+                        <li> Working with a new development team that works a bit differently than other dev teams
+                            worked with in
+                            the past.</li>
+                        <li> While requirements gathering and ideating the first round of wires for this, UX discovered
+                            a major obstacle with the proposed solution.
+                            A new initiative solving this obstacle was created while still requirements gathering for
+                            this intiative, and UX was also involved with this second intiative.
+                        </li>
+                    </ul>
+                </section>
+                <section class="timelinerole">
+                    <section class="timeline">
+                        <h3>Timeline</h3>
+                        <p>June 2024-July 2025</p>
+                    </section>
+                    <section class="role">
+                        <h3>Role</h3>
+                        <p>UX Designer</p>
+                    </section>
+                </section>
+            </section>
+            <section class="solution">
+                <h3>Solution breakdown</h3>
+                <ul>
+                    <li>Remove the limitation of only scheduling Veterans to a specific RO.</li>
+                    <li>Remove the limitation of assigning hearing coordinators to a specific RO.</li>
+                    <li>Create a priority queue for assigning cases to hearing coordinators.</li>
+                    <li>
+                        Implement a failsafe functionality to prevent double-booking of a timeslot now that RO
+                        assignments have
+                        been removed for hearing coordinators.
+                    </li>
+                </ul>
+            </section>
+
+
+
+        </section>
+        <section class="process">
+            <h2>Process</h2>
+            <h3>1. Mapping out the user flow</h3>
+
+            <p> We approached the requirements gathering phase by meeting up with the stakeholders, getting a better
+                understanding of the ask, and then exploring the existing functionality internally amongst ourselves.
+                The Hearings functionality in the application was mature and we had to further understand how the legacy
+                code worked
+                before altering both the funtionality and the business processes of the stakeholders.
+            <p>
+                From there, we continued with our weekly cadence of stakeholder meetings to continue asking more
+                questions
+                and presenting initial wireframes until we were able to flesh both requirements and wireframes out
+                enough.
+            </p>
+            <p>
+                Unlike past experiences with other initiatives, it was a welcome surprise to see the level of scope
+                constraints the hearings development team had.
+                We worked together with the stakeholders to devise phases of development and stuck to an MVP level for
+                both initiatives. This allowed for a quick delivery
+                of the work.
+            </p>
+
+            <section class="subprocess">
+                <h4>1.Intiative One: The Priority Queue</h4>
+                <p>
+                    A Veteran on a hearing docket was defined as having priority if for example, they were 65 or older.
+                    Or if they had an illness. The level of priority was
+                    determined by several of these factors and a hearing coordinator was required to schedule by
+                    priority.
+                </p>
+                <p>
+                    A priority algorithm was created and supervisors would go into this queue and assign from the top of
+                    this priority list to a hearing coordinator of their choosing.
+                    If the same user had multiple hearings requested that still needed scheduling, but had different
+                    priortity numbers due to an older receipt date, an exception could be made
+                    to group these hearings together and present them as a package to the judge. For this reason, UX and
+                    devs also had to design a multiple hearings functionality.
+                </p>
+
+                <div class="process-imgs">
+                    <img src="Images/HC View.svg"
+                        alt="An image of the proposed user flow for the hearing coordinators.">
+                    <img src="Images/Super View.svg" alt="An image of the proposed user flow for the supervisors.">
+                </div>
+                <p>
+                    Assignment and unassignment functionalties for this intiative were kept very limited so as to
+                    decrease development time. UX had to design
+                    for these limitations while still keeping these two functionalities user-friendly enough. Although
+                    we initally advocated for checkboxes to allow users more control
+                    as to what cases to unassign, we ultimately landed on a middle ground through various feedback and
+                    working sessions with the client.
+                </p>
+
+                <div class="process-imgs">
+                    <img src="Images/assigned tab version 1.svg"
+                        alt="An image of an earlier iteration of the assigned tab.">
+                    <img src="Images/unassign modal one.svg" class="modalImg"
+                        alt="An image of an earlier iteration of the unassign modal">
+                </div>
+                <div class="process-imgs">
+                    <img src="Images/assigned tab final.svg" alt="An image of the final iteration of the assigned tab.">
+                    <img src="Images/unassign modal final.svg" class="modalImg"
+                        alt="An image of the final interation of the unassign modal">
+                </div>
+                <p>
+                    We also opted for keeping assignment functionalities on the same priority queue to decrease
+                    development time and stakeholder cost, as well as less navigation for the user.
+                </p>
+                <div class="process-imgs">
+                    <img src="Images/Queue - Assign Cases.svg"
+                        alt="An image of an earlier iteration of assignment functionality.">
+                    <img src="Images/Assign-Final.svg"
+                        alt="An image of the final iteration of assignment functionality.">
+                </div>
+                <h4>2. Initiative Two: The Locking Mechanism</h4>
+                <p>
+                    The current business practice was that coordinators scheduled hearings in a form, based on what RO
+                    they were assigned to.
+                    During the solutioning of the first intiative, we quickly realized that by lifting the RO
+                    assignments
+                    for Hearing Coordinators, multiple coordinators could be scheduling in the same RO at the same time.
+                </p>
+                <p>
+                    We proposed a brand new functionality for our software: Multi-user editing in a form and locking
+                    fields to prevent editing.
+                </p>
+
+                <div class="process-imgs">
+                    <img src="Images/Locking Flow.svg"
+                        alt="An image of the proposed user flow for the locking mechanism of time slots.">
+                </div>
+
+                <p>
+                    The scheduling form was pre-existing, so UX ideated on how to communicate to users that a timeslot
+                    was locked and allow
+                    users to schedule mutliple hearings for the same veteran without changing too much of the form's
+                    structure.
+                </p>
+
+                <p>
+                    Conditions that needed to be met were, as follows:
+                <ul>
+                    <li>
+                        A user could only have a time slot locked for 15 minutes. How do we account for 15 minutes of
+                        inactivity? What happens when a user's 15 minutes are up?
+                    </li>
+                    <li>
+                        What different areas of the application besides the form could be affected by this new
+                        mechanism?
+                    </li>
+                    <li>
+                        How do we account for a user who schedules a hearing before their 15 minutes are up but need to
+                        schedule more hearings for that same <Var></Var>eteran?
+                    </li>
+                </ul>
+                </p>
+                <p>
+                    At first we tried sticking to existing patterns, like inline errors or tooltips and having a message
+                    pop up on hover of a timeslot.
+                    There were 508 concerns with this approach, however.
+                </p>
+
+                <div class="process-imgs">
+                    <img src="Images/slot locking v1.svg"
+                        alt="An image of the first iteration of the locking mechanism, where messages were hover dependent.">
+                </div>
+                <p>
+                    So we opted for a tradeoff. It would be alot of information tucked into a dropdown option, but the
+                    information was permanent and could be easily read out by a screenreader.
+                </p>
+                <div class="process-imgs">
+                    <img src="Images/slot locking v2.svg"
+                        alt="An image of the locking iteration after a couple of iterations. We're almost getting to the final state here, but its a bit rough still.">
+                </div>
+                
+                <p>
+                   Locked slots would be disabled but still readable and provide a live timer of how long the current user had in that slot.
+                   If a slot were locked by the current user, a blue background would be used to distingush that slot from the rest of the dropdown options.
+                </p>
+                <div class="process-imgs">
+                    <img src="Images/Docket Locking-Final.svg"
+                        alt="An image of the final iteration of the locking mechanism.">
+                        <img src="Images/timer alert 2.svg"
+                        alt="An image of the alert for a user who has locked a slot in the scheduling form.">
+                        <img src="Images/scheduling options.svg"
+                        alt="An image of the different scheduling options, A user could schedule and release their locked slot immediately or choose to hold it for the rest of the 15 minute period to schedule other hearings.">
+                </div>
+                <p>
+                    We also provided live countdowns on alerts for coordinators in other pages throughout the site that were affected by the locking mechanism intiated in the scheduling form.
+                </p>
+                <div class="process-imgs">
+                        <img src="Images/timer alert 1.svg"
+                        alt="An image of the alert for a user who is in a separate but effected form.">
+                </div>
+            </section>
+        </section>
+
+        <section class="reflections">
+            <h2>Reflections</h2>
+            <p>
+                Working on this intiative might have been one of my favorite quarters during Booz Allen. I worked with a development 
+                team that I didn't typically work with but that was a refreshing change of pace. The development team felt more structured
+                and had a better grasp at keeping scope controlled and narrow. If new requests were introduced by either stakeholders or solutioning 
+                discoveries, then these new requests would become their own, bite sized intiatives. 
+            </p>
+            <p>
+                The lead business analyst was the biggest highlight for me, however. Working side by side with him on this intiative taught me 
+                how to better communicate with stakeholders and find out what solutions they really needed, versus what they thought might be the best approach.
+                I found the confidence to lead several of the requirements gathering sessions- with the rest of the teams' support, of course- and that helped me 
+                tie in my designs better as I presented them to stakeholders.
+            </p>
+            <p>
+                I also throughly enjoyed working with the tech lead, who I had worked with before, and having brainstorming sessions with him as to how to best
+                implement the locking mechanism discussed above. I would go on to take these sessions about the locking mechanism and pitch them in the Decision Evaluations
+                project, albiet in a slightly different way.
+            </p>
+        </section>
+        </section>
+        <h3> Check out other projects:</h3>
+        <div class="otherprojectsdiv">
+            <section class="otherprojects" id="xdappimg" tabindex="0">
+                <img src="Images/X&D Advisor Hub App.svg" alt="Click here to navigate to the X&D Advisor Hub project.">
+                <h3>X&D Advisor Hub App</h3>
+                <h4>
+                    Web-based application that provides a gamified dashboard for a UX advisorship program
+                </h4>
+            </section>
+            <section class="otherprojects" id="jargonimage" tabindex="0"
+                alt="Click here to navigate to the Jargon project.">
+                <img src="Images/Jargon.svg">
+                <h3>Jargon</h3>
+                <h4>
+                    A responsive RPG inspired app for learning a new language and communicating with others on both
+                    desktop and
+                    mobile screens
+                </h4>
+            </section>
+        </div>
+    </main>
+    <footer id="react-footer-container"></footer>
+</body>
+
+</html>

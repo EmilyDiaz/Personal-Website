@@ -1,4 +1,6 @@
 @import"sharedstyles.css";
+@import "header.css";
+@import "footer.css";
 
 h1 {
     color: var(--primary-color);
@@ -10,6 +12,15 @@ h2 {
 
 h3 {
     color: var(--header-color-primary);
+}
+.imganimationover {
+    transform: translateX(10px) translateY(-20px);
+    transition: .5s ease-in-out;
+}
+
+.imganimationleave {
+    transform: translateX(-10px) translateY(20px);
+    transition: .5s ease-in-out;
 }
 
 #homemain {
@@ -23,6 +34,7 @@ h3 {
     gap: 60px;
     margin-bottom: 30px;
     border-radius: 5px;
+    width: 100%;
 
 }
 
@@ -55,7 +67,7 @@ h3 {
 }
 
 
-#Projects {
+.Projects {
     margin-bottom: 30px;
     display: flex;
     flex-direction: column;
@@ -68,16 +80,96 @@ h3 {
     height: 400px;
     background-position: center;
     padding: 2em 4em;
+    position: relative;
+    overflow: hidden;
 }
 .projecttemplate:hover{
     cursor: pointer;
 }
-#boozallenproject{
-    background-image: url(Images/BoozAllenLogo.svg);
+.tagrow{
+    display: flex;
+    gap: 0.75rem;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+}
+#reassigncasesproject{
+    background-image: url(Images/ReassignCasesHomeCover.svg);
     background-size: 90%;
     background-repeat: no-repeat;
 
 }
+ #decisionevaluationsproject{
+    background-image: url(Images/DecisionEvalHomeCover.svg);
+    background-size: 90%;
+    background-repeat: no-repeat;
+
+}
+#correspondenceproject{
+    background-image: url(Images/CorrespondenceHomeCover.svg);
+    background-size: 90%;
+    background-repeat: no-repeat;
+
+}
+#hearingproject{
+    background-image: url(Images/HearingsHomeCover.svg);
+    background-size: 90%;
+    background-repeat: no-repeat;
+
+}
+#designsystemproject{
+    background-image: url(Images/DesignSystemHomeCover.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+
+.sticker{
+    background-color: rgba(255, 255, 255, 0.92);
+    color: rgba(20, 44, 40, 0.95);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75em 1em;
+    border-radius: 999px;
+    border: 1px solid rgba(20, 44, 40, 0.1);
+}
+
+.status-tag{
+    background-color: rgba(20, 44, 40, 0.95);
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75em 1em;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.status-dot{
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.status-dot.shipped{
+    background-color: #38b000;
+}
+
+.status-dot.on-hold{
+    background-color: #d00000;
+}
+
 #xdappproject{
     
     background-image: url(Images/X&D\ Advisor\ Hub\ App.svg);
@@ -117,11 +209,11 @@ h3 {
     background-repeat: no-repeat;
 }
 
-#Projects>h3 {
+.Projects>h3 {
     color: var(--header-color-primary);
 }
 
-.project-container {
+#designprojectContainer, #devprojectContainer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
@@ -139,6 +231,9 @@ h3 {
     gap: 20px;
 }
 
+.project>a{
+    padding: 0;
+}
 
 .tools {
     margin-top: 30px;
@@ -146,6 +241,19 @@ h3 {
     flex-wrap: wrap;
     width: 100%;
     gap: 10px;
+}
+
+.tooltag {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 0.9rem;
+    background: rgba(40, 64, 80, 0.1);
+    color: rgba(20, 44, 40, 0.95);
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: 1px solid rgba(20, 44, 40, 0.12);
 }
 
 .project>img {
@@ -159,7 +267,7 @@ h3 {
     display: flex;
     margin-bottom:30px;
      border-top:rgba(40, 128, 113, .2) 2px solid;
-    /*border-bottom:rgba(40, 128, 113, .2) 2px solid;*/
+    border-bottom:rgba(40, 128, 113, .2) 2px solid;
     padding:2em;
 }
 #aboutmeDesc{
@@ -194,32 +302,52 @@ height: 300px;
 }
 #port{
     padding: 2em;
+    display: flex;
+}
+#protDesc{
+    display: flex;
+    flex-direction: column;
+}
+#port>img{
+    width: 30%;
 }
 
 /*media queries*/
 
 @media  screen and (max-width:1500px) {
-    .project-container{
+    #designprojectContainer, #devprojectContainer{
         grid-template-columns: 1fr 1fr;
     }
 }
 @media screen and (max-width:1000px) {
-    .project-container {
+    #designprojectContainer, #devprojectContainer{
         grid-template-columns: 1fr;
     }
 }
+@media screen and (max-width:1280px){
+     #intro-section{
+      flex-direction: column;
+      align-self: center;
+    }
+    #introDesc>h1{
+         align-self: center;
+    }
+       #introDesc>p{
+         align-self: center;
+    }
 
+     
+    #frogprofile{
+        align-items: center;
+    }
+}
 @media screen and (max-width:600px) {
     video{
         width: 80vw;
     }
-    #Projects {
+    .Projects {
         width: auto;
         padding: 0px;
-    }
-
-    .project {
-        flex-direction: column;
     }
 
     #homemain {
@@ -228,18 +356,17 @@ height: 300px;
     .separator{
         display: none;
     }
-    #intro-section,#introDesc,
-    #moreDetails {
-      display: block;
+   #port{
+    flex-direction: column;
+   }
+   #port>img{
+    width: 50%;
+    align-self: flex-end                                                                         ;
+}
+ #moreDetails{
+      flex-direction: column;
       justify-self: center;
     }
-    #introDesc>h1{
-        justify-self: center;
-    }
-       #introDesc>p{
-        justify-self: center;
-    }
-
     #aboutme{
         display: block;
     }

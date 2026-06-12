@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emily Diaz-Booz Allen</title>
+    <link rel="stylesheet" href="projectpages.css">
+    <script src="common.js" async></script>
+    <script type="module">
+        import RefreshRuntime from 'http://localhost:5173/@react-refresh'
+        RefreshRuntime.injectIntoGlobalHook(window)
+        window.$RefreshReg$ = () => { }
+        window.$RefreshSig$ = () => (type) => type
+        window.__vite_plugin_react_preamble_installed__ = true
+    </script>
+    <script type="module" src="http://localhost:5173/src/main.jsx"></script>
+</head>
+
+<body>
+    <header id=react-header-container></header>
+    <main>
+        <section class="projectheader" data-titleimg="/Images/BoozAllenTitle.svg"
+            data-img="/Images/DesignSystemProjectCover.png"
+            data-alt="An image of the second case study I've written for Booz Allen.">
+        </section>
+        <section class="projectsummary">
+            <h2>Overview</h2>
+
+            <section class="problem">
+                <h3>Problem</h3>
+                <p>When I first started in the VA portfolio, our project was very barebones when it came to the design
+                    library in
+                    both actual components and documentation. Our design library was situated in Sketch,so features were
+                    not 1:1 to Figma and more limited. The little components we did have designed out did not have
+                    autolayout
+                    and documentation consisted of a few Word documents thrown into a shared team OneDrive.
+                </p>
+                <p>
+                    This led to inefficiency when trying to meet our deliverables on time and inconsistency, since
+                    designs
+                    had to be
+                    adjusted pixel by pixel and colors were not standardized.
+                    This process, paired with the lack of standarization of UX reviews across development teams,
+                    resulted in
+                    a loss
+                    of fidelity between designs and the final product in our software environments.
+                </p>
+            </section>
+            <section class="projectdetails">
+                <section class="challenges">
+                    <h3>Challenges faced</h3>
+                    <ul>
+                        <li tabindex="0">
+                            Resource limitation was limited due to the small team size of only 3 UX designers.
+                        </li>
+                        <li tabindex="0">Frequent deprioritization due to stakeholder requests taking precedence.
+                        </li>
+                        <li>
+                            Transfer and learning curve of design system from Sketch to Figma.
+                        </li>
+                    </ul>
+                </section>
+                <section class="timelinerole">
+                    <section class="timeline">
+                        <h3 tabindex="0">Timeline</h3>
+                        <p tabindex="0">June 2022-Present</p>
+                    </section>
+                    <section class="role">
+                        <h3 tabindex="0">Role</h3>
+                        <p tabindex="0">UX Designer</p>
+                    </section>
+                </section>
+            </section>
+            <section class="solution">
+                <h3>Solution breakdown</h3>
+                <p tabindex="0">Learn how to use Figma and leverage more advanced features to organize and enhance
+                    design system.</p>
+            </section>
+        </section>
+        </section>
+        <section class="process">
+            <p tabindex="0">
+                Our UX team worked for a few months in Sketch before we had to make the transfer over to Figma. We
+                quickly copied over our
+                existing design files and design system over to Figma and took a few weeks to get used to working in a
+                new program.
+            </p>
+            <p tabindex="0">
+                We worked on organizing and enhancing the design system in between different initiatives. Specifically,
+                we focused on
+                creating variants for our components and using autolayout not only for our components, but our design
+                files themselves. (Pre-autolayout days are...painful to talk about to be honest.)
+            </p>
+            <section class="process-imgs">
+                <img src="Images/Button Component Breakdown.png"
+                    alt="An image of the button component, broken down by its various properties.">
+            </section>
+            <p tabindex="0"> Eventually, we decided to follow the atomic design system standard for our own system.
+                Atomic was
+                defined as a component that was the simpliest building block. It could be used to build bigger
+                components, but on its own it still was usable and had context behind it.
+            </p>
+            <div class="process-imgs">
+                <img src="Images/atomic-design-process.png" alt="An image of the atomic design process for design systems. From smallest to largest, 
+                it goes atom, molecule, organism, template, and page.">
+            </div>
+            <section class="process-imgs">
+                <img src="Images/Atom component.png" class="atomicdesign"
+                    alt="An image of an atom component, specifically a link, in the VA project.">
+                <img src="Images/Molecule component.png" class="atomicdesign"
+                    alt="An image of a molecule component, specifically a button, in the VA project.">
+                <img src="Images/Organisms.png" class="atomicdesign"
+                    alt="An example of an organism component, specifically a footer pattern, used in the VA project.">
+            </section>
+            <p tabindex="0">
+                From there, we explored using properties, variables, slots for our components. The introduction of
+                variables allowed us
+                to create design tokens that we could map to different specs for our compoents (i.e, padding, colors,
+                etc.)
+            </p>
+            <p tabindex="0">
+                We built our primitive tokens first and cleaned up our color naming structure so it followed the
+                structure in the VA design systems. Then our semantic tokens were built off our primitive tokens and
+                were named by usage-Components (narrowed down by type of component, atom or molecule, and the specific
+                component's name) or Typography.
+            </p>
+            <section class="process-imgs">
+                <img src="Images/Primitive tokens.png" class="designtokens"
+                    alt="An image of the native Figma variable creater with a list of the primitive tokens created for the VA project's design system.">
+                <img src="Images/Semantic tokens.png" class="designtokens"
+                    alt="An image of the native Figma variables creator with a list of Semantic tokens created for the VA project's design system.">
+            </section>
+            <p tabindex="0">
+                Molecule components had less design tokens associated with them given that they were built off of atom
+                components. We found this separation worked best for us,
+                so we could easily find the tokens associated to a specific component in case we wanted to change the
+                values. Typography was less variable from component to component, so it worked better being its own
+                section of design tokens to make them easier to find.
+            </p>
+
+            <p tabindex="0">
+                By the time I left, our small team of three had created over 100 components, modernizing both new and
+                existing
+                ones with autolayout, properties, variables, and slots.
+                Colors were documentated and attached to design tokens according to their variable names on USWDS.
+                Common layout
+                and spacing values were also attached the tokens and
+                attached to their corresponding components.
+            </p>
+            <section class="comparisonimages">
+                <figure class="process-imgs">
+                    <img src="Images/Design System-Before.svg"
+                        alt="A snapshot of the design system when I first joined the team.">
+                </figure>
+                <figure class="process-imgs">
+                    <img src="Images/Design System-After.svg"
+                        alt="A snapshot of the design system by the time I left the team">
+                </figure>
+            </section>
+            <p> We had also started assembling a pattern library to share externally with devs and a tech debt log for
+                components, styles, and patterns that had a reported gap between design and code.
+                And to take a step even further, I had begun experimenting with Framelink MCP servers to connect AI to
+                our
+                designs and improve our design handoff process even more for devs.
+            </p>
+        </section>
+
+
+        <section class="reflections">
+            <h3 tabindex="0">Reflections</h3>
+            <p tabindex="0">The way we approached the problem of an outdated and disorganized design system was, as I
+                reflect on it
+                now, a bit backwards.</p>
+            <p tabindex="0">
+                If I had a chance to approach it again or approach another design system again, I'd first focus on the
+                organiztion of it (what methodology we'd want to use), audit it for discrepencies between development
+                and design and identify where the component needs to be fixed, and then shift to enhancing it. 
+            </p>
+            <p tabindex="0">
+                After the audit documentation and the enhancements are done, I'd move to the MCP server work.
+            </p>
+        </section>
+    </main>
+    <footer id="react-footer-container"></footer>
+</body>
+
+</html>

@@ -7,55 +7,30 @@
     <title>Emily Diaz-Onboarding Figma Flow</title>
     <link rel="stylesheet" href="sharedstyles.css">
     <link rel="stylesheet" href="onboarding.css">
-    <script src="common.js" async></script>
+    <link rel="stylesheet" href="projectpages.css" <script src="common.js" async>
+    </script>
+    <script type="module">
+        import RefreshRuntime from 'http://localhost:5173/@react-refresh'
+        RefreshRuntime.injectIntoGlobalHook(window)
+        window.$RefreshReg$ = () => { }
+        window.$RefreshSig$ = () => (type) => type
+        window.__vite_plugin_react_preamble_installed__ = true
+    </script>
+    <script type="module" src="http://localhost:5173/src/main.jsx"></script>
 </head>
 
 <body>
-  <header>
-        <a href="index.html" id="homepage">
-            <h4> EMILY DIAZ-FUSCO</h4>
-        </a>
-        <nav>
-            <div class="dropdown">
-                <a id="project-navbar">Projects</a>
-                <div class="dropdown-content">
-                    <ul>
-                        <li>
-                            <a href="BoozAllenCaseStudy.html">Booz Allen Hamilton</a>
-                        </li>
-                        <li>
-                            <a href="powerapp.html">X&D Advisor App</a>
-                        </li>
-                         <li>
-                            <a href="jargon.html">Jargon</a>
-                        </li>
-                         <li>
-                            <a href="onboarding.html">Onboarding Guide</a>
-                        </li>
-                         <li>
-                            <a href="reach4help.html">Reach4Help</a>
-                        </li>
-                         <li>
-                            <a href="plugins.html">Plugins</a>
-                        </li>
-                    </ul>
-
-                </div>
-            </div>
-            <a href="Resume/Resume-Current.pdf">View Resume</a>
-        </nav>
-    </header>
-
+    <header id=react-header-container></header>
     <main>
-        <section>
-            <h1>Onboarding Guide</h1>
-            <section class="projectimage">
-                <img src="Images/Onboarding Flow.png"
-                    alt="Cover image of this project. Shows the dashboard interface of the powerapp.">
-            </section>
-            <section class="summary">
-                <h2>Problem</h2>
-                <p> New hires in the project wait about 3 months or so just to have access to the <strong> *proprietary
+        <section class="projectheader" data-name="Onboarding Guide" data-img="/Images/Onboarding Flow.png"
+            data-alt="Cover image of this project. Shows the dashboard interface of the powerapp.">
+        </section>
+        <section class="projectsummary">
+            <h2>Overview</h2>
+            <section class="problem">
+                <h3>Problem</h3>
+                <p> New hires in the project wait about 3 months or so just to have access to the <strong>
+                        *proprietary
                         software </strong> they'll be working with in the duration of the project contract.
                     While this is required due to PII and security concerns for the production environment, these
                     concerns do not affect the demo environment of this software and delay
@@ -63,173 +38,143 @@
                     higher-level concepts of the software as well as the design system of the
                     software.
                 </p>
-
-                <p class="disclaimer">*Further details on this project cannot be discuss due to NDA. Any information
-                    presented has
-                    been generalized and some parts have even been redacted with the use of lorem ipsum or blur effects.
-                </p>
             </section>
-            <section class="topsection">
-
+            <section class="projectdetails">
                 <section class="challenges">
-                    <h2>Challenges faced</h2>
+                    <h3>Challenges faced</h3>
                     <ul>
-                        <li>
+                        <li tabindex="0">
                             Working around the limitations of Figma (a lack of scrolling prototypes as well as no save
                             states) while still trying to make the guide as intuitive as possible
                         </li>
-                        <li>
+                        <li tabindex="0">
                             Sharp learning curve for using Microsoft PowerApps, given that this was my first time using
                             it.
                         </li>
                     </ul>
                 </section>
-                <section class="timeline">
-                    <h2>Timeline</h2>
-                    <h3>March 2024-March 2025</h3>
-                    <p>
-                        Officialy released for use on May 2024, but kept iterating on it up until March 2025
-                    </p>
+                <section class="timelinerole">
+                    <section class="timeline">
+                        <h3>Timeline</h3>
+                        <p>March 2024-March 2025</p>
+                    </section>
+                    <section class="role">
+                        <h3>Role</h3>
+                        <p>0-1 Ownership. I researched, designed, and developed this project into
+                            production.</p>
+                    </section>
                 </section>
-
             </section>
             <section class="solution">
-                <h2>Solution</h2>
-                <p> Create a onboarding learning guide that incorporates the following elements:
+                <h3>Solution breakdown</h3>
+                <p tabindex="0"> Create a onboarding learning guide that incorporates the following elements:
                 <ul>
-                    <li>
+                    <li tabindex="0">
                         An overview of the appeals process in the Department of Veterans' Affairs (Information available
                         to the public)
                     </li>
-                    <li>
+                    <li tabindex="0">
                         A high-level overview of an appeal's lifecycle in the proprietary software, presented in a
                         logical, realistic flow
                     </li>
-                    <li>
+                    <li tabindex="0">
                         A glossary of common terms used in the appeals process and the software
                     </li>
                 </ul>
                 </p>
             </section>
-            <p>
-                The main chunk of this project was set up using Figma and the flow was divided into two parts:
-            </p>
-            <p>
-                The first part would slowly introduce the Appeals landscape to the user, bringing in common
-                terms and processes found on the public website of the VA. Links to the website for a more
-                detailed overview were also included. Familar colors (typical of the VA brand) and components were used
-                in the guide to further
-                establish connection with a VA product.
-            </p>
+        </section>
+
+        <p tabindex="0">
+            The main chunk of this project was set up using Figma and the flow was divided into two parts:
+        </p>
+        <p tabindex="0">
+            The first part would slowly introduce the Appeals landscape to the user, bringing in common
+            terms and processes found on the public website of the VA. Links to the website for a more
+            detailed overview were also included. Familar colors (typical of the VA brand) and components were used
+            in the guide to further
+            establish connection with a VA product.
+        </p>
 
 
-            <div class="asidediv">
-                <img src="Images/Tooltip example.png" alt="Image of the tooltips that were used to guide users through the different steps and pages.">
-                <aside>
-                    <p>
-                        The second part consisted of mockups of the software's demo environment. Advanced prototyping,
-                        such as with variables and conditionals, were added for controlling the behavior of guidance
-                        tooltips.
-                        These tooltips were toggled visible when the user was on a certain step. They informed the user
-                        on what step to take
-                        next, how many steps were left in the particular module, and allowed the user to return to a
-                        previous tooltip (or in some
-                        cases advance to the next tooltip.)
-                    </p>
-                </aside>
-            </div>
-            <div class="asidediv">
-                <img src="Images/OnboardingFlowcutfile-ezgif.com-crop.gif"
-                    style="border: 2px solid var(--primary-color); border-radius:5px">
-                <aside>
-                    <p>Here we see a clip of how the first part of the guide was set up. Unfortuately, given the NDA,
-                        the second step
-                        with glimpses of
-                        the software cannot be shown. But in the clip we see the user progressing through the flow and
-                        getting to the interactive
-                        portion of it, where they can learn more about three different Appeals processes.
-                    </p>
-                    <p>
-                        One of the difficulties with Figma was the lack of scrolling animations, so a combination of
-                        delay and mouse over interactions were used
-                        to trigger the animation seen in the Board Appeals flow.
-                    </p>
-                </aside>
-            </div>
-            <div class="asidediv">
-                <img src="Images/Side Bar.png" alt="Image of the side navigation bar for the onboarding guide." id="navbarimg">
-                <aside>
-                    <p>
-                        Throughout the flow you could access the content outline and glossary at any point, though the
-                        glossary would open up in PowerApps on a separate tab.
-                        It was highly recommended that first time users follow the flow in order however this guide was
-                        also used frequently by existing users as a quick reference. Given the
-                        lack of state saving in Figma, it was impossible to distinguish the type of user or where the
-                        user had left off.
-                    </p>
-
-                    <p>
-                        The latter problem could not be solved in Figma, but the
-                        former was alleviated by providing this content outline. In this sidebar the user could skip to
-                        any section they pleased, with the caveat that the tooltips were reset each time
-                        they entered a specific part of a module.
-                    </p>
-                </aside>
-            </div>
-            <div class="comparisonaside">
-
-                <img src="Images/Glossary app start.png" alt="Image of the glossary app when the user first loads into Powerapps.">
-                <img src="Images/Glossary app in use.png"alt="Image of the glossary app after a user has filtered by a certain category.">
-                <aside>
-                    <p>
-                        A total of 229 terms related to the Appeals process were organized and categorized for this
-                        application. They were then manually inputted into a Sharepoint list,
-                        which acted as the database for the PowerApp.
-                    </p>
-                    <p>
-                        Although a Sharepoint List would have served just as well for the Glossary,
-                        the PowerApp environment allowed for the VA brand and colors to be represented as well as
-                        allowed a more intuitive UI, such as with the addition of a type ahead
-                        search bar and a tighter, more centralized layout for the information.
-                    </p>
-                </aside>
-            </div>
-            <h3> Check out other projects:</h3>
-            <div class="otherprojectsdiv" id="otherprojects">
-                <section class="otherprojects" id="boozallenimg">
-                    <img src="Images/BoozAllenLogo.svg"
-                        alt="Click on this image to navigate to the Booz Allen case studies.">
-                    <h3>Booz Allen Case Studies</h3>
-                    <h4>
-                        Ongoing enhancement of a proprietary case management software to improve the Appeals process for
-                        U.S Veterans
-                    </h4>
-                </section>
-                <section class="otherprojects" id="jargonimage">
-                    <img src="Images/Jargon.svg" alt="Click on this image to navigate to the Jargon project.">
-                    <h3>Jargon</h3>
-                    <h4>
-                        A responsive RPG inspired app for learning a new language and communicating with others on both
-                        desktop and mobile screens
-                    </h4>
-                </section>
-            </div>
-
- <footer>
-        <div id="graphicsRight">
-            <canvas id="hexCanvas" tabindex="0"></canvas>
-            <canvas id="cashewCanvas" tabindex="0"></canvas>
+        <div class="asidediv">
+            <img src="Images/Tooltip example.png"
+                alt="Image of the tooltips that were used to guide users through the different steps and pages."
+                tabindex="0">
+            <aside>
+                <p tabindex="0">
+                    The second part consisted of mockups of the software's demo environment. Advanced prototyping,
+                    such as with variables and conditionals, were added for controlling the behavior of guidance
+                    tooltips.
+                    These tooltips were toggled visible when the user was on a certain step. They informed the user
+                    on what step to take
+                    next, how many steps were left in the particular module, and allowed the user to return to a
+                    previous tooltip (or in some
+                    cases advance to the next tooltip.)
+                </p>
+            </aside>
         </div>
-        <p tabindex="0">This website was designed & coded by Emily. Two gremlins named Hex and Cashew supervised, though.</p>
-        <div id="graphicsLeft">
-            <a href="https://github.com/EmilyDiaz" target="_blank" rel="noopener noreferrer"><img
-                    src="Images/Github.svg" alt=""></a>
-            <a href="https://www.linkedin.com/in/emily-diaz-b5b696203" target="_blank" rel="noopener noreferrer"><img
-                    src="Images/LinkedIn.png" alt=""></a>
+        <div class="asidediv">
+            <img src="Images/OnboardingFlowcutfile-ezgif.com-crop.gif"
+                style="border: 2px solid var(--primary-color); border-radius:5px" tabindex="0">
+            <aside>
+                <p tabindex="0">Here we see a clip of how the first part of the guide was set up. Unfortuately,
+                    given the NDA,
+                    the second step
+                    with glimpses of
+                    the software cannot be shown. But in the clip we see the user progressing through the flow and
+                    getting to the interactive
+                    portion of it, where they can learn more about three different Appeals processes.
+                </p>
+                <p tabindex="0">
+                    One of the difficulties with Figma was the lack of scrolling animations, so a combination of
+                    delay and mouse over interactions were used
+                    to trigger the animation seen in the Board Appeals flow.
+                </p>
+            </aside>
         </div>
-    </footer>
+        <div class="asidediv">
+            <img src="Images/Side Bar.png" alt="Image of the side navigation bar for the onboarding guide."
+                id="navbarimg" tabindex="0">
+            <aside>
+                <p tabindex="0">
+                    Throughout the flow you could access the content outline and glossary at any point, though the
+                    glossary would open up in PowerApps on a separate tab.
+                    It was highly recommended that first time users follow the flow in order however this guide was
+                    also used frequently by existing users as a quick reference. Given the
+                    lack of state saving in Figma, it was impossible to distinguish the type of user or where the
+                    user had left off.
+                </p>
 
+                <p tabindex="0">
+                    The latter problem could not be solved in Figma, but the
+                    former was alleviated by providing this content outline. In this sidebar the user could skip to
+                    any section they pleased, with the caveat that the tooltips were reset each time
+                    they entered a specific part of a module.
+                </p>
+            </aside>
+        </div>
+        <div class="comparison">
 
+            <img src="Images/Glossary app start.png"
+                alt="Image of the glossary app when the user first loads into Powerapps." tabindex="0">
+            <img src="Images/Glossary app in use.png"
+                alt="Image of the glossary app after a user has filtered by a certain category." tabindex="0">
+            <aside>
+                <p tabindex="0">
+                    A total of 229 terms related to the Appeals process were organized and categorized for this
+                    application. They were then manually inputted into a Sharepoint list,
+                    which acted as the database for the PowerApp.
+                </p>
+                <p tabindex="0">
+                    Although a Sharepoint List would have served just as well for the Glossary,
+                    the PowerApp environment allowed for the VA brand and colors to be represented as well as
+                    allowed a more intuitive UI, such as with the addition of a type ahead
+                    search bar and a tighter, more centralized layout for the information.
+                </p>
+            </aside>
+        </div>
+    </main>
+    <footer id="react-footer-container"></footer>
 </body>
-
 </html>
