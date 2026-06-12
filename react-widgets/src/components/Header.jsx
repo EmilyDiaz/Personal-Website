@@ -43,7 +43,7 @@ export default function Header(){
 
                 </div>
             </div>
-            <a href="Resume/Resume-Current.pdf" target="_blank" rel="noopener noreferrer">View Resume</a>
+            <a href="Resume/Emily Diaz Resume.pdf" target="_blank" rel="noopener noreferrer">View Resume</a>
         </nav>
         </>
     )
