@@ -267,7 +267,7 @@ h3 {
     display: flex;
     margin-bottom:30px;
      border-top:rgba(40, 128, 113, .2) 2px solid;
-    /*border-bottom:rgba(40, 128, 113, .2) 2px solid;*/
+    border-bottom:rgba(40, 128, 113, .2) 2px solid;
     padding:2em;
 }
 #aboutmeDesc{
@@ -302,6 +302,14 @@ height: 300px;
 }
 #port{
     padding: 2em;
+    display: flex;
+}
+#protDesc{
+    display: flex;
+    flex-direction: column;
+}
+#port>img{
+    width: 30%;
 }
 
 /*media queries*/
@@ -319,14 +327,16 @@ height: 300px;
 @media screen and (max-width:1280px){
      #intro-section{
       flex-direction: column;
-      justify-self: center;
+      align-self: center;
     }
     #introDesc>h1{
-        justify-self: center;
+         align-self: center;
     }
        #introDesc>p{
-        justify-self: center;
+         align-self: center;
     }
+
+     
     #frogprofile{
         align-items: center;
     }
@@ -346,8 +356,17 @@ height: 300px;
     .separator{
         display: none;
     }
-   
-
+   #port{
+    flex-direction: column;
+   }
+   #port>img{
+    width: 50%;
+    align-self: flex-end                                                                         ;
+}
+ #moreDetails{
+      flex-direction: column;
+      justify-self: center;
+    }
     #aboutme{
         display: block;
     }

@@ -33,26 +33,7 @@ a{
     color: black;
 }
 
-.comparisonimages {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-    gap: 40px;
-}
 
-
-figure{
-    margin: 0;
-    width: 50%;
-}
-figcaption{
-    font-style: italic;
-    width: 80%;
-}
-figure>img {
-    width: 100%;
-}
 
 #xduserflow {
     display: flex;

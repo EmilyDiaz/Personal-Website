@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Map</title>
+    <link rel="stylesheet" href="worldmap.css">
+    <link rel="stylesheet" href="projectpages.css">
+    <script type="module">
+        import RefreshRuntime from 'http://localhost:5173/@react-refresh'
+        RefreshRuntime.injectIntoGlobalHook(window)
+        window.$RefreshReg$ = () => { }
+        window.$RefreshSig$ = () => (type) => type
+        window.__vite_plugin_react_preamble_installed__ = true
+    </script>
+    <script type="module" src="http://localhost:5173/src/main.jsx"></script>
+</head>
+
+<body>
+    <header id=react-header-container></header>
+    <div id="mapcontent">
+        <div id="peaceisland"></div>
+        <div id="compass">
+            <img src="Images/Compass.png" alt="">
+        </div>
+    </div>
+
+
+    <section class="tile-view" aria-label="Island navigation tiles">
+        <article class="tile-card">
+            <img src="Images/Peace Island- Default.png" alt="Island one illustration">
+            <a class="tile-button" href="#">Click button to visit island one</a>
+        </article>
+        <article class="tile-card">
+            <img src="Images/Peace Island- Default.png" alt="Island two illustration">
+            <a class="tile-button" href="#">Click button to visit island two</a>
+        </article>
+    </section>
+</body>
+
+</html>

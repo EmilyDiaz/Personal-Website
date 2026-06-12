@@ -16,7 +16,13 @@ canvas:hover {
     margin-left: 20px;
 }
 
-#graphicsLeft>a>img {
+#graphicsRight {
+    display: flex;
+    margin-left: 20px;
+    gap: 10px;
+}
+
+#graphicsRight>a>img {
     width: 40px;
 }
 
