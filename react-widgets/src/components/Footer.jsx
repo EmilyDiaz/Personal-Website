@@ -12,13 +12,13 @@ export default function Footer() {
                 hexCtx.imageSmoothingEnabled = false;
                 hexCtx.drawImage(hexImage, 0, 0, 100, 100);
             }
-            hexImage.src = "/Images/hexpixel.png"
+            hexImage.src = "./Images/hexpixel.png"
 
             hexCanvas.addEventListener("mouseover", () => {
-                hexImage.src = "/Images/hexpixel.gif"
+                hexImage.src = "./Images/hexpixel.gif"
             })
             hexCanvas.addEventListener("mouseleave", () => {
-                hexImage.src = "/Images/hexpixel.png"
+                hexImage.src = "./Images/hexpixel.png"
             })
         }
 
@@ -32,13 +32,13 @@ export default function Footer() {
                 cashewCtx.imageSmoothingEnabled = false;
                 cashewCtx.drawImage(cashewImage, 0, 10, 100, 100);
             }
-            cashewImage.src = "/Images/cashewneutral.png"
+            cashewImage.src = "./Images/cashewneutral.png"
 
             cashewCanvas.addEventListener("mouseover", () => {
-                cashewImage.src = "/Images/cashewpet.png"
+                cashewImage.src = "./Images/cashewpet.png"
             })
             cashewCanvas.addEventListener("mouseleave", () => {
-                cashewImage.src = "/Images/cashewneutral.png"
+                cashewImage.src = "./Images/cashewneutral.png"
             })
         }
     }, [])
