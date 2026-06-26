@@ -78,6 +78,7 @@ figure>img {
 .subprocess{
     margin: 2em
 }
+
 .process-imgs{
     align-items: center;
     display: flex;
@@ -90,11 +91,36 @@ figure>img {
 
 
 .process-imgs img:not(.modalImg, .designtokens, .atomicdesign){
-    width: 100%;
+    width: 95%
 }
 
 .process-imgs img {
     border: 2px solid var(--primary-color);
+}
+
+.zoom-wrapper {
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    cursor: zoom-in;
+}
+
+.zoom-wrapper.is-modal-img,
+.zoom-wrapper.is-designtokens,
+.zoom-wrapper.is-atomicdesign {
+    width: 50%;
+}
+
+.zoom-wrapper img {
+    display: block;
+    width: 100%;
+    transition: transform 0.1s ease;
+    transform-origin: 0 0;
+    will-change: transform;
+}
+
+.zoom-wrapper:hover img {
+    transform: scale(2.5);
 }
 
 .modalImg, .designtokens, .atomicdesign{

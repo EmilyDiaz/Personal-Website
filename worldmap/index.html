@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Map</title>
+    <link rel="stylesheet" href="worldmap.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Images/faviconbigger.png">
+</head>
+
+<body>
+    <div id="mapcontent">
+        <div id="islandsContent">
+            <a href="/portfolio/">
+                <div class="islands" id="portfolioisland" aria-label="Image of Portfolio Island."
+                    title="Portfolio Island is the island to visit if you want insight on UI/UX and non-game development work!">
+                </div>
+            </a>
+            <a href="/peaceisland/">
+                <div class="islands" id="peaceisland" aria-label="Image of Peace Island."
+                    title="Explore serenity and low stakes at Peace Island. You never know what you might find...">
+                </div>
+            </a>
+            <div class="islands" id="writingisland" aria-label="Image of a hidden island." title="Not much is known about this island. Travel is not advised at the moment."></div>
+            <a href="/galleryisland/">
+                <div class="islands" id="galleryisland" aria-label="Image of Gallery Island."
+                    title="Peruse different art pieces (I promise its not all frog art) in your own pace at Gallery Island.">
+                </div>
+            </a>
+            <div class="islands" id="gameisland" aria-label="Image of a hidden island."" title=" Not much is known about this island. Travel is not advised at the moment."></div>
+        </div>
+        <section id="explain">
+            <section id="explain-text">
+                <h3>Hover over an island to learn more about it:</h3>
+                <p id="island-description"></p>
+            </section>
+
+    </div>
+
+    </section>
+     <section class="tile-view" aria-label="Island navigation tiles">
+        <h2>Select which island to visit:</h2>
+        <a href="/portfolio/">
+            <article class="tile-card">
+                <img src="Images/Portfolio Island-Default.png"
+                    alt="Illustration of an island that takes you to the portfolio page.">
+                <p>Portfolio Island is the island to visit if you want insight on UI/UX and non-game development work!
+                </p>
+            </article>
+        </a>
+
+        <a href="/peaceisland/">
+            <article class="tile-card">
+                <img src="Images/Peace Island-Default.png"
+                    alt="Illustration of an island that takes you to a peaceful mountainous island.">
+                <p>Explore serenity and low stakes at Peace Island. You never know what you might find...</p>
+            </article>
+        </a>
+
+        <a href="/galleryisland/">
+            <article class="tile-card">
+                <img src="Images/Gallery Island-Default.png"
+                    alt="Illustration of an island that takes you to the visual arts page.">
+                <p>Peruse different art pieces (I promise its not all frog art) in your own pace at Gallery Island.</p>
+
+            </article>
+        </a>
+
+
+        <article class="tile-card">
+            <img src="Images/Game Island-Default.png" alt="Illustration of an upcoming island.">
+            <p>Coming soon!</p>
+        </article>
+
+        <article class="tile-card">
+            <img src="Images/Writing Island-Default.png" alt="Illustration of an upcoming island.">
+            <p>Coming soon!</p>
+        </article>
+
+    </section>
+    <script src="worldmap.js"></script>
+</body>
+
+</html>

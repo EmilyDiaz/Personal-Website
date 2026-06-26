@@ -374,6 +374,7 @@ li{
 
 .asidewrapper>nav>ul>li {
     padding-bottom: 0px;
+    margin-bottom: 30px;
 }
 
 .asidewrapper>nav>ul>li>a:hover {
