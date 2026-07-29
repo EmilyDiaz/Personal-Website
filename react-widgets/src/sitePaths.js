@@ -12,7 +12,15 @@ export function resolveSitePath(path) {
     return path
   }
 
-  if (/^https?:\/\//.test(path) || path.startsWith('data:') || path.startsWith('mailto:')) {
+  if (
+    /^https?:\/\//.test(path) ||
+    path.startsWith('data:') ||
+    path.startsWith('mailto:') ||
+    path.startsWith('./') ||
+    path.startsWith('../') ||
+    path.startsWith('#') ||
+    path.startsWith('?')
+  ) {
     return path
   }
 
