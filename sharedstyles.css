@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Lato-Regular';
     /* A name you choose to refer to the font later */
-    src: url('Fonts/Lato/Lato-Regular.ttf') format('truetype');
+    src: url('./Fonts/Lato/Lato-Regular.ttf') format('truetype');
     /* Path relative to the CSS file */
     font-weight: normal;
     font-style: normal;
@@ -12,7 +12,7 @@
 @font-face {
     font-family: 'Lato-Italic';
     /* A name you choose to refer to the font later */
-    src: url('Fonts/Lato/Lato-Italic.ttf') format('truetype');
+    src: url('./Fonts/Lato/Lato-Italic.ttf') format('truetype');
     /* Path relative to the CSS file */
     font-weight: normal;
     font-style: italic;
@@ -23,7 +23,7 @@
 @font-face {
     font-family: 'Lato-Bold';
     /* A name you choose to refer to the font later */
-    src: url('Fonts/Lato/Lato-Bold.ttf') format('truetype');
+    src: url('./Fonts/Lato/Lato-Bold.ttf') format('truetype');
     /* Path relative to the CSS file */
     font-weight: bold;
     font-style: normal;
@@ -34,7 +34,7 @@
 @font-face {
     font-family: 'Lato-Bold Italic';
     /* A name you choose to refer to the font later */
-    src: url('Fonts/Lato/Lato-BoldItalic.ttf') format('truetype');
+    src: url('./Fonts/Lato/Lato-BoldItalic.ttf') format('truetype');
     /* Path relative to the CSS file */
     font-weight: bold;
     font-style: italic;
@@ -45,7 +45,7 @@
 @font-face {
     font-family: 'Lato-Light';
     /* A name you choose to refer to the font later */
-    src: url('Fonts/Lato/Lato-Light.ttf') format('truetype');
+    src: url('./Fonts/Lato/Lato-Light.ttf') format('truetype');
     /* Path relative to the CSS file */
     font-weight: lighter;
     font-style: normal;
@@ -55,7 +55,7 @@
 
 @font-face {
     font-family: 'Pixelify-SemiBold';
-    src: url('Fonts/Pixelify_Sans/static/PixelifySans-SemiBold.ttf') format('truetype');
+    src: url('./Fonts/Pixelify_Sans/static/PixelifySans-SemiBold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -63,7 +63,7 @@
 
 @font-face {
     font-family: 'Permanent-Marker';
-    src: url('Fonts/PermanentMarker/PermanentMarker-Regular.ttf') format('truetype');
+    src: url('./Fonts/PermanentMarker/PermanentMarker-Regular.ttf') format('truetype');
     font-weight: regular;
     font-style: normal;
     font-display: swap;
