@@ -95,31 +95,31 @@ h3 {
     z-index: 2;
 }
 #reassigncasesproject{
-    background-image: url(/Images/ReassignCasesHomeCover.svg);
+    background-image: url(../Images/ReassignCasesHomeCover.svg);
     background-size: 90%;
     background-repeat: no-repeat;
 
 }
  #decisionevaluationsproject{
-    background-image: url(/Images/DecisionEvalHomeCover.svg);
+    background-image: url(../Images/DecisionEvalHomeCover.svg);
     background-size: 90%;
     background-repeat: no-repeat;
 
 }
 #correspondenceproject{
-    background-image: url(/Images/CorrespondenceHomeCover.svg);
+    background-image: url(../Images/CorrespondenceHomeCover.svg);
     background-size: 90%;
     background-repeat: no-repeat;
 
 }
 #hearingproject{
-    background-image: url(/Images/HearingsHomeCover.svg);
+    background-image: url(../Images/HearingsHomeCover.svg);
     background-size: 90%;
     background-repeat: no-repeat;
 
 }
 #designsystemproject{
-    background-image: url(/Images/DesignSystemHomeCover.svg);
+    background-image: url(../Images/DesignSystemHomeCover.svg);
     background-size: 100%;
     background-repeat: no-repeat;
 
@@ -172,38 +172,38 @@ h3 {
 
 #xdappproject{
     
-    background-image: url(/Images/X&D\ Advisor\ Hub\ App.svg);
+    background-image: url(../Images/X&D\ Advisor\ Hub\ App.svg);
     background-size: 90%;
     background-repeat: no-repeat;
 
 }
 #jargonproject{
-    background-image: url(/Images/JargonCover.png);
+    background-image: url(../Images/JargonCover.png);
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: center;
 
 }
 #onboardingproject{
-    background-image: url(/Images/OnboardingFlowcutfile-ezgif.com-crop.gif);
+    background-image: url(../Images/OnboardingFlowcutfile-ezgif.com-crop.gif);
     background-size: 90%;
     background-repeat: no-repeat;
 
 }
 #datagenproject{
-    background-image: url(/Images/Dummy\ Data\ Generator.svg);
+    background-image: url(../Images/Dummy\ Data\ Generator.svg);
     background-size: 90%;
     background-repeat: no-repeat;
 
 }
 #scannerproject{
-    background-image: url(/Images/Prototype\ Scanner.gif);
+    background-image: url(../Images/Prototype\ Scanner.gif);
     background-size: 90%;
     background-repeat: no-repeat;
 
 }
 #reach4helpproject{
-    background-image: url(/Images/Reach4HelpProjectCover.svg);
+    background-image: url(../Images/Reach4HelpProjectCover.svg);
     background-size:40%;
     background-position: center;
     background-repeat: no-repeat;
