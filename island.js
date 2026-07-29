@@ -1,17 +1,23 @@
-const islandUrl = ["/portfolio/", "/peaceisland/", "/galleryisland/"]
-const currentUrl = window.location.pathname
-const match = islandUrl.filter((url) => !url.includes(currentUrl))
+const islandUrls = ["portfolio/", "peaceisland/", "galleryisland/"]
+const siteBase = window.location.pathname.includes("/Personal-Website/") ? "/Personal-Website/" : "/"
+const currentPath = window.location.pathname.replace(/\/+$/, "")
+const availableIslandPaths = islandUrls
+  .map((path) => `${siteBase}${path.replace(/^\/+/, "")}`)
+  .filter((path) => path.replace(/\/+$/, "") !== currentPath)
+
 const randomIslandbttn = document.getElementById("randomIslandbttn")
-randomIslandbttn.addEventListener("click", () => {
-  location.replace(`${RandomIsland(match,0)}`)
-})
 
-function RandomIsland(array,index) {
+if (randomIslandbttn) {
+  randomIslandbttn.addEventListener("click", () => {
+    const nextIsland = RandomIsland(availableIslandPaths, 0)
+    window.location.assign(nextIsland)
+  })
+}
+
+function RandomIsland(array, index) {
   for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]]
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[array[i], array[j]] = [array[j], array[i]]
   }
-  console.log(array[0])
   return array[index]
-
 }

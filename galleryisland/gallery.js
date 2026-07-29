@@ -5,15 +5,15 @@
             const nextButton = document.getElementById('museum-next');
             const wallImages = [
                 {
-                    src: '/Images/Museum Wall One.png',
+                    src: '../Images/Museum Wall One.png',
                     alt: 'Museum Wall One display'
                 },
                 {
-                    src: '/Images/Museum Wall Two.png',
+                    src: '../Images/Museum Wall Two.png',
                     alt: 'Museum Wall Two display'
                 },
                 {
-                    src: '/Images/Museum Wall Three.png',
+                    src: '../Images/Museum Wall Three.png',
                     alt: 'Museum Wall Three display'
                 }
             ];

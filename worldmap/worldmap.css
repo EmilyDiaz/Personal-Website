@@ -1,5 +1,5 @@
 body {
-    background-image: url(/Images/worldmapbackground.png);
+    background-image: url(../Images/worldmapbackground.png);
     background-size: cover;
     background-repeat: no-repeat;
     max-width: 1440px;
@@ -63,58 +63,58 @@ align-items: center;
 
 
 #peaceisland {
-    background-image: url(/Images/Peace\ Island-Default.png);
+    background-image: url(../Images/Peace\ Island-Default.png);
     top: 10vh;
     left: 5vw;
     width: 18%
 }
 
 #peaceisland:hover {
-    background-image: url(/Images/Peace\ Island-Hover.png);
+    background-image: url(../Images/Peace\ Island-Hover.png);
 }
 
 #writingisland {
-    background-image: url(/Images/Writing\ Island-Default.png);
+    background-image: url(../Images/Writing\ Island-Default.png);
     top: 0vh;
     right: 5vw;
     width: 18%
 }
 
 #writingisland:hover {
-    background-image: url(/Images/Writing\ Island-Hover.png);
+    background-image: url(../Images/Writing\ Island-Hover.png);
 }
 
 #portfolioisland {
-    background-image: url(/Images/Portfolio\ Island-Default.png);
+    background-image: url(../Images/Portfolio\ Island-Default.png);
     top: 30vh;
     right: 35vw;
     width: 18%
 }
 
 #portfolioisland:hover {
-    background-image: url(/Images/Portfolio\ Island-Hover.png);
+    background-image: url(../Images/Portfolio\ Island-Hover.png);
 }
 
 #gameisland {
-    background-image: url(/Images/Game\ Island-Default.png);
+    background-image: url(../Images/Game\ Island-Default.png);
     top: 70vh;
     left: 5vw;
     width: 18%
 }
 
 #gameisland:hover {
-    background-image: url(/Images/Game\ Island-Hover.png);
+    background-image: url(../Images/Game\ Island-Hover.png);
 }
 
 #galleryisland {
-    background-image: url(/Images/Gallery\ Island-Default.png);
+    background-image: url(../Images/Gallery\ Island-Default.png);
     top: 60vh;
     right: 5vw;
     width: 18%
 }
 
 #galleryisland:hover {
-    background-image: url(/Images/Gallery\ Island-Hover.png);
+    background-image: url(../Images/Gallery\ Island-Hover.png);
 }
 
 
@@ -123,7 +123,7 @@ align-items: center;
     display:flex;
     min-width: 730px;
     max-width: 730px;
-    background:url(/Images/DescBox.png);
+    background:url(../Images/DescBox.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
