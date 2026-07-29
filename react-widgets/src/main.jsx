@@ -4,6 +4,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import ProjectTemplate from './components/ProjectTemplate'
 import ProjectHeader from './components/ProjectHeader'
+import { resolveSitePath } from './sitePaths'
 
 // Find the placeholder elements on your existing website
 const headerRoot = document.getElementById('react-header-container')
@@ -50,7 +51,7 @@ if (designprojectRoot) {
   ReactDOM.createRoot(designprojectRoot).render(
     <React.StrictMode>
       <ProjectTemplate
-        projecturl="/portfolio/decisionevaluations/"
+        projecturl={resolveSitePath('portfolio/decisionevaluations/')}
         projectid="decisionevaluationsproject"
         projectname="Booz Allen Hamilton Case Studies"
         dates="2025-2026"
@@ -62,7 +63,7 @@ if (designprojectRoot) {
       />
 
       <ProjectTemplate
-        projecturl="/portfolio/hearings/"
+        projecturl={resolveSitePath('portfolio/hearings/')}
         projectid="hearingproject"
         projectname="Booz Allen Hamilton Case Study"
         dates="2024-2025"
@@ -75,7 +76,7 @@ if (designprojectRoot) {
       />
 
       <ProjectTemplate
-        projecturl="/portfolio/reassigncases/"
+        projecturl={resolveSitePath('portfolio/reassigncases/')}
         projectid="reassigncasesproject"
         projectname="Booz Allen Hamilton Case Study"
         dates="2023-2024"
@@ -87,7 +88,7 @@ if (designprojectRoot) {
       />
 
       <ProjectTemplate
-        projecturl="/portfolio/correspondence/"
+        projecturl={resolveSitePath('portfolio/correspondence/')}
         projectid="correspondenceproject"
         projectname="Booz Allen Hamilton Case Study"
         dates="2022-???"
@@ -98,7 +99,7 @@ if (designprojectRoot) {
         alt2="Figma"
       />
       <ProjectTemplate
-        projecturl="/portfolio/designsystem/"
+        projecturl={resolveSitePath('portfolio/designsystem/')}
         projectid="designsystemproject"
         projectname="Booz Allen Hamilton Case Studies"
         stickername="NDA"
@@ -108,7 +109,7 @@ if (designprojectRoot) {
       />
      
       <ProjectTemplate
-        projecturl="/portfolio/reach4help/"
+        projecturl={resolveSitePath('portfolio/reach4help/')}
         projectid="reach4helpproject"
         projectname="Reach 4 Help"
         projectdescription="Designed a mobile app version of browser application for Reach4Help, a nonprofit dedicated to connecting users to aid & resources for disaster relief."
@@ -120,9 +121,9 @@ if (designprojectRoot) {
         projectid="jargonproject"
         projectname="Jargon"
         projectdescription="Designed a gamified, language learning app for my Google UX certifcation."
-        tool1="/Images/Mural.svg"
+        tool1={resolveSitePath('Images/Mural.svg')}
         alt1="Mural"
-        tool2="/Images/FigmaLogo.svg"
+        tool2={resolveSitePath('Images/FigmaLogo.svg')}
         alt2="Figma"
       />*/}
       
@@ -136,7 +137,7 @@ if (devprojectRoot) {
     <React.StrictMode>
   
       <ProjectTemplate
-        projecturl="/portfolio/powerapp/"
+        projecturl={resolveSitePath('portfolio/powerapp/')}
         projectid="xdappproject"
         projectname="X&D Advisor Hub Dashboard"
         projectdescription=" Designed and developed a gamified, advisorship tracking application to help increase member aquistion and engagement."
@@ -147,7 +148,7 @@ if (devprojectRoot) {
         alt5="Figma"
       />
       <ProjectTemplate
-        projecturl="/portfolio/onboarding/"
+        projecturl={resolveSitePath('portfolio/onboarding/')}
         projectid="onboardingproject"
         projectname="Onboarding Guide"
         projectdescription="Designed and prototyped a interactive onboarding flow, as well as created a companion glossary with PowerApps, that decreased onboarding time."
@@ -158,7 +159,7 @@ if (devprojectRoot) {
       />
 
       <ProjectTemplate
-        projecturl="/portfolio/dummydata/"
+        projecturl={resolveSitePath('portfolio/dummydata/')}
         projectid="datagenproject"
         projectname="Dummy Data Generator"
         projectdescription="Coded a figma plugin for generating dummy data appropriate for designs under the Veterans Affairs portfolio. Distributed and tested across teams of more than twenty UX designers. Increased fidelity of wires when handing off to developers."
@@ -168,7 +169,7 @@ if (devprojectRoot) {
         alt4="Figma"
       />
       <ProjectTemplate
-        projecturl="/portfolio/prototypescanner/"
+        projecturl={resolveSitePath('portfolio/prototypescanner/')}
         projectid="scannerproject"
         projectname="Prototype Variable Scanner"
         projectdescription=" Coded a figma plugin for quick and easy variable documentation used in advanced prototyping.

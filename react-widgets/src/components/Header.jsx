@@ -1,7 +1,9 @@
+import { resolveSitePath } from '../sitePaths'
+
 export default function Header(){
     return( 
         <>
-        <a href="/portfolio/" id="homepage">
+        <a href={resolveSitePath('portfolio/')} id="homepage">
             <h4> EMILY DIAZ-FUSCO</h4>
         </a>
         <nav>
@@ -10,40 +12,40 @@ export default function Header(){
                 <div className="dropdown-content" tabIndex="0">
                     <ul>
                         <li>
-                            <a href="/portfolio/decisionevaluations/">Decision Evaluations (BAH)</a>
+                            <a href={resolveSitePath('portfolio/decisionevaluations/')}>Decision Evaluations (BAH)</a>
                         </li>
                         <li>
-                            <a href="/portfolio/hearings/">Hearings (BAH)</a>
+                            <a href={resolveSitePath('portfolio/hearings/')}>Hearings (BAH)</a>
                         </li>
                         <li>
-                            <a href="/portfolio/reassigncases/">Reassign Cases (BAH)</a>
+                            <a href={resolveSitePath('portfolio/reassigncases/')}>Reassign Cases (BAH)</a>
                         </li>
                         <li>
-                            <a href="/portfolio/correspondence/">Correspondence (BAH)</a>
+                            <a href={resolveSitePath('portfolio/correspondence/')}>Correspondence (BAH)</a>
                         </li>
                         <li>
-                            <a href="/portfolio/designsystem/">Design System (BAH)</a>
+                            <a href={resolveSitePath('portfolio/designsystem/')}>Design System (BAH)</a>
                         </li>
                         <li>
-                            <a href="/portfolio/powerapp/">X&D Advisor App</a>
+                            <a href={resolveSitePath('portfolio/powerapp/')}>X&D Advisor App</a>
                         </li>
                         <li>
-                            <a href="/portfolio/onboarding/">Onboarding Guide</a>
+                            <a href={resolveSitePath('portfolio/onboarding/')}>Onboarding Guide</a>
                         </li>
                         <li>
-                            <a href="/portfolio/reach4help/">Reach4Help</a>
+                            <a href={resolveSitePath('portfolio/reach4help/')}>Reach4Help</a>
                         </li>
                         <li>
-                            <a href="/portfolio/dummydata/">Dummy Data Generator</a>
+                            <a href={resolveSitePath('portfolio/dummydata/')}>Dummy Data Generator</a>
                         </li>
                         <li>
-                            <a href="/portfolio/prototypescanner/">Prototype Variable Scanner</a>
+                            <a href={resolveSitePath('portfolio/prototypescanner/')}>Prototype Variable Scanner</a>
                         </li>
                     </ul>
 
                 </div>
             </div>
-            <a href="/Resume/Emily Diaz Resume.pdf" target="_blank" rel="noopener noreferrer">View Resume</a>
+            <a href={resolveSitePath('Resume/Emily Diaz Resume.pdf')} target="_blank" rel="noopener noreferrer">View Resume</a>
         </nav>
         </>
     )

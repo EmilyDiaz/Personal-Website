@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { resolveSitePath } from '../sitePaths'
 
 export default function Footer() {
     useEffect(() => {
@@ -12,13 +13,13 @@ export default function Footer() {
                 hexCtx.imageSmoothingEnabled = false;
                 hexCtx.drawImage(hexImage, 0, 0, 100, 100);
             }
-            hexImage.src = "/Images/hexpixel.png"
+            hexImage.src = resolveSitePath('Images/hexpixel.png')
 
             hexCanvas.addEventListener("mouseover", () => {
-                hexImage.src = "/Images/hexpixel.gif"
+                hexImage.src = resolveSitePath('Images/hexpixel.gif')
             })
             hexCanvas.addEventListener("mouseleave", () => {
-                hexImage.src = "/Images/hexpixel.png"
+                hexImage.src = resolveSitePath('Images/hexpixel.png')
             })
         }
 
@@ -32,13 +33,13 @@ export default function Footer() {
                 cashewCtx.imageSmoothingEnabled = false;
                 cashewCtx.drawImage(cashewImage, 0, 10, 100, 100);
             }
-            cashewImage.src = "/Images/cashewneutral.png"
+            cashewImage.src = resolveSitePath('Images/cashewneutral.png')
 
             cashewCanvas.addEventListener("mouseover", () => {
-                cashewImage.src = "/Images/cashewpet.png"
+                cashewImage.src = resolveSitePath('Images/cashewpet.png')
             })
             cashewCanvas.addEventListener("mouseleave", () => {
-                cashewImage.src = "/Images/cashewneutral.png"
+                cashewImage.src = resolveSitePath('Images/cashewneutral.png')
             })
         }
     }, [])
@@ -53,9 +54,9 @@ export default function Footer() {
                 though.</p>
             <div id="graphicsRight">
                 <a href="https://github.com/EmilyDiaz" target="_blank" rel="noopener noreferrer"><img
-                    src="/Images/Github.svg" alt=""></img></a>
+                    src={resolveSitePath('Images/Github.svg')} alt=""></img></a>
                 <a href="https://www.linkedin.com/in/emily-diaz-b5b696203" target="_blank" rel="noopener noreferrer"><img
-                    src="/Images/LinkedIn.png" alt=""></img></a>
+                    src={resolveSitePath('Images/LinkedIn.png')} alt=""></img></a>
             </div>
         </>
     )
