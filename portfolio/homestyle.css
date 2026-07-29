@@ -1,6 +1,6 @@
-@import"/sharedstyles.css";
-@import "/header.css";
-@import "/footer.css";
+@import "../sharedstyles.css";
+@import "../header.css";
+@import "../footer.css";
 
 h1 {
     color: var(--primary-color);

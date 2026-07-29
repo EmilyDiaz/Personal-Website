@@ -1,8 +1,8 @@
 
-@import "projectheader.css";
-@import"sharedstyles.css";
-@import "header.css";
-@import "footer.css";
+@import "./projectheader.css";
+@import "./sharedstyles.css";
+@import "./header.css";
+@import "./footer.css";
 main{
     margin: 2em;
 }
