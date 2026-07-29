@@ -50,7 +50,7 @@ if (designprojectRoot) {
   ReactDOM.createRoot(designprojectRoot).render(
     <React.StrictMode>
       <ProjectTemplate
-        projecturl="DecisionEvaluations.html"
+        projecturl="/portfolio/decisionevaluations/"
         projectid="decisionevaluationsproject"
         projectname="Booz Allen Hamilton Case Studies"
         dates="2025-2026"
@@ -62,7 +62,7 @@ if (designprojectRoot) {
       />
 
       <ProjectTemplate
-        projecturl="Hearing.html"
+        projecturl="/portfolio/hearings/"
         projectid="hearingproject"
         projectname="Booz Allen Hamilton Case Study"
         dates="2024-2025"
@@ -75,7 +75,7 @@ if (designprojectRoot) {
       />
 
       <ProjectTemplate
-        projecturl="ReassignCases.html"
+        projecturl="/portfolio/reassigncases/"
         projectid="reassigncasesproject"
         projectname="Booz Allen Hamilton Case Study"
         dates="2023-2024"
@@ -87,7 +87,7 @@ if (designprojectRoot) {
       />
 
       <ProjectTemplate
-        projecturl="Correspondence.html"
+        projecturl="/portfolio/correspondence/"
         projectid="correspondenceproject"
         projectname="Booz Allen Hamilton Case Study"
         dates="2022-???"
@@ -98,7 +98,7 @@ if (designprojectRoot) {
         alt2="Figma"
       />
       <ProjectTemplate
-        projecturl="DesignSystem.html"
+        projecturl="/portfolio/designsystem/"
         projectid="designsystemproject"
         projectname="Booz Allen Hamilton Case Studies"
         stickername="NDA"
@@ -108,7 +108,7 @@ if (designprojectRoot) {
       />
      
       <ProjectTemplate
-        projecturl="reach4help.html"
+        projecturl="/portfolio/reach4help/"
         projectid="reach4helpproject"
         projectname="Reach 4 Help"
         projectdescription="Designed a mobile app version of browser application for Reach4Help, a nonprofit dedicated to connecting users to aid & resources for disaster relief."
@@ -136,7 +136,7 @@ if (devprojectRoot) {
     <React.StrictMode>
   
       <ProjectTemplate
-        projecturl="powerapp.html"
+        projecturl="/portfolio/powerapp/"
         projectid="xdappproject"
         projectname="X&D Advisor Hub Dashboard"
         projectdescription=" Designed and developed a gamified, advisorship tracking application to help increase member aquistion and engagement."
@@ -147,7 +147,7 @@ if (devprojectRoot) {
         alt5="Figma"
       />
       <ProjectTemplate
-        projecturl="onboarding.html"
+        projecturl="/portfolio/onboarding/"
         projectid="onboardingproject"
         projectname="Onboarding Guide"
         projectdescription="Designed and prototyped a interactive onboarding flow, as well as created a companion glossary with PowerApps, that decreased onboarding time."
@@ -158,7 +158,7 @@ if (devprojectRoot) {
       />
 
       <ProjectTemplate
-        projecturl="plugins.html"
+        projecturl="/portfolio/dummydata/"
         projectid="datagenproject"
         projectname="Dummy Data Generator"
         projectdescription="Coded a figma plugin for generating dummy data appropriate for designs under the Veterans Affairs portfolio. Distributed and tested across teams of more than twenty UX designers. Increased fidelity of wires when handing off to developers."
@@ -168,7 +168,7 @@ if (devprojectRoot) {
         alt4="Figma"
       />
       <ProjectTemplate
-        projecturl="plugins.html"
+        projecturl="/portfolio/prototypescanner/"
         projectid="scannerproject"
         projectname="Prototype Variable Scanner"
         projectdescription=" Coded a figma plugin for quick and easy variable documentation used in advanced prototyping.

@@ -1,0 +1,196 @@
+body {
+    background-image: url(/Images/worldmapbackground.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 1440px;
+    width: 100%;
+    justify-self: center;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+h1,
+h2
+ {
+    color: #288071;
+    font-family: 'Lato-Bold', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+}
+
+#mapcontent {
+display: flex;
+flex-direction: column;
+gap: 700px;
+align-items: center;
+}
+#islandContent{
+    position: relative;
+    min-height: 100vh;
+}
+
+.islands {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    z-index: 0;
+    height: 200px;
+}
+
+
+#peaceisland {
+    background-image: url(/Images/Peace\ Island-Default.png);
+    top: 10vh;
+    left: 5vw;
+    width: 18%
+}
+
+#peaceisland:hover {
+    background-image: url(/Images/Peace\ Island-Hover.png);
+}
+
+#writingisland {
+    background-image: url(/Images/Writing\ Island-Default.png);
+    top: 0vh;
+    right: 5vw;
+    width: 18%
+}
+
+#writingisland:hover {
+    background-image: url(/Images/Writing\ Island-Hover.png);
+}
+
+#portfolioisland {
+    background-image: url(/Images/Portfolio\ Island-Default.png);
+    top: 30vh;
+    right: 35vw;
+    width: 18%
+}
+
+#portfolioisland:hover {
+    background-image: url(/Images/Portfolio\ Island-Hover.png);
+}
+
+#gameisland {
+    background-image: url(/Images/Game\ Island-Default.png);
+    top: 70vh;
+    left: 5vw;
+    width: 18%
+}
+
+#gameisland:hover {
+    background-image: url(/Images/Game\ Island-Hover.png);
+}
+
+#galleryisland {
+    background-image: url(/Images/Gallery\ Island-Default.png);
+    top: 60vh;
+    right: 5vw;
+    width: 18%
+}
+
+#galleryisland:hover {
+    background-image: url(/Images/Gallery\ Island-Hover.png);
+}
+
+
+
+#explain{
+    display:flex;
+    min-width: 730px;
+    max-width: 730px;
+    background:url(/Images/DescBox.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    max-height: 200px;
+    min-height: 200px;
+    
+}
+
+#explain-text{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+
+}
+
+.tile-view {
+    display: none;
+    padding: 40px 20px 60px;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.tile-card {
+    background-color: rgba(40, 128, 113, .2);
+    border-radius: 24px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.tile-card img {
+    width: min(100%, 360px);
+    height: auto;
+    border-radius: 20px;
+    object-fit: contain;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    body {
+        background-image: none;
+
+    }
+    #mapcontent{
+        min-height: 0;
+    }
+
+    #peaceisland,
+    #gameisland,
+    #writingisland,
+    #galleryisland,
+    #portfolioisland,
+    #explain
+     {
+        display: none;
+    }
+
+    .tile-view {
+        display: block;
+    }
+
+    .tile-card {
+        padding: 28px 18px;
+    }
+}

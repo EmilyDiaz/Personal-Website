@@ -1,7 +1,7 @@
 export default function Header(){
     return( 
         <>
-        <a href="index.html" id="homepage">
+        <a href="/portfolio/" id="homepage">
             <h4> EMILY DIAZ-FUSCO</h4>
         </a>
         <nav>
@@ -10,40 +10,40 @@ export default function Header(){
                 <div className="dropdown-content" tabIndex="0">
                     <ul>
                         <li>
-                            <a href="DecisionEvaluations.html">Decision Evaluations (BAH)</a>
+                            <a href="/portfolio/decisionevaluations/">Decision Evaluations (BAH)</a>
                         </li>
                         <li>
-                            <a href="Hearing.html">Hearings (BAH)</a>
+                            <a href="/portfolio/hearings/">Hearings (BAH)</a>
                         </li>
                         <li>
-                            <a href="ReassignCases.html">Reassign Cases (BAH)</a>
+                            <a href="/portfolio/reassigncases/">Reassign Cases (BAH)</a>
                         </li>
                         <li>
-                            <a href="Correspondence.html">Correspondence (BAH)</a>
+                            <a href="/portfolio/correspondence/">Correspondence (BAH)</a>
                         </li>
                         <li>
-                            <a href="DesignSystem.html">Design System (BAH)</a>
+                            <a href="/portfolio/designsystem/">Design System (BAH)</a>
                         </li>
                         <li>
-                            <a href="powerapp.html">X&D Advisor App</a>
+                            <a href="/portfolio/powerapp/">X&D Advisor App</a>
                         </li>
                         <li>
-                            <a href="onboarding.html">Onboarding Guide</a>
+                            <a href="/portfolio/onboarding/">Onboarding Guide</a>
                         </li>
                         <li>
-                            <a href="reach4help.html">Reach4Help</a>
+                            <a href="/portfolio/reach4help/">Reach4Help</a>
                         </li>
                         <li>
-                            <a href="dummydata.html">Dummy Data Generator</a>
+                            <a href="/portfolio/dummydata/">Dummy Data Generator</a>
                         </li>
                         <li>
-                            <a href="prototypescanner.html">Prototype Variable Scanner</a>
+                            <a href="/portfolio/prototypescanner/">Prototype Variable Scanner</a>
                         </li>
                     </ul>
 
                 </div>
             </div>
-            <a href="Resume/Emily Diaz Resume.pdf" target="_blank" rel="noopener noreferrer">View Resume</a>
+            <a href="/Resume/Emily Diaz Resume.pdf" target="_blank" rel="noopener noreferrer">View Resume</a>
         </nav>
         </>
     )
