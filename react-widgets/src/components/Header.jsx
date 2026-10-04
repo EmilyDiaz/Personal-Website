@@ -3,12 +3,14 @@ import { resolveSitePath } from '../sitePaths'
 export default function Header(){
     return( 
         <>
-        <a href={resolveSitePath('portfolio/')} id="homepage">
-            <h4> EMILY DIAZ-FUSCO</h4>
+        <a href={resolveSitePath('portfolio/')} id="homepage" aria-label="Emily Diaz-Fusco home">
+            <span className="site-brand__frog">
+                <img src={resolveSitePath('Images/faviconbigger.png')} alt="" aria-hidden="true" />
+            </span>
         </a>
         <nav>
-            <div className="dropdown" tabIndex="0">
-                <a id="project-navbar" tabIndex="0">Projects</a>
+            <div className="dropdown">
+                {/*<a id="project-navbar" tabIndex="0">Projects</a>
                 <div className="dropdown-content" tabIndex="0">
                     <ul>
                         <li>
@@ -43,7 +45,7 @@ export default function Header(){
                         </li>
                     </ul>
 
-                </div>
+                </div>*/}
             </div>
             <a href={resolveSitePath('Resume/Emily Diaz Resume.pdf')} target="_blank" rel="noopener noreferrer">View Resume</a>
         </nav>

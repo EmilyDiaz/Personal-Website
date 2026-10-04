@@ -47,15 +47,15 @@ export default function Footer() {
     return (
         <>
             <div id="graphicsLeft">
-                <canvas id="hexCanvas" tabIndex="0"></canvas>
-                <canvas id="cashewCanvas" tabIndex="0"></canvas>
+                <canvas id="hexCanvas"></canvas>
+                <canvas id="cashewCanvas"></canvas>
             </div>
-            <p tabIndex="0">This website was designed & coded by Emily. Two gremlins named Hex and Cashew supervised,
+            <p >This website was designed & coded by Emily. Two gremlins named Hex and Cashew supervised,
                 though.</p>
             <div id="graphicsRight">
-                <a href="https://github.com/EmilyDiaz" target="_blank" rel="noopener noreferrer"><img
-                    src={resolveSitePath('Images/Github.svg')} alt=""></img></a>
-                <a href="https://www.linkedin.com/in/emily-diaz-b5b696203" target="_blank" rel="noopener noreferrer"><img
+                <a href="https://www.figma.com/@emilymdiaz" target="_blank" rel="noopener noreferrer"><img
+                    src={resolveSitePath('Images/FigmaLogo.svg')} alt=""></img></a>
+                <a href="https://www.linkedin.com/in/emily-diaz-fusco" target="_blank" rel="noopener noreferrer"><img
                     src={resolveSitePath('Images/LinkedIn.png')} alt=""></img></a>
             </div>
         </>

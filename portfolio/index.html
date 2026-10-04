@@ -9,93 +9,119 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../Images/faviconbigger.png">
     <script src="../base-path.js"></script>
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-81WDFMYN4J"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-81WDFMYN4J');
+</script>
 <body>
     <header id=react-header-container></header>
     <main id="homemain">
         <section id="intro-section">
             <section id="introDesc">
-                <h1 id="welcomeMessage" tabindex="0">Hi, I'm Emily!👋</h1>
-                <p tabindex="0">
-                    I'm a Product Designer that bridges the gap between design and development and delivers
-                    solutions for complex systems in the healthcare, federal, and non-profit spaces.
+                <h1 id="welcomeMessage">Hi, I'm Emily!👋</h1>
+                <p >
+                    I'm a UX Designer for government, healthcare and non-profits. I make things: accessible interfaces, design systems, and the occasional imaginary world.
                 </p>
-                <p tabindex="0">
+                <p>I'm <a href="../Images/NNG-UX-Certificate-1072718-Diaz_Letter.pdf" target="_blank"
+                        rel="noopener noreferrer">NN/G certified</a> and have Public Trust Clearance.</p>
+                <p>
                     Feel free to check out my projects below or explore the overarching site.
                 </p>
 
                 <section id="moreDetails">
                     <section class="descBlock">
-                        <h3 tabindex="0">Current company</h3>
-                        <p tabindex="0">VetsEZ</p>
+                        <h3>Current company</h3>
+                        <p >VetsEZ</p>
                     </section>
                     <div class="separator"></div>
-                    <section class="descBlock" tabindex="0">
-                        <h3 tabindex="0">Current side project</h3>
-                        <p tabindex="0">Building a game for my husband</p>
+                    <section class="descBlock">
+                        <h3 >Current side project</h3>
+                        <p>Building a game for my husband</p>
                     </section>
-                    <a href="../Images/NNG-UX-Certificate-1072718-Diaz_Letter.pdf" target="_blank"
-                        rel="noopener noreferrer">
-                        <img src="https://media.nngroup.com/nng-uxc-badge.png" width="180" height="150"
-                            alt="UX Certification Badge from Nielsen Norman Group" tabindex="0" /></a>
                 </section>
 
             </section>
             <section id="frogprofile">
-                <video controls width="600px" autoplay muted playsinline loop preload="metadata" loading="lazy" autoplay>
-                    <source src="../Images/frogfulltimelapse.mp4" type="video/mp4">
-                </video>
-                <p tabindex="0">*Disclaimer: I am not a frog. I just think they are cute.</p>
+                <div class="frogvideo">
+                    <video id="frogvideo" width="600px" autoplay muted playsinline loop preload="metadata" loading="lazy">
+                        <source src="../Images/frogfulltimelapse.mp4" type="video/mp4">
+                    </video>
+                    <button class="frogvideo__pause" type="button" aria-label="Pause frog video">
+                        <span class="frogvideo__icon" aria-hidden="true"></span>
+                    </button>
+                </div>
+                <p>*Disclaimer: I am not a frog. I just think they are cute.</p>
             </section>
         </section>
         </section>
         </section>
         <section class="Projects">
-            <h2>Design Work</h2>
             <div id="designprojectContainer"></div>
-        </section class="Projects">
+        <!--</section class="Projects">
         <h2>Dev Work</h2>
         <div id="devprojectContainer"></div>
-        <section>
-
+        <section>-->
         </section>
         <section id="aboutme">
             <section id="aboutmeDesc">
-                <h2 tabindex="0">More about me</h2>
-                <h3 tabindex="0">
+                <h2>More about me</h2>
+                <h3>
                     My main goal in life is to experience and learn new things. Satisfaction to my curiosity is what
                     keeps
                     me going.
                 </h3>
-                <p tabindex="0"> And even if I'm not good at that new thing or I decide perhaps the experience isn't
+                <p> And even if I'm not good at that new thing or I decide perhaps the experience isn't
                     for
                     me,
                     at least I tried!
                 </p>
-                <p tabindex="0"> When I'm not tangled in code or wireframes, I enjoy drawing, reading, writing,
+                <p> When I'm not tangled in code or wireframes, I enjoy drawing, reading, writing,
                     playing video
                     games, or spending time with my two gremlins.
                 </p>
                 <section id="aboutmegraphicsMain">
                     <div class="imgframe">
                         <img src="../Images/hex.jpg" tabindex="0">
-                        <h3 tabindex="0">Hex</h3>
+                        <h3>Hex</h3>
                     </div>
                     <div class="imgframe">
                         <img src="../Images/cashew.jpg" tabindex="0">
-                        <h3 tabindex="0">Cashew</h3>
+                        <h3>Cashew</h3>
                     </div>
                 </section>
 
-                <p tabindex="0">Feel free to reach out to me if you have further questions, a business opportunity,
+                <p>Feel free to reach out to me if you have further questions, a business opportunity,
                     or
                     simply just
                     want a
                     e-pen pal.</p>
-                <a href="mailto:emilmdiaz@gmail.com">Email me at emilmdiaz@gmail.com</a>
+                <form class="contact-form" action="https://formsubmit.co/emilmdiaz@gmail.com" method="POST">
+                    <input type="hidden" name="_subject" value="New message from your portfolio">
+                    <input type="hidden" name="_template" value="table">
+                    <div class="contact-form__fields">
+                        <label class="contact-form__field">
+                            Your name
+                            <input name="name" type="text" autocomplete="name" required>
+                        </label>
+                        <label class="contact-form__field">
+                            Your email
+                            <input name="email" type="email" autocomplete="email" required>
+                        </label>
+                        <label class="contact-form__field contact-form__field--message">
+                            Message
+                            <textarea name="message" rows="5" required></textarea>
+                        </label>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
             </section>
             <section id="aboutmegraphicsRight">
-                <img src="../Images/littleme.svg" tabindex="0">
+                <img src="../Images/littleme.svg">
             </section>
         </section>
 
@@ -106,7 +132,7 @@
                     You enter the port, the smell of the fishmonger's fresh catch smacking you across the face.
                 </p>
                 <p>
-                    A friendly frogman waves at you through the crowd of early risers, beckoning you over to where he sits on his
+                    A friendly frogman waves at you through the crowd of early risers, beckoning you over to where he sits on
                     his raft.
                 </p>
                 <p>

@@ -2,31 +2,19 @@
 @import "../header.css";
 @import "../footer.css";
 
-h1 {
-    color: var(--primary-color);
-}
-
-h2 {
-    color: var(--header-color-primary);
-}
-
-h3 {
-    color: var(--header-color-primary);
-}
 .imganimationover {
     transform: translateX(10px) translateY(-20px);
     transition: .5s ease-in-out;
 }
 
 .imganimationleave {
-    transform: translateX(-10px) translateY(20px);
+    transform: translateX(-10px) translateY(0px);
     transition: .5s ease-in-out;
 }
 
 #homemain {
     display: flex;
     flex-direction: column;
-    margin: 2em;
 }
 
 #intro-section {
@@ -34,13 +22,16 @@ h3 {
     gap: 60px;
     margin-bottom: 30px;
     border-radius: 5px;
-    width: 100%;
+    margin: 0em 4em 4em 4em;
 
 }
 
 #introDesc{
     display: flex;
     flex-direction: column;
+}
+#introDesc p a{
+    color: var(--primary-color);
 }
 
 #moreDetails{
@@ -62,29 +53,122 @@ h3 {
     justify-content: center;
     align-items: flex-end;
 }
+.frogvideo{
+    position: relative;
+    line-height: 0;
+}
+.frogvideo__pause{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: grid;
+    width: 76px;
+    height: 76px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .72);
+    color: white;
+    cursor: pointer;
+    box-sizing: border-box;
+    opacity: 0;
+    place-items: center;
+    transform: translate(-50%, -50%);
+    transition: opacity .2s ease-in-out, background-color .2s ease-in-out;
+}
+.frogvideo__icon{
+    position: relative;
+    display: block;
+    width: 24px;
+    height: 30px;
+}
+.frogvideo__icon::before,
+.frogvideo__icon::after{
+    position: absolute;
+    top: 0;
+    width: 7px;
+    height: 30px;
+    border-radius: 1px;
+    background-color: currentColor;
+    content: "";
+}
+.frogvideo__icon::before{
+    left: 1px;
+}
+.frogvideo__icon::after{
+    right: 1px;
+}
+.frogvideo__pause.is-playing .frogvideo__icon{
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 22px solid currentColor;
+}
+.frogvideo__pause.is-playing .frogvideo__icon::before,
+.frogvideo__pause.is-playing .frogvideo__icon::after{
+    display: none;
+}
+.frogvideo:hover .frogvideo__pause,
+.frogvideo__pause:focus-visible{
+    opacity: 1;
+}
+.frogvideo__pause:hover{
+    background-color: rgba(0, 0, 0, .88);
+    box-shadow: none;
+    transform: translate(-50%, -50%);
+}
+.frogvideo__pause:focus-visible{
+    outline: 3px solid var(--primary-color);
+    outline-offset: 4px;
+    transform: translate(-50%, -50%);
+}
+.frogvideo video{
+    display: block;
+    max-width: 100%;
+}
 #frogprofile>p{
     align-self: center;
 }
 
 
 .Projects {
-    margin-bottom: 30px;
+    padding:4em;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background-color: white;
+    background-color: var(--primary-color)
 }
 .projecttemplate{
     background-color: rgba(40, 128, 113, .2);
+    box-shadow: 0 4px 12px rgba(20, 44, 40, 1);
     border-radius: 30px;
     height: 400px;
-    background-position: center;
     padding: 2em 4em;
     position: relative;
     overflow: hidden;
 }
 .projecttemplate:hover{
     cursor: pointer;
+}
+.projectdescription>h3{
+    color: white;
+}
+.project-lock{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 0.35em;
+    vertical-align: -1px;
+    white-space: nowrap;
+}
+.project-lock svg{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.projectdescription>p{
+    color: rgb(226, 226, 226);
 }
 .tagrow{
     display: flex;
@@ -95,14 +179,14 @@ h3 {
     z-index: 2;
 }
 #reassigncasesproject{
-    background-image: url(../Images/ReassignCasesHomeCover.svg);
-    background-size: 90%;
+    background-image: url(../Images/ReassignCasescover.svg);
+    background-size: cover;
     background-repeat: no-repeat;
 
 }
  #decisionevaluationsproject{
-    background-image: url(../Images/DecisionEvalHomeCover.svg);
-    background-size: 90%;
+    background-image: url(../Images/DecisionEvalCover.svg);
+    background-size: cover;
     background-repeat: no-repeat;
 
 }
@@ -113,14 +197,14 @@ h3 {
 
 }
 #hearingproject{
-    background-image: url(../Images/HearingsHomeCover.svg);
-    background-size: 90%;
+    background-image: url(../Images/Hearings\ Project\ Cover.png);
+    background-size: cover;
     background-repeat: no-repeat;
 
 }
 #designsystemproject{
     background-image: url(../Images/DesignSystemHomeCover.svg);
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
 
 }
@@ -172,8 +256,8 @@ h3 {
 
 #xdappproject{
     
-    background-image: url(../Images/X&D\ Advisor\ Hub\ App.svg);
-    background-size: 90%;
+    background-image: url(../Images/AdvisorHubCover.svg);
+    background-size: cover;
     background-repeat: no-repeat;
 
 }
@@ -181,7 +265,7 @@ h3 {
     background-image: url(../Images/JargonCover.png);
     background-size: 50%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position:right;
 
 }
 #onboardingproject{
@@ -265,10 +349,7 @@ h3 {
 
 #aboutme{
     display: flex;
-    margin-bottom:30px;
-     border-top:rgba(40, 128, 113, .2) 2px solid;
-     border-bottom:rgba(40, 128, 113, .2) 2px solid;
-    padding:2em;
+    margin:4em
 }
 #aboutmeDesc{
     display: column;
@@ -280,6 +361,58 @@ h3 {
     text-decoration: underline;
     color: #0071bc;
     font-style: italic;
+}
+.contact-form{
+    width: min(100%, 760px);
+    margin-top: 24px;
+}
+.contact-form__fields{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+.contact-form__field{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+.contact-form__field--message{
+    grid-column: 1 / -1;
+}
+.contact-form input,
+.contact-form textarea{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 14px;
+    border: 1px solid rgba(64, 97, 124, .45);
+    border-radius: 4px;
+    background-color: white;
+    color: #183142;
+    font: inherit;
+}
+.contact-form textarea{
+    min-height: 140px;
+    resize: none;
+}
+.contact-form input:focus-visible,
+.contact-form textarea:focus-visible{
+    outline: 3px solid var(--tertiary-color);
+    outline-offset: 2px;
+}
+.contact-form button{
+    margin-top: 18px;
+    box-shadow: none;
+}
+.contact-form__status{
+    min-height: 1.5em;
+    margin: 8px 0 0;
+    font-size: 16px;
+}
+.contact-form__fallback{
+    margin-top: 4px;
+    font-size: 16px;
 }
 #aboutmegraphicsMain{
     display: flex;
@@ -301,12 +434,20 @@ width: 300px;
 height: 300px;
 }
 #port{
-    padding: 2em;
     display: flex;
+    padding: 4em;
+    background-color: var(--primary-color)
 }
+
 #protDesc{
     display: flex;
     flex-direction: column;
+}
+#portDesc>p{
+    color: whitesmoke;
+}
+#portDesc>h2{
+    color: whitesmoke;
 }
 #port>img{
     width: 40%;
@@ -319,8 +460,8 @@ button{
     border-radius: 10px;
     padding: 10px 20px;
     border: none;
-    background-color: var(--primary-color);
-    color: white;
+    background-color: var(--tertiary-color);
+    color: #183142;
     font-size: medium;
     font-weight: bold;
     box-shadow: 5px 5px 5px rgb(197, 197, 197);
@@ -395,6 +536,14 @@ button:hover{
     }
     #aboutmegraphicsMain{
         flex-direction: column;
+    }
+
+    .contact-form__fields{
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form__field--message{
+        grid-column: auto;
     }
    
     #aboutmegraphicsMain>.imgframe>img{

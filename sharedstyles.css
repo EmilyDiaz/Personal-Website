@@ -70,28 +70,16 @@
 }
 
 :root {
-    --primary-color: #288071;
-    --secondary-color: white;
-    --tertiary-color: black;
-    --hover-color: #1D594F;
-    --border-color: var(--primary-color);
-    --header-color-primary: var(--primary-color);
-    --header-color-secondary: var(--secondary-color);
-    --body-text: var(--tertiary-color);
-    --selected-tab: var(--accent-color);
-    --hover-tab: var(--tertiary-color);
-    --card-color: var(--primary-color);
-    --button-text-primary: var(--primary-color);
-    --button-text-secondary: var(--secondary-color);
-    --button-bg-color: var(--primary-color);
-    --button-bg-color-secondary: var(--secondary-color);
-    --button-text-hover: var(--hover-color);
+    --primary-color: #40617c;
+    --secondary-color: #D4E6E3;
+    --tertiary-color: #DC9B9B;
+    --paragraph-color:rgb(99, 112, 126);
+    --hover-color:#cc9090;
 
 }
 
 
 body {
-    max-width: 1440px;
     width: 100%;
     justify-self: center;
     font-family: 'Lato-Regular', Tahoma, Geneva, Verdana, sans-serif;
@@ -115,6 +103,8 @@ h4 {
 
 p {
     font-size: 20px;
+    line-height: 170%;
+    color: var(--paragraph-color)
 }
 
 h1,
@@ -126,7 +116,7 @@ h4 {
     margin-top: 10px;
 }
 .separator{
-    border: 1px rgb(126, 123, 123,0.5) solid;
+    border: 1px var(--tertiary-color) solid;
     height: 60%;
 }
 
@@ -265,6 +255,12 @@ li{
     left: calc(50vw + 45vw);
     width: 60px;
     height: 60px;
+}
+
+@media screen and (max-width:1000px){
+    body {
+        max-width: 1224px;
+    }
 }
 
 /* 100% Image Width on Smaller Screens */

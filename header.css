@@ -2,6 +2,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 10px;
+    margin:2em
 }
 
 header>nav {
@@ -9,18 +10,31 @@ header>nav {
     gap: 30px;
 }
 
-header>a {
+#homepage {
+    display: flex;
+    align-items: center;
     text-decoration: none;
+}
+header>a:hover{
+     text-decoration: overline;
+    text-decoration-color: var(--tertiary-color);
+    text-decoration-thickness: 3px;
+}
+header>a:focus-visible{
+    text-decoration: overline;
+    text-decoration-color: var(--tertiary-color);
+    text-decoration-thickness: 3px;
 }
 
 header>nav>a {
     text-decoration: none;
-    color: black;
+    color: var(--primary-color);
+    font-weight: bold;
 }
 
 header>nav>a:hover {
     text-decoration: overline;
-    text-decoration-color: var(--primary-color);
+    text-decoration-color: var(--tertiary-color);
     text-decoration-thickness: 3px;
 }
 
@@ -31,9 +45,36 @@ header>a>h4 {
     margin-top: 0;
 }
 
-header>a:hover {
-    text-decoration: none;
+.site-brand__frog {
+    position: relative;
+    display: inline-flex;
+    width: 36px;
+    height: 36px;
 }
+
+.site-brand__frog::before {
+    position: absolute;
+    top: 1px;
+    right: 0;
+    left: 0;
+    height: 3px;
+    background-color: var(--tertiary-color);
+    content: "";
+    opacity: 0;
+}
+
+header>a:hover .site-brand__frog::before,
+header>a:focus-visible .site-brand__frog::before {
+    opacity: 1;
+}
+
+.site-brand__frog img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    image-rendering: pixelated;
+}
+
 
 
 .dropdown:hover .dropdown-content {
