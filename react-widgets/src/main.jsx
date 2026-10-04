@@ -51,43 +51,55 @@ if (designprojectRoot) {
   ReactDOM.createRoot(designprojectRoot).render(
     <React.StrictMode>
       <ProjectTemplate
-        projecturl={resolveSitePath('portfolio/decisionevaluations/')}
-        projectid="decisionevaluationsproject"
-        projectname="Booz Allen Hamilton Case Studies"
-        dates="2025-2026"
-        stickername="NDA"
-        status="Shipped"
-        projectdescription="Created a new feature for accessing and editing attorney performance reviews."
-        alt1="Mural"
-        alt2="Figma"
-      />
-
-      <ProjectTemplate
         projecturl={resolveSitePath('portfolio/hearings/')}
         projectid="hearingproject"
-        projectname="Booz Allen Hamilton Case Study"
-        dates="2024-2025"
-        stickername="NDA"
-        status="Shipped"
+        projectname="Scheduling hearings for Veterans"
+        requiresPassword
+        /*stickername="NDA"
+        status="Shipped"*/
         projectdescription="Created a new queue for tracking Veteran hearings more efficiently. Enhanced scheduling workflows to prevent
         erroneous or double booking of Veteran hearings. "
-        alt1="Mural"
-        alt2="Figma"
+      /*alt1="Mural"
+      alt2="Figma"*/
       />
-
+       <ProjectTemplate
+        projecturl={resolveSitePath('portfolio/decisionevaluations/')}
+        projectid="decisionevaluationsproject"
+        projectname="Attorney performance evaluations"
+        requiresPassword
+        /*stickername="NDA"
+        status="Shipped"*/
+        projectdescription="Created a new feature for accessing and editing attorney performance reviews."
+      /*alt1="Mural"
+      alt2="Figma"*/
+      />
       <ProjectTemplate
+        projecturl={resolveSitePath('portfolio/powerapp/')}
+        projectid="xdappproject"
+        projectname="X&D Advisor Hub Dashboard"
+        projectdescription=" Designed and developed a gamified, advisorship tracking application to help increase member aquistion and engagement."
+      /*alt1="ChatGPT"
+      alt2="Sharepoint"
+      alt3="Powerapps"
+      alt4="Powerautomate"
+      alt5="Figma"*/
+      />
+     
+
+      
+
+      {/*<ProjectTemplate
         projecturl={resolveSitePath('portfolio/reassigncases/')}
         projectid="reassigncasesproject"
-        projectname="Booz Allen Hamilton Case Study"
-        dates="2023-2024"
+        projectname="Creating stricter user roles and permissions"
         stickername="NDA"
         status="Shipped"
         projectdescription="Enhancement of supervisor and employee workflows for Veteran Health Administration."
-        alt1="Mural"
-        alt2="Figma"
-      />
+      alt1="Mural"
+      alt2="Figma"
+      />*/}
 
-      <ProjectTemplate
+      {/*<ProjectTemplate
         projecturl={resolveSitePath('portfolio/correspondence/')}
         projectid="correspondenceproject"
         projectname="Booz Allen Hamilton Case Study"
@@ -97,25 +109,26 @@ if (designprojectRoot) {
         projectdescription="Created a new mail tracking workflow for Veteran Appeals."
         alt1="Mural"
         alt2="Figma"
-      />
+      />*/}
+      {/*
       <ProjectTemplate
         projecturl={resolveSitePath('portfolio/designsystem/')}
         projectid="designsystemproject"
-        projectname="Booz Allen Hamilton Case Studies"
+        projectname="Case Management Software Design System"
         stickername="NDA"
         projectdescription="Enhanced and maintained a VA Design system based library with over 100 components through the use of layout features, variables, components, and AI."
-        alt1="Mural"
-        alt2="Figma"
-      />
-     
-      <ProjectTemplate
+      alt1="Mural"
+      alt2="Figma"*/}
+
+
+      {/*<ProjectTemplate
         projecturl={resolveSitePath('portfolio/reach4help/')}
         projectid="reach4helpproject"
         projectname="Reach 4 Help"
         projectdescription="Designed a mobile app version of browser application for Reach4Help, a nonprofit dedicated to connecting users to aid & resources for disaster relief."
         alt1="Mural"
         alt2="Figma"
-      />
+      />*/}
       {/*<ProjectTemplate
         projecturl="jargon.html"
         projectid="jargonproject"
@@ -126,7 +139,7 @@ if (designprojectRoot) {
         tool2={resolveSitePath('Images/FigmaLogo.svg')}
         alt2="Figma"
       />*/}
-      
+
 
     </React.StrictMode>
   )
@@ -135,7 +148,7 @@ if (designprojectRoot) {
 if (devprojectRoot) {
   ReactDOM.createRoot(devprojectRoot).render(
     <React.StrictMode>
-  
+
       <ProjectTemplate
         projecturl={resolveSitePath('portfolio/powerapp/')}
         projectid="xdappproject"

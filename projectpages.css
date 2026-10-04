@@ -4,24 +4,106 @@
 @import "./header.css";
 @import "./footer.css";
 main{
-    margin: 2em;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
 .projectsummary{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    border-bottom: rgba(40, 128, 113, .2) 2px solid;;
+    background-color: var(--primary-color);
+    padding: 4em 10em;
 }
 .projectsummary>h2{
     margin-bottom: 0;
+    color: white;
+}
+.problemsol>div>h3{
+    color: white;
+
+}
+.problemsol>div>p{
+    color: rgb(226, 226, 226);
+}
+.research{
+    padding: 4em 10em;
+}
+.researchheader{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr;
 }
 
-.process{
-    margin:2em;
+#depainpointstable{
+    width: 100%;
+    height: 300px;
+    background-image: url(Images/painpoints\ decision\ eval.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    
+}
+
+#hearingsusertable{
+    width: 100%;
+    height: 300px;
+    background-image: url(Images/hearingsusertable.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    
+}
+#deresearchquestions{
+
+    width: 100%;
+    height: 700px;
+    background-image: url(Images/ResearchQuestions-DecisionEval.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border-radius: 10px;
+    
+}
+#hearingsresearchquestions{
+
+    width: 100%;
+    height: 700px;
+    background-image: url(Images/deresearchquestions.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border-radius: 10px;
+    
 }
 .timelinerole{
-    display: flex;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+    width: 100%;
+
+}
+.timeline>p{
+    color: rgb(226, 226, 226);
+}
+.timeline>h3{
+    color: white;
+}
+.role>h3{
+    color: white;
+}
+.role>p{
+    color: rgb(226, 226, 226);
+}
+.problemsol{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
 }
 
 .challenges{
@@ -31,13 +113,6 @@ main{
     border-radius: 5px;
     padding: 0em 1em;
     width: 50%;
-}
- .timeline, .role,.problem{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    border-radius: 5px;
-    padding: 0em 1em;
 }
 
 .challenges >h3{
@@ -75,27 +150,317 @@ figcaption{
 figure>img {
     width: 100%;
 }
-.subprocess{
-    margin: 2em
+
+
+.featureheader{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+.feature1>.featureheader>div>p{
+    color: rgb(226, 226, 226);
 }
 
+.feature1>.featureheader>div>h3{
+    color: rgb(226, 226, 226);
+}
+.feature1>.featureheader>div>h2{
+    color: white;
+}
+
+.reflections>p{
+    color: rgb(226, 226, 226);
+}
+.reflections>h2{
+    color: white;
+}
+
+
+.feature3>.featureheader>p{
+    color: rgb(226, 226, 226);
+}
+
+
+
+.feature3>.featureheader>div>p{
+    color: rgb(226, 226, 226);
+}
+
+.feature3>.featureheader>div>h3{
+    color: rgb(226, 226, 226);
+}
+.feature3>.featureheader>div>h2{
+    color: white;
+}
+.feature3,.feature1,.reflections{
+    padding: 4em 8em;
+    background-color: var(--primary-color);
+}
+
+
+.feature2,.feedbackiteration{
+    padding: 4em 8em;
+}
 .process-imgs{
-    align-items: center;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+#casedetails{
+    width: 100%;
+    height: 600px;
+    background-image: url(Images/Case\ Details.svg);
+    background-repeat: no-repeat;
+    background-position-y: -60%;
+    background-position-x:center;
+    border-radius: 10px;
+    background-color: var(--tertiary-color);
+}
+#caseeval{
+    width: 100%;
+    height: 600px;
+    background-image: url(Images/Case\ evaulation.svg);
+    background-repeat: no-repeat;
+    background-position:center;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+}
+#comments{
+    width: 100%;
+    height: 600px;
+    background-image: url(Images/comments.svg);
+    background-repeat: no-repeat;
+    background-position:center;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+}
+
+#regularsearch{
+    width: 100%;
+    height: 600px;
+    background-image: url(Images/Regular\ search.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+    
+}
+#advancedsearch{
+    width: 100%;
+    height: 600px;
+    background-image: url(Images/Advanced\ search.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+    
+}
+
+#searchlock{
+    width: 100%;
+    height: 600px;
+    background-image: url(Images/Search\ Page\ Locks.svg);
+    background-repeat: no-repeat;
+    background-position:center;
+    border-radius: 10px;
+    background-color: var(--tertiary-color);
+}
+#persona{
+    width: 100%;
+    height: 600px;
+    background-image: url(Images/Persona.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+     background-size: 80%;
+    border-radius: 10px;
+    background-color: var(--tertiary-color);
+    
+}
+#expedition{
+    width: 100%;
+    height: 600px;
+    background-image: url(Images/stats\ allocation.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+     background-size: 80%;
+    border-radius: 10px;
+    background-color: var(--tertiary-color);
+    
+}
+#steam{
+    width: 100%;
+    height: 600px;
+    background-image: url(Images/badges.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+    border-radius: 10px;
+    background-color: var(--tertiary-color);
+    
+}
+#onboardingintro{
+    width: 100%;
+    height: 700px;
+    background-image: url(Images/Profile\ Setup\ 1.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 10px; 
+}
+#powerapp{
+    width: 100%;
+    height: 700px;
+    background-image: url(Images/Screenshot\ for\ Powerapp.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 10px; 
+}
+#assignments{
+    width: 100%;
+    height: 700px;
+    background-image: url(Images/Assignments\ Dashboard.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 10px; 
+}
+#bookingfailure{
+    width: 100%;
+    height: 300px;
+    background-image: url(Images/bookingsfailure.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border-radius: 10px; 
+}
+
+#designsystem{
+    width: 100%;
+    height: 600px;
+    background-image: url(Images/Style\ Guide.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+     background-size: 80%;
+    border-radius: 10px;
+    
+    
+}
+#avatars{
+    width: 100%;
+    height: 600px;
+    background-image: url(Images/avatars\ for\ mentorapp.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+    border-radius: 10px;
+    
+    
+}
+#priorityqueue{
+    width: 100%;
+    height: 600px;
+    background-image: url(Images/PriorityQueue.svg);
+    background-repeat: no-repeat;
+    background-position:center;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+}
+#unassignmodal{
+    width: 100%;
+    height: 600px;
+    background-image: url(Images/Unassignmodal.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    border-radius: 10px;
+    background-color: var(--tertiary-color);
+    
+}
+#unassign{
+    width: 100%;
+    height: 600px;
+    background-image: url(Images/Unassign.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    border-radius: 10px;
+    background-color: var(--tertiary-color);
+    
+}
+#assign{
+    width: 100%;
+    height: 600px;
+    background-image: url(Images/Assign.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    border-radius: 10px;
+    background-color: var(--tertiary-color);
+    
+}
+#lockingdocket{
+    width: 100%;
+    height: 600px;
+    background-image: url(Images/Docket\ Locking.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+    
+}
+#buttonoptions{
+    width: 100%;
+    height: 600px;
+    background-image: url(Images/Form\ Button\ options.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+    
+}
+#livebanner{
+    width: 100%;
+    height: 600px;
+    background-image: url(Images/Live\ timer\ banner.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+    
+}
+#quote{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding:2em;
-    
-
+    background-color: var(--secondary-color);
+    height: 100px;
+    width: 50%;
+    padding: 20px;
+    border-radius: 8px;
+    align-self: center;
 }
-
-
+#quote>h3{
+    margin: 0px;
+}
+#quote>p{
+    margin: 0px;
+    color: var(--primary-color);
+}
 .process-imgs img:not(.modalImg, .designtokens, .atomicdesign){
     width: 95%
 }
+#powerappstable{
+    width: 100%;
+    height: 700px;
+    background-image: url(Images/PowerappsTable.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 10px; 
+}
 
-.process-imgs img {
-    border: 2px solid var(--primary-color);
+.reflections{
+    display: flex;
+    flex-direction: column;
 }
 
 .zoom-wrapper {
@@ -143,15 +508,7 @@ figure>img {
     padding: 0em 1em;
 }
 
-.reflections {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    border-radius: 5px;
-    padding: 20px;
-    margin-bottom: 50px;
-    border-top:rgba(40, 128, 113, .2) 2px solid;
-}
+
 
 .alt-caption {
     font-size: 0.9rem;
@@ -183,4 +540,41 @@ figure>img {
     .challenges{
         width: 100%;
     }
+}
+
+#decisionevalheader{
+    background-image: url(./Images/DecisionEvalCover-CaseStudy.svg);
+    margin: 0em 4em 4em 4em;
+    width: 100%;
+    max-width: 1224px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+#hearingheader{
+    background-image: url(./Images/HearingCover-CaseStudy.svg);
+    margin: 0em 4em 4em 4em;
+    width: 100%;
+    max-width: 1224px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+
+#advisorhubheader{
+    background-image: url(./Images/AdvisorHubCover-CaseStudy.svg);
+    margin: 0em 4em 4em 4em;
+    width: 100%;
+    max-width: 1224px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
 }

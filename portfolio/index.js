@@ -28,6 +28,23 @@ window.addEventListener('load', () => {
   ProjectAnimation(onboardingproject);
   ProjectAnimation(scannerproject);
   ProjectAnimation(reach4helpproject);
+
+  const frogvideo = document.getElementById("frogvideo");
+  const frogvideoPause = document.querySelector(".frogvideo__pause");
+  if (frogvideo && frogvideoPause) {
+    frogvideoPause.addEventListener("click", () => {
+      if (frogvideo.paused) {
+        frogvideo.play();
+        frogvideoPause.setAttribute("aria-label", "Pause frog video");
+        frogvideoPause.classList.remove("is-playing");
+      } else {
+        frogvideo.pause();
+        frogvideoPause.setAttribute("aria-label", "Play frog video");
+        frogvideoPause.classList.add("is-playing");
+      }
+    });
+  }
+
 });
 
 function ProjectAnimation(projectname) {

@@ -3,8 +3,7 @@ footer {
     align-items: center;
     justify-content: center;
     padding: 10px;
-    margin: 2em;
-    border-top: 2px solid var(--primary-color)
+    margin: 0em 2rem 2rem 2em;
 }
 
 canvas:hover {
