@@ -62,7 +62,7 @@ if (designprojectRoot) {
       alt2="Figma"*/
       />
        <ProjectTemplate
-        projecturl={resolveSitePath('portfolio/decisionevaluations/')}
+        projecturl={resolveSitePath('portfolio/evaluations/')}
         projectid="decisionevaluationsproject"
         projectname="Attorney performance evaluations"
         /*stickername="NDA"
