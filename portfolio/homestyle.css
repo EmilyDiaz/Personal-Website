@@ -154,19 +154,6 @@
 .projectdescription>h3{
     color: white;
 }
-.project-lock{
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin-left: 0.35em;
-    vertical-align: -1px;
-    white-space: nowrap;
-}
-.project-lock svg{
-    display: block;
-    width: 100%;
-    height: 100%;
-}
 .projectdescription>p{
     color: rgb(226, 226, 226);
 }
@@ -475,83 +462,131 @@ button:hover{
     cursor: pointer;
 }
 /*media queries*/
-@media screen and (max-width:900px){
-    #port{
-    flex-direction: column;
-   }
-   #port>img{
-    width: 80%;
-    align-self: center                                                                         ;
-}
-}
-@media  screen and (max-width:1500px) {
-    #designprojectContainer, #devprojectContainer{
-        grid-template-columns: 1fr 1fr;
+@media screen and (max-width: 1024px) {
+    #intro-section {
+        flex-direction: column;
+        margin: 0 2em 2em;
+        gap: 2rem;
+    }
+
+    #frogprofile {
+        align-items: center;
+    }
+
+    #moreDetails {
+        gap: 1.5rem;
+        flex-wrap: wrap;
+    }
+
+    #designprojectContainer,
+    #devprojectContainer {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    #aboutme {
+        margin: 2em;
+    }
+
+    #port {
+        padding: 2em;
+        flex-direction: column;
+    }
+
+    #port > img {
+        width: 80%;
+        align-self: center;
     }
 }
-@media screen and (max-width:1000px) {
-    #designprojectContainer, #devprojectContainer{
+
+@media  screen and (max-width: 900px) {
+    #designprojectContainer,
+    #devprojectContainer {
         grid-template-columns: 1fr;
     }
 }
-@media screen and (max-width:1280px){
-     #intro-section{
-      flex-direction: column;
-      align-self: center;
-    }
-    #introDesc>h1{
-         align-self: center;
-    }
-       #introDesc>p{
-         align-self: center;
+
+@media screen and (max-width: 768px) {
+    #intro-section,
+    #aboutme,
+    #port {
+        margin: 0 1em 1.5em;
     }
 
-     
-    #frogprofile{
-        align-items: center;
+    #introDesc > h1,
+    #introDesc > p {
+        align-self: center;
+    }
+
+    .separator {
+        display: none;
+    }
+
+    #moreDetails {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .Projects {
+        padding: 1.25em;
+    }
+
+    .projecttemplate {
+        height: 280px;
+    }
+
+    #aboutme {
+        display: block;
+    }
+
+    #aboutmegraphicsMain {
+        flex-direction: column;
+    }
+
+    #aboutmegraphicsMain > .imgframe > img {
+        width: 100%;
+    }
+
+    .contact-form__fields {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form__field--message {
+        grid-column: auto;
+    }
+
+    #options {
+        flex-direction: column;
+    }
+
+    #port > img {
+        width: 100%;
+    }
+
+    .projectdescription {
+        width: 100%;
     }
 }
-@media screen and (max-width:600px) {
-    video{
+
+@media screen and (max-width: 600px) {
+    video {
         width: 80vw;
     }
+
+    #intro-section {
+        margin: 0 1em 1.5em;
+    }
+
     .Projects {
         width: auto;
-        padding: 0px;
+        padding: 0;
     }
 
     #homemain {
         flex-direction: column;
     }
-    .separator{
-        display: none;
-    }
- 
- #moreDetails{
-      flex-direction: column;
-      justify-self: center;
-    }
-    #aboutme{
-        display: block;
-    }
-    #aboutmegraphicsMain{
-        flex-direction: column;
-    }
 
-    .contact-form__fields{
-        grid-template-columns: 1fr;
-    }
-
-    .contact-form__field--message{
-        grid-column: auto;
-    }
-   
-    #aboutmegraphicsMain>.imgframe>img{
-        width: 100%;
-    }
-
-
-    .projectdescription {
-        width: 100%;
+    #port {
+        padding: 1.5em 1em;
     }
 }

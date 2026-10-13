@@ -54,7 +54,6 @@ if (designprojectRoot) {
         projecturl={resolveSitePath('portfolio/hearings/')}
         projectid="hearingproject"
         projectname="Scheduling hearings for Veterans"
-        requiresPassword
         /*stickername="NDA"
         status="Shipped"*/
         projectdescription="Created a new queue for tracking Veteran hearings more efficiently. Enhanced scheduling workflows to prevent
@@ -66,7 +65,6 @@ if (designprojectRoot) {
         projecturl={resolveSitePath('portfolio/decisionevaluations/')}
         projectid="decisionevaluationsproject"
         projectname="Attorney performance evaluations"
-        requiresPassword
         /*stickername="NDA"
         status="Shipped"*/
         projectdescription="Created a new feature for accessing and editing attorney performance reviews."

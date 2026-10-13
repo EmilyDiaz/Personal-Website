@@ -8,13 +8,9 @@ export default function ProjectTemplate(props) {
         props.alt6,
     ].filter(Boolean)
 
-    const projectUrl = props.requiresPassword
-        ? `password.html?case=${encodeURIComponent(props.projectid)}`
-        : props.projecturl
-
     return (
             <div className="project">
-                <a href={projectUrl}>
+                <a href={props.projecturl}>
                     <div className="projecttemplate" id={props.projectid} tabIndex="0">
                         <div className="tagrow">
                             {props.stickername ? <div className="sticker">{props.stickername}</div> : null}
@@ -35,14 +31,6 @@ export default function ProjectTemplate(props) {
                 <div className="projectdescription">
                     <h3>
                         {props.projectname}
-                        {props.requiresPassword && (
-                            <span className="project-lock" role="img" aria-label="Password protected" title="Password protected">
-                                <svg viewBox="0 0 28 28" aria-hidden="true" focusable="false" fill="none">
-                                    <rect x="4" y="12" width="20" height="13" rx="2" stroke="white" strokeWidth="2" />
-                                    <path d="M9 12V8a5 5 0 0 1 10 0v4" stroke="white" strokeWidth="2" strokeLinecap="round" />
-                                </svg>
-                            </span>
-                        )}
                     </h3>
                     <p>
                         {props.projectdescription}
