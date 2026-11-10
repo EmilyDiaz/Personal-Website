@@ -1,5 +1,5 @@
  document.addEventListener('DOMContentLoaded', function () {
-            document.querySelectorAll('.process-imgs img').forEach(function (img) {
+            document.querySelectorAll('.process-imgs img:not([data-comparison-image])').forEach(function (img) {
                 const wrapper = document.createElement('div');
                 wrapper.classList.add('zoom-wrapper');
                 if (img.classList.contains('modalImg')) wrapper.classList.add('is-modal-img');

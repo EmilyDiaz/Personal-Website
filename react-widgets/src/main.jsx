@@ -53,29 +53,33 @@ if (designprojectRoot) {
       <ProjectTemplate
         projecturl={resolveSitePath('portfolio/hearings/')}
         projectid="hearingproject"
-        projectname="Scheduling hearings for Veterans"
+        projectimg={resolveSitePath('Images/Hearings Project Cover.png')}
+        projectname="Scheduling Hearings for Veterans"
         /*stickername="NDA"
         status="Shipped"*/
-        projectdescription="Created a new queue for tracking Veteran hearings more efficiently. Enhanced scheduling workflows to prevent
-        erroneous or double booking of Veteran hearings. "
+        projectdescription="Removed bottlenecks in the hearings scheduling process for Veterans by creating a new queue for tracking Veteran hearings more efficiently and enhanced scheduling workflows to prevent
+        erroneous or double booking of Veteran hearings."
       /*alt1="Mural"
       alt2="Figma"*/
       />
        <ProjectTemplate
         projecturl={resolveSitePath('portfolio/evaluations/')}
         projectid="decisionevaluationsproject"
-        projectname="Attorney performance evaluations"
+        projectimg={resolveSitePath('Images/DecisionEvalCover.svg')}
+        projectname="Attorney Performance Evaluations and Search Page Modernization"
         /*stickername="NDA"
         status="Shipped"*/
-        projectdescription="Created a new feature for accessing and editing attorney performance reviews."
+        projectdescription="Created a new feature for accessing and editing attorney performance reviews, previously inaccessible by those in supervisory roles. Modernized an outdated search page and introduced
+        the ability to search by performance evaluations."
       /*alt1="Mural"
       alt2="Figma"*/
       />
       <ProjectTemplate
         projecturl={resolveSitePath('portfolio/powerapp/')}
         projectid="xdappproject"
+        projectimg={resolveSitePath('Images/AdvisorHubCover.svg')}
         projectname="X&D Advisor Hub Dashboard"
-        projectdescription=" Designed and developed a gamified, advisorship tracking application to help increase member aquistion and engagement."
+        projectdescription="Researched, designed and developed a gamified, advisorship tracking application that helped increase member aquistion and engagement."
       /*alt1="ChatGPT"
       alt2="Sharepoint"
       alt3="Powerapps"
@@ -150,6 +154,7 @@ if (devprojectRoot) {
       <ProjectTemplate
         projecturl={resolveSitePath('portfolio/powerapp/')}
         projectid="xdappproject"
+        projectimg={resolveSitePath('Images/AdvisorHubCover.svg')}
         projectname="X&D Advisor Hub Dashboard"
         projectdescription=" Designed and developed a gamified, advisorship tracking application to help increase member aquistion and engagement."
         alt1="ChatGPT"
@@ -161,6 +166,7 @@ if (devprojectRoot) {
       <ProjectTemplate
         projecturl={resolveSitePath('portfolio/onboarding/')}
         projectid="onboardingproject"
+        projectimg={resolveSitePath('Images/OnboardingFlowcutfile-ezgif.com-crop.gif')}
         projectname="Onboarding Guide"
         projectdescription="Designed and prototyped a interactive onboarding flow, as well as created a companion glossary with PowerApps, that decreased onboarding time."
         alt1="ChatGPT"
@@ -172,6 +178,7 @@ if (devprojectRoot) {
       <ProjectTemplate
         projecturl={resolveSitePath('portfolio/dummydata/')}
         projectid="datagenproject"
+        projectimg={resolveSitePath('Images/Dummy Data Generator.svg')}
         projectname="Dummy Data Generator"
         projectdescription="Coded a figma plugin for generating dummy data appropriate for designs under the Veterans Affairs portfolio. Distributed and tested across teams of more than twenty UX designers. Increased fidelity of wires when handing off to developers."
         alt1="ChatGPT"
@@ -182,6 +189,7 @@ if (devprojectRoot) {
       <ProjectTemplate
         projecturl={resolveSitePath('portfolio/prototypescanner/')}
         projectid="scannerproject"
+        projectimg={resolveSitePath('Images/Prototype Scanner.gif')}
         projectname="Prototype Variable Scanner"
         projectdescription=" Coded a figma plugin for quick and easy variable documentation used in advanced prototyping.
                             Distributed and tested across teams of more than twenty UX designers. Assisted with

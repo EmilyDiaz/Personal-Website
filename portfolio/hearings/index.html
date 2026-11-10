@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emily Diaz - Hearings</title>
     <link rel="stylesheet" href="../../projectpages.css">
-    <script src="../../zoom.js"></script>
     <script type="module" src="../../assets/dist/react-components.js"></script>
     <link rel="icon" type="image/png" sizes="32x32" href="../../Images/faviconbigger.png">
     <script src="../../base-path.js"></script>
@@ -54,7 +53,7 @@
                             </section>
                             <section class="role">
                                 <h3>Role & Team</h3>
-                                <p>UX Designer</p>
+                                <p>Role: UX Designer</p>
                                 <p>Team: 2 other UXers, 8 devs, 2 tech leads, 2 BAs, and 1 QA</p>
                             </section>
                         </section>
@@ -95,8 +94,9 @@
                 </div>
 
             </section>
-            </p>
-            <div id="priorityqueue"></div>
+            <div class="process-imgs">
+                <img src="/Images/PriorityQueue.svg">
+            </div>
         </section>
         <section class="feature2">
             <section class="featureheader">
@@ -120,9 +120,9 @@
                 </div>
             </section>
             <div class="process-imgs">
-                <div id="unassign"></div>
-                <div id="unassignmodal"></div>
-                <div id="assign"></div>
+                <img src="/Images/Assign.svg">
+                <img src="/Images/Unassign.svg">
+                <img src="/Images/Unassignmodal.svg">
             </div>
         </section>
         <section class="feature3">
@@ -141,8 +141,8 @@
             </section>
             </p>
             <div class="process-imgs">
-                <div id="lockingdocket"></div>
-                <div id="livebanner"></div>
+                <img src="/Images/Docket Locking.svg">
+                <img src="/Images/Live timer banner.svg">
             </div>
         </section>
         <section class="feedbackiteration">
@@ -179,8 +179,7 @@
 
             </section>
              <div class="process-imgs">
-                <div id="buttonoptions"></div>
-                <div id="livebanner"></div>
+                <img src="/Images/Form button options.svg">
             </div>
         </section>
 
@@ -223,6 +222,21 @@
 
         </section>
     </main>
+    <section class="related-casestudies" aria-labelledby="related-casestudies-title">
+        <h2 id="related-casestudies-title">Explore my other case studies</h2>
+        <div class="related-casestudies__grid">
+            <a class="related-casestudy" href="../evaluations/">
+                <img src="../../Images/DecisionEvalCover-CaseStudy.svg" alt="">
+                <span>Attorney Performance Evaluations</span>
+                <span class="related-casestudy__arrow" aria-hidden="true">&#8594;</span>
+            </a>
+            <a class="related-casestudy" href="../powerapp/">
+                <img src="../../Images/AdvisorHubCover-CaseStudy.svg" alt="">
+                <span>X&amp;D Advisor Hub</span>
+                <span class="related-casestudy__arrow" aria-hidden="true">&#8594;</span>
+            </a>
+        </div>
+    </section>
     <footer id="react-footer-container"></footer>
 </body>
 

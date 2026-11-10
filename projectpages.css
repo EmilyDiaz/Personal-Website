@@ -37,9 +37,8 @@ body {
     padding: 4em 10em;
 }
 .researchheader{
-    display: grid;
-    gap: 30px;
-    grid-template-columns: 1fr 1fr;
+    display: block;
+    gap: 20px;
 }
 
 #depainpointstable{
@@ -159,9 +158,8 @@ figure>img {
 
 
 .featureheader{
-    display: grid;
-    gap: 30px;
-    grid-template-columns: repeat(2, 1fr);
+    display: block;
+    gap: 20px;
     
 }
 .feature1>.featureheader>div>p{
@@ -208,12 +206,156 @@ figure>img {
 .feature2,.feedbackiteration{
     padding: 4em 8em;
 }
+
+.related-casestudies {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 3.5em 8em;
+}
+
+.related-casestudies h2 {
+    margin: 0 0 1.25rem;
+}
+
+.related-casestudies__grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
+}
+
+.related-casestudy {
+    position: relative;
+    display: flex;
+    min-height: 220px;
+    align-items: flex-end;
+    overflow: hidden;
+    border-radius: 10px;
+    background: var(--primary-color);
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.related-casestudy::after {
+    position: absolute;
+    inset: 45% 0 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    content: "";
+}
+
+.related-casestudy img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 180ms ease;
+}
+
+.related-casestudy:hover img {
+    transform: scale(1.04);
+}
+
+.related-casestudy > span {
+    position: relative;
+    z-index: 1;
+    padding: 1.25rem;
+}
+
+.related-casestudy__arrow {
+    margin-left: auto;
+    font-size: 1.75rem;
+}
+
+.related-casestudy:focus-visible {
+    outline: 3px solid var(--tertiary-color);
+    outline-offset: 4px;
+}
+
 .process-imgs{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+.process-imgs>p{
+    color: rgb(226, 226, 226);
+}
+.grid-imgs>div>p{
+    color: rgb(226, 226, 226);
+}
+.grid-imgs{
     display: grid;
     gap: 30px;
     grid-template-columns: repeat(2, 1fr);
-    
 }
+
+.search-comparison {
+    width: 100%;
+}
+
+.search-comparison__label {
+    margin: 0 0 0.75rem;
+    color: whitesmoke;
+    font-weight: 700;
+}
+
+.search-comparison__stage {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    min-height: 240px;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+}
+
+.search-comparison__stage > .zoom-wrapper {
+    width: 100%;
+}
+
+.search-comparison__stage > img {
+    display: block;
+    width: 100%;
+}
+
+.search-comparison__arrow {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    display: grid;
+    width: 44px;
+    height: 44px;
+    place-items: center;
+    transform: translateY(-50%);
+    border: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.94);
+    color: var(--primary-color);
+    cursor: pointer;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.search-comparison__arrow:hover {
+    background: white;
+}
+
+.search-comparison__arrow:focus-visible {
+    outline: 3px solid var(--tertiary-color);
+    outline-offset: 3px;
+}
+
+.search-comparison__arrow--previous {
+    left: 1rem;
+}
+
+.search-comparison__arrow--next {
+    right: 1rem;
+}
+
 #casedetails{
     width: 100%;
     height: 600px;
@@ -452,12 +594,12 @@ figure>img {
     margin: 0px;
     color: var(--primary-color);
 }
-.process-imgs img:not(.modalImg, .designtokens, .atomicdesign){
+.process-imgs img:not(.modalImg, .designtokens, .atomicdesign, [data-comparison-image]){
     width: 95%
 }
 #powerappstable{
     width: 100%;
-    height: 700px;
+    height: 400px;
     background-image: url(Images/PowerappsTable.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -585,7 +727,8 @@ figure>img {
     .feature2,
     .feature3,
     .feedbackiteration,
-    .reflections {
+    .reflections,
+    .related-casestudies {
         padding-left: 2.5em;
         padding-right: 2.5em;
     }
@@ -618,7 +761,8 @@ figure>img {
     .feature2,
     .feature3,
     .feedbackiteration,
-    .reflections {
+    .reflections,
+    .related-casestudies {
         padding-left: 2em;
         padding-right: 2em;
     }
@@ -660,7 +804,8 @@ figure>img {
     .feature2,
     .feature3,
     .feedbackiteration,
-    .reflections {
+    .reflections,
+    .related-casestudies {
         padding: 2em 1.25em;
     }
 
@@ -670,6 +815,10 @@ figure>img {
     .timelinerole,
     .problemsol,
     .process-imgs {
+        grid-template-columns: 1fr;
+    }
+
+    .related-casestudies__grid {
         grid-template-columns: 1fr;
     }
 
@@ -693,7 +842,8 @@ figure>img {
     .feature2,
     .feature3,
     .feedbackiteration,
-    .reflections {
+    .reflections,
+    .related-casestudies {
         padding: 1.5em 1em;
     }
 

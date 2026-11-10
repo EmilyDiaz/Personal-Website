@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Emily Diaz-Evaluations</title>
   <link rel="stylesheet" href="../../projectpages.css">
-  <script src="../../zoom.js"></script>
   <script type="module" src="../../assets/dist/react-components.js"></script>
   <link rel="icon" type="image/png" sizes="32x32" href="../../Images/faviconbigger.png">
   <script src="../../base-path.js"></script>
@@ -42,7 +41,8 @@
           </div>
           <div>
             <h3>Solution</h3>
-            <p>Judges and other authorized users can now search for and edit evaluations after submission. While one
+            <p>Judges and other authorized users can now search for and edit evaluations after submission, as well as
+              review the audit trail of changes. While one
               person edits, the
               case is locked to others, preventing duplication and overriding of information.
             <p>
@@ -79,22 +79,37 @@
           <h3>Search Page</h3>
         </div>
         <div>
-          <p>The existing search page was limited to only cases, and a user could only search by Veteran IDs. I
-            introduced performance evaluations as
-            a valid query and designed for advanced search functionalities where users could search for cases or
-            performance evaluations by other parameters.
+          <p>The original search page was outdated, seemingly abandoned as the rest of the application grew.
+            A user could only search for Veteran IDs and their results returned only three types of cases: Appeals,
+            Higher-Level Reviews and Supplemental Claims, where at this point the application had incorporated five
+            types of cases, including performance evaluations.
+            Load times were slow, given to the lack of table pagination and the large number of results returned.
           </p>
-          <p>While a judge queue was discussed and designed upon early on as another possible entry point for
-            evaluations,
-            it was soon deprioritized in favor of expanding the search page functionalities.
-          </p>
+          <p>Given that performance evaluations were a new case type that had to be integrated into the search page, I
+            and the lead developer
+            collaborated to design a solution that accommodated the new case type while improving the overall search
+            experience. I redesigned the search page not only to include performance evaluations, but to improve the
+            information architecture and modernize the tables
+            so that load times were faster by including tabs and pagination.</p>
         </div>
-
       </section>
-      </p>
       <div class="process-imgs">
-        <div id="regularsearch"></div>
-        <div id="advancedsearch"></div>
+        <div class="search-comparison" data-search-comparison data-image-comparison
+          data-before-src="/Images/Old Search.svg" data-after-src="/Images/Regular Search.svg"
+          data-before-alt="Before: original search page design" data-after-alt="After: redesigned regular search page">
+          <h3 class="search-comparison__label" data-comparison-label aria-live="polite">Before</h3>
+          <div class="search-comparison__stage">
+            <img src="/Images/Old Search.svg" alt="Before: original search page design" data-comparison-image>
+            <button class="search-comparison__arrow search-comparison__arrow--next" type="button"
+              aria-label="Show after search design" data-comparison-toggle>&#8594;</button>
+          </div>
+        </div>
+        <p>The idea of advanced search options was also discussed early on in the process of introducing performance
+          evaluations into the search page. When it came to pieces of searchable information, what if a user did not
+          have a Veteran ID, but the attorney's or judge's name, instead?</p>
+        <p>I designed for an advanced search drawer that gave users the ability to search for performance evaluations by
+          several different criteria.</p>
+        <img src="/Images/Advanced search.svg">
       </div>
     </section>
     <section class="feature2">
@@ -107,10 +122,13 @@
           the post-evaluation stage. I designed
           a quick way for users to not only access the performance evaluation from the case details page, but choose
           what
-          version to access. We also designed for the locking mechanism to apply in this
-          navigation menu as well. </p>
+          version to access. I also designed for the locking mechanism to apply in this
+          navigation menu as well, borrowing the idea from previous implementation in the Scheduling Hearings for
+          Veterans case study.</p>
       </section>
-      <div id="casedetails"></div>
+      <div class="process-imgs">
+        <img src="/Images/Case Details.svg">
+      </div>
     </section>
     <section class="feature3">
       <section class="featureheader">
@@ -121,15 +139,29 @@
         <p>The new performance evaluation page was very similar to the pre-submission form. I had to design around an
           already dense form
           and add a change log for auditing purposes. I went with an accordion so the user only had to open it if
-          necessary. The previous form
-          only allowed for one comment box, which had to be expanded on given that different users might need to add
-          comments and needed space to not override each other.
+          necessary, in order to keep the form less dense and overwhelming on page load. Users also needed the ability to switch between historical and current versions of the performance evaluation, which was provided to them within the change log.
         </p>
       </section>
       </p>
+
       <div class="process-imgs">
-        <div id="caseeval"></div>
-        <div id="comments"></div>
+        <img src="/Images/Case evaluation.svg">
+        <p>The previous form
+          only allowed for one comment box, given that only one user was involved in the review and submitting process.
+          Giving multiple users the ability to access performance evaluations post submission introduced issues with this sole comment box, such as comment overwriting. 
+          I also had to consider the introduction of versioning with the audit trail, and how comments would be associated with each version-both historical and current.</p>
+        <div class="search-comparison" data-image-comparison data-before-src="/Images/Old Comments.svg"
+          data-after-src="/Images/New Comments.svg"
+          data-before-alt="Before: original performance evaluation comment field"
+          data-after-alt="After: redesigned comments section">
+          <h3 class="search-comparison__label" data-comparison-label aria-live="polite">Before</h3>
+          <div class="search-comparison__stage">
+            <img src="/Images/Old Comments.svg" alt="Before: original performance evaluation comment field"
+              data-comparison-image>
+            <button class="search-comparison__arrow search-comparison__arrow--next" type="button"
+              aria-label="Show after comments design" data-comparison-toggle>&#8594;</button>
+          </div>
+        </div>
       </div>
     </section>
     <section class="feedbackiteration">
@@ -141,7 +173,9 @@
           well as an indicator for the editing expiration date of an evaluation.
         </p>
       </section>
-      <div id="searchlock"></div>
+      <div class="process-imgs">
+        <img src="/Images/Search Page Locks.svg">
+      </div>
     </section>
 
     <section class="reflections">
@@ -151,22 +185,66 @@
         before it got
         properly worked on.
         The project was divided into two parts: Development team A would spearhead the case details entry
-          point while development team B would take charge of the search page entry point.
+        point while development team B would take charge of the search page entry point.
         The entry point of the judges queue, although intially approved, was later deemed by stakeholders to be out
         of scope.
       </p>
       <p>
-        The initial development team did not have alot of experience working with functional stories, so I and the leads of the different development
+        The initial development team did not have alot of experience working with functional stories, so I and the leads
+        of the different development
         teams worked together on drafting business requirements.
         There were a few gaps missed during initial presentation of wireframes that had to be addressed during the
         UAT deployment in the development phase, but most of these gaps were linked to edge cases.
       </p>
-      <p>This feature was deployed to UAT before I transitioned off the project, so I don't have visibility into production usage. Metrics I'd want to track include how often evaluations were edited post-submission and how much faster judges and case reviewers could resolve a correction through the application compared to the external workaround they used before.
+      <p>This feature was deployed to UAT right before I transitioned off the project, so I don't have visibility into
+        production usage. Metrics I'd want to track include how often evaluations were edited post-submission and how
+        much faster judges and case reviewers could resolve a correction through the application compared to the
+        external workaround they used before.
       </p>
 
     </section>
   </main>
+  <section class="related-casestudies" aria-labelledby="related-casestudies-title">
+    <h2 id="related-casestudies-title">Explore my other case studies</h2>
+    <div class="related-casestudies__grid">
+      <a class="related-casestudy" href="../hearings/">
+        <img src="../../Images/HearingCover-CaseStudy.svg" alt="">
+        <span>Scheduling Hearings for Veterans</span>
+        <span class="related-casestudy__arrow" aria-hidden="true">&#8594;</span>
+      </a>
+      <a class="related-casestudy" href="../powerapp/">
+        <img src="../../Images/AdvisorHubCover-CaseStudy.svg" alt="">
+        <span>X&amp;D Advisor Hub</span>
+        <span class="related-casestudy__arrow" aria-hidden="true">&#8594;</span>
+      </a>
+    </div>
+  </section>
   <footer id="react-footer-container"></footer>
+  <script>
+    document.querySelectorAll('[data-image-comparison]').forEach((comparison) => {
+      const comparisonImages = [
+        { label: 'Before', src: comparison.dataset.beforeSrc, alt: comparison.dataset.beforeAlt },
+        { label: 'After', src: comparison.dataset.afterSrc, alt: comparison.dataset.afterAlt },
+      ];
+      const image = comparison.querySelector('[data-comparison-image]');
+      const label = comparison.querySelector('[data-comparison-label]');
+      const toggle = comparison.querySelector('[data-comparison-toggle]');
+      let activeImage = 0;
+
+      toggle.addEventListener('click', () => {
+        activeImage = (activeImage + 1) % comparisonImages.length;
+        image.src = comparisonImages[activeImage].src;
+        image.alt = comparisonImages[activeImage].alt;
+        label.textContent = comparisonImages[activeImage].label;
+
+        const showingAfter = activeImage === 1;
+        toggle.classList.toggle('search-comparison__arrow--next', !showingAfter);
+        toggle.classList.toggle('search-comparison__arrow--previous', showingAfter);
+        toggle.textContent = showingAfter ? '\u2190' : '\u2192';
+        toggle.setAttribute('aria-label', showingAfter ? 'Show before design' : 'Show after design');
+      });
+    });
+  </script>
 </body>
 
 </html>
