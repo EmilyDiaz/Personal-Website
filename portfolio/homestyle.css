@@ -470,9 +470,6 @@ button:hover{
         padding: 1.25em;
     }
 
-    .projecttemplate {
-        height: 220px;
-    }
 
     #aboutme {
         display: block;
@@ -503,7 +500,7 @@ button:hover{
     }
 
     .project {
-        grid-template-columns: 25% 75%;
+        grid-template-columns: 1fr;
     }
 }
 
