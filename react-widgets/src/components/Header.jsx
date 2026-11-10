@@ -9,7 +9,7 @@ export default function Header(){
             </span>
         </a>
         <nav>
-            <a href={resolveSitePath('Resume/Emily Diaz Resume.pdf')} target="_blank" rel="noopener noreferrer">View Resume</a>
+            <a href={resolveSitePath('Resume/Emily Diaz-Fusco Resume.docx')} target="_blank" rel="noopener noreferrer">View Resume</a>
             <a href={resolveSitePath('worldmap/')} >View World Map</a>
         </nav>
         </>
